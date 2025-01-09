@@ -11,6 +11,11 @@ let x;
 let size;
 let type;
 
+let padding;
+let padding2=30;
+let height;
+let width;
+
 //variabili slider 
 let slider;
 let sliderValue = 1;
@@ -28,7 +33,7 @@ let persone = "#FF4A6B";
 
 
 
-
+// caricamento dati
 function preload() {
   tablePeople = loadTable("Assets/persone.csv", "csv", "header");
   tableProva = loadTable("Assets/prova.csv", "csv", "header");
@@ -49,13 +54,29 @@ function setup() {
 
   // Crea lo slider verticale
   slider = createSlider(0, totalSteps-1, 0); // Range da 0 a 24, valore iniziale 0
-  slider.position(width-495, height-500); // Posizione
-  slider.size(height-70);
-  slider.style('height', '20px')
-  slider.style('transform', 'rotate(90deg)'); // Ruota lo slider per renderlo verticale
+  slider.position(20, height-40); // Posizione
+  slider.size(width-40);
+  //slider.style('height', '20px')
+  //slider.style('transform', 'rotate(90deg)'); // Ruota lo slider per renderlo verticale
   slider.style('background', '#ddd');
   slider.style('border-radius', '8px');
-  slider.style('outline', 'none');   
+  slider.style('outline', 'none'); 
+  
+  /* 
+  NON STA FUNZIONANDO
+  // Disegna una scala numerica accanto allo slider
+  let stepHeight = (height - 60) / totalSteps;
+  for (let i = 0; i < totalSteps; i++) {
+    let y = 500 + i * stepHeight - 10; // Calcola la posizione y per ogni numero
+    textAlign(RIGHT, CENTER);
+    textFont(GentiumBold);
+    textSize(16);
+    noStroke();
+    fill("black");
+    text(i, width - 45, y-419); // Posiziona i numeri accanto allo slider
+  }
+  */
+
 }
 
 
@@ -64,23 +85,22 @@ function draw() {
 
   let height = windowHeight;
   let width = windowWidth;
+  let padding = 60;
 
-  // rettangolo grigio sfondo grafica
+  // rettangolo sfondo grafica
   noStroke();
   fill(blueSfondo)
-  rect(20, 60, width - 100, height -80);
-
-  let padding = 40; 
+  rect(0, 60, width, height -120); 
 
   // Scritta CAPITOLO
   fill("white");
-  textSize(50);
+  textSize(25);
   textFont(GentiumBold);
   textAlign(LEFT, LEFT);
   text("CHAPTER " + sliderValue, 40, 115);
 
+  /* 
   // LEGENDA
-  
   for (let l = 1; l < 5; l++){
     fill("white");
     rect(40, 70 + (70 * l), 180, 50, 15);
@@ -113,24 +133,13 @@ function draw() {
   text("Main characters", 90, 240);
   text("Events", 90, 310);
   text("Connections", 90, 380);
+  */
 
 
 
 
   // Aggiorna il valore dello slider
   sliderValue = slider.value();
-
-  // Disegna una scala numerica accanto allo slider
-  let stepHeight = (height - 60) / totalSteps;
-  for (let i = 0; i < totalSteps; i++) {
-    let y = 500 + i * stepHeight - 10; // Calcola la posizione y per ogni numero
-    textAlign(RIGHT, CENTER);
-    textFont(GentiumBold);
-    textSize(16);
-    noStroke();
-    fill("black");
-    text(i, width - 45, y-419); // Posiziona i numeri accanto allo slider
-  }
  
   // Filtra gli ID corrispondenti al capitolo selezionato -> inserisce nell'Array matchingIDs gli ID
   //se il numero del capitolo corrisponde al valore dello slider  
@@ -150,43 +159,28 @@ function draw() {
     }
   }
 
-  //disegno linee
+
+  //disegno EDGES - sotto tutto
   drawEdges(matchingIDs);
 
-  // disegna CERCHI FISSI per God e Jesus -> personaggi princ
-  if (sliderValue > 0){
-  let xGod = map (-93.604515, -1335.7671, 1328.8036, 250 + padding, 1540 - padding);
-  let yGod = map (-41.32583, -1335.1002, 1331.486,  90 + padding, 940 - padding);
-  fill(blueSfondo)
-  stroke(persone);
-  strokeWeight(4);
-  circle(xGod, yGod, 68)
-
-  let xJes = map (-37.821632, -1335.7671, 1328.8036, 250 + padding, 1540 - padding);
-  let yJes = map (-347.98218, -1335.1002, 1331.486,  90 + padding, 940 - padding);
-  circle(xJes, yJes, 83)
-  }
-
-
-
-  //disegno cerchi per ogni nodo
+  // CICLO FOR PER DISEGNARE COSE 
   for (let i = 0; i < nodes.length; i++) {
 
-    let x = map (nodes[i].attributes.x, -1335.7671, 1328.8036, 250 + padding, 1540 - padding);
-    let y = map (nodes[i].attributes.y, -1335.1002, 1331.486,  90 + padding, 940 - padding);
+    // MAP x, y, size 
+    let x = map (nodes[i].attributes.x, -1335.7671, 1328.8036, 20+padding, width-20-padding);
+    let y = map (nodes[i].attributes.y, -1335.1002, 1331.486,  60 + padding2, height-60-padding2);
     let size = map (nodes[i].attributes.size, 25, 80 , 15, 70);
 
-    
-
-
+    // DISEGNA COSE GRIGIE
     //disegna nodi se l'array minorIDs include key (=ID personaggio)
     if (minorIDs.includes(nodes[i].key)) {
       drawGrayCircle(x, y, size, nodes[i].attributes.type);
     }
 
+    // DISEGNA COSE COLORATE 
     //disegna nodi se l'array matchingIDs include key (=ID personaggio)
     if (matchingIDs.includes(nodes[i].key)){
-      
+
       drawCircle (x, y, size, nodes[i].attributes.type);
 
       // Disegna il testo al centro
@@ -197,9 +191,27 @@ function draw() {
       text(nodes[i].attributes.label, x-50, y, 100); // Scrivi il nome al centro del cerchio
     }    
   } 
+
+
+  // sopra EDJES 
+  // disegna CERCHI FISSI per God e Jesus -> personaggi princ
+  if (sliderValue > 0){
+    let xGod = map (-93.604515, -1335.7671, 1328.8036, 20+padding, width-20-padding);
+    let yGod = map (-41.32583, -1335.1002, 1331.486,  60 + padding2, height-60-padding2);
+    fill(100, 100, 100, 0);
+    stroke(persone);
+    strokeWeight(4);
+    circle(xGod, yGod, 68)
+  
+    let xJes = map (-37.821632, -1335.7671, 1328.8036, 20+padding, width-20-padding);
+    let yJes = map (-347.98218, -1335.1002, 1331.486,  60 + padding2, height-60-padding2);
+    circle(xJes, yJes, 83)
+  }
+
 }
 
 
+// FUNZIONE PER DISEGNARE CERCHI ED ESAGONI GRIGI SOTTO
 function drawGrayCircle (x, y, size, type) {
   for (let j=0; j<nodes.length;j++){
     let type = nodes[j].attributes.type
@@ -214,12 +226,13 @@ function drawGrayCircle (x, y, size, type) {
   } else {
     noStroke();
     fill ("#464971");
-    drawHexagon (x, y, size); //con il raggio = size anche gli eventi cambiano dimensione; se vogliamo possiamo definire un valore fisso del raggio 
+    drawHexagon (x, y, size); //con il raggio = size anche gli eventi cambiano dimensione; 
+    // se vogliamo possiamo definire un valore fisso del raggio 
 
   } 
 }
 
-
+// FUNZIONE PER DISEGNARE CERCHI 
 function drawCircle (x, y, size, type){
 
   for (let j=0; j<nodes.length;j++){
@@ -227,27 +240,20 @@ function drawCircle (x, y, size, type){
 
   }
 
-  if (type === "persona"){
+  if (type === "evento"){
+    noStroke();
+    fill ("#1C5991");
+    drawHexagon (x, y, size*1.3); //con il raggio = size anche gli eventi cambiano dimensione; 
+    // se vogliamo possiamo definire un valore fisso del raggio  
+  } else {
     noStroke();
     fill (persone);
     circle (x, y, size);
-    
-  } else {
-    noStroke();
-    fill ("#1C5991");
-    drawHexagon (x, y, size*1.3); //con il raggio = size anche gli eventi cambiano dimensione; se vogliamo possiamo definire un valore fisso del raggio 
-
-
   }
-  //for (let i=0; i<nodes.length;i++){
-  //}
-  
-  //fill (type); // non vanno più, bisogna creare due type e disegnare le cose in base al type (evento) (persona)
-
-
 }
 
 
+// FUNZIONE PER FORMA ESAGONI
 function drawHexagon(xPos, yPos, radius) {
   beginShape();
   for (let i = 0; i < 6; i++) {
@@ -269,7 +275,12 @@ function drawHexagon(xPos, yPos, radius) {
 //disegnamo linee con x e y della source e x1 e y1 del target
 
 
+// FUNZIONE PER EDGES
 function drawEdges (matchingIDs){
+
+  let height = windowHeight;
+  let width = windowWidth;
+  let padding = 60;
 
   for(let k = 0; k < data.edges.length; k++){
 
@@ -298,10 +309,10 @@ function drawEdges (matchingIDs){
     if (sourceNode && targetNode) {
 
       //ridimensiono edges con stessi valori massimi e minimi di cerchi ed esagoni 
-      let x = map (sourceNode.attributes.x,minOriginalX, maxOriginalX, 290, 1500);
-      let y = map (sourceNode.attributes.y, minOriginalY,  maxOriginalY, 130, 900);
-      let x1 = map(targetNode.attributes.x,minOriginalX, maxOriginalX, 290, 1500);
-      let y1 = map(targetNode.attributes.y, minOriginalY, maxOriginalY,  130, 900);
+      let x = map (sourceNode.attributes.x,minOriginalX, maxOriginalX, 20+padding, width-20-padding);
+      let y = map (sourceNode.attributes.y, minOriginalY,  maxOriginalY, 60 + padding2, height-60-padding2);
+      let x1 = map(targetNode.attributes.x,minOriginalX, maxOriginalX, 20+padding, width-20-padding);
+      let y1 = map(targetNode.attributes.y, minOriginalY, maxOriginalY,  60 + padding2, height-60-padding2);
 
       // Disegno linea edges
       stroke("#b8b7c7");
@@ -318,24 +329,13 @@ function drawEdges (matchingIDs){
 
 //funzione che muove pallina NUOVA
 function keyPressed() {
-  if (keyCode === UP_ARROW) {
+  if (keyCode === LEFT_ARROW) {
     slider.value(max(0, slider.value() - 1)); // Riduci il valore senza scendere sotto 0
-  } else if (keyCode === DOWN_ARROW) {
+  } else if (keyCode === RIGHT_ARROW) {
     slider.value(min(totalSteps - 1, slider.value() + 1)); // Aumenta il valore senza superare il massimo
   }
 }
 
 
-
-
-
-
-
-
- 
-  
-  
-
-  
 
 
