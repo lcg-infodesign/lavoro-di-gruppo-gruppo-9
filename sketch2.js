@@ -2,6 +2,7 @@ let data;
 let tablePeople;
 let tableProva;
 let nodes = []; //Array globale per i nodi 
+
 // variabili font
 let myFont;
 
@@ -24,6 +25,9 @@ let totalSteps = 25;
 // COLOR PALETTE 
 let blueSfondo = "#252850";
 let persone = "#FF4A6B";
+
+//bottone
+let button;
 
 
 
@@ -54,7 +58,7 @@ function setup() {
 
   // Crea lo slider verticale
   slider = createSlider(0, totalSteps-1, 0); // Range da 0 a 24, valore iniziale 0
-  slider.position(20, height-40); // Posizione
+  slider.position(20, height-30); // Posizione
   slider.size(width-40);
   //slider.style('height', '20px')
   //slider.style('transform', 'rotate(90deg)'); // Ruota lo slider per renderlo verticale
@@ -90,50 +94,79 @@ function draw() {
   // rettangolo sfondo grafica
   noStroke();
   fill(blueSfondo)
-  rect(0, 60, width, height -120); 
+  rect(0, 60, width, height -150); 
 
   // Scritta CAPITOLO
-  fill("white");
+  fill("black");
   textSize(25);
   textFont(GentiumBold);
   textAlign(LEFT, LEFT);
-  text("CHAPTER " + sliderValue, 40, 115);
+  text("CHAPTER " + sliderValue, 40, height-35);
 
-  /* 
+   
   // LEGENDA
-  for (let l = 1; l < 5; l++){
-    fill("white");
-    rect(40, 70 + (70 * l), 180, 50, 15);
+  for (let l = 0; l < 4; l++){
+    fill("gray");
+    let rspace = width/8.5;
+    rect(width/2 + (rspace+10)*l, 10, rspace, 40, 20);
   }
   noStroke();
   fill (persone);
-  circle(65, 165, 30);
+  circle(width/2 +20, 30, 30);
 
   fill("none");
   stroke(persone);
   strokeWeight(3);
-  circle(65, 235, 30);
+  circle(width/2 + 30 + width/8.5, 30, 27);
 
   fill(persone);
-  circle(65, 235, 20);
+  circle(width/2 + 30 + width/8.5, 30, 17);
 
   noStroke();
   fill ("#1C5991");
-  drawHexagon (65, 305, 18);  
+  drawHexagon (width/2 + 45 + 2*width/8.5, 30, 18);  
 
-  stroke("gray");
+  stroke("white");
   strokeWeight(3);
-  line(55, 390, 80, 360);
+  line(width/2 + 50 + 3*width/8.5, 20, width/2 + 70 + 3*width/8.5, 40);
 
   noStroke();
   textFont(GentiumBold);
-  textSize(16);
+  textSize(20);
   fill("black");
-  text("Characters", 90, 170);
-  text("Main characters", 90, 240);
-  text("Events", 90, 310);
-  text("Connections", 90, 380);
-  */
+  text("Characters", width/2 + 40, 36);
+  text("Main characters", width/2 + 50 + width/8.5, 36);
+  text("Events", width/2 + 70 + 2*width/8.5, 36);
+  text("Connections", width/2 + 85 + 3*width/8.5, 36);
+
+
+
+  // LINK ALTRE PAGINE VANGELI
+  for (let l = 0; l < 4; l++){
+    fill("gray");
+    let rspace = width/9;
+    rect(50 + (rspace+10)*l, 10, rspace, 40, 20);
+  }
+
+  noStroke();
+  textFont(GentiumBold);
+  textSize(20);
+  fill("black");
+  text("Characters", 50 + 40, 36);
+  text("Main characters", 50 + 50 + width/8.5, 36);
+  text("Events", 50 + 70 + 2*width/8.5, 36);
+  text("Connections", 50 + 85 + 3*width/8.5, 36);
+
+  button = createButton("");
+  button.position(15,20);
+  button.size(10,20);
+  button.mousePressed(gotolink);
+  stroke("black");
+  strokeWeight(3);
+  line(15, 30, 25, 20);
+  line(15, 30, 25, 40);
+
+  
 
 
 
@@ -336,6 +369,9 @@ function keyPressed() {
   }
 }
 
-
+//funzione per link bottone 
+function gotolink() {
+	window.open('../landing_page/landing.html');
+}
 
 
