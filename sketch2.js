@@ -23,7 +23,7 @@ let totalSteps = 25;
 
 // COLOR PALETTE 
 let blueSfondo = "#252850";
-let persone = "#FF4A6B";
+let persone = "#FF8BBD";
 
 
 
