@@ -184,26 +184,15 @@ function draw() {
   text("Mark's Gospel", 50 + 2*width/9 + 2*gutter + width/18, 30);
   text("John's Gospel", 50 + 3*width/9 + 3*gutter + width/18, 30);
 
-
-  // BOTTONE FRECCIA LANDING PAGE
-  
-  /*button = createButton("");
-  button.position(15,20);
-  button.size(10,20);
-  button.mousePressed(gotolink);*/
-
   //disegno rettangolo clicclabile
   fill("white");
   rect(10, 16, 20, 30);
 
-  
-
+  //disegno linee freccia
   stroke("black");
   strokeWeight(3);
   line(15, 30, 25, 20);
   line(15, 30, 25, 40);
-
-  line.mousePressed(gotolink);
   
 
   
@@ -416,9 +405,25 @@ function keyPressed() {
 
 //funzione per link rettangolo
 function mousePressed(){
+
+  let width = windowWidth;
+
   if (mouseX > 10 && mouseX < 30 && mouseY > 16 && mouseY < 46){
     window.location.href = '../landing_page/landing.html';
     cursor("pointer");
-  }  
+  }else if (mouseX > 50 + 3 * width/9 + 30 && mouseX < 50 + 4 * width/9 + 30 && mouseY > 10 && mouseY < 40){
+    window.location.href = '../vangelo_giovanni/giovanni.html';
+    cursor("pointer");
+  }else if (mouseX > 50 + 2 * width/9 + 20 && mouseX < 50 + 3 * width/9 + 20 && mouseY > 10 && mouseY < 40 ){
+    window.location.href = '../vangelo_marco/marco.html';
+    cursor("pointer");
+  }else if (mouseX > 50 + width/9 + 10 && mouseX < 50 + 2 * width/9 + 10 && mouseY > 10 && mouseY < 40 ){
+    window.location.href = '../vangelo_matteo/matteo.html';
+    cursor("pointer");
+  }
+
 }
+
+
+
 
