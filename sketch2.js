@@ -103,41 +103,61 @@ function draw() {
   textAlign(LEFT, LEFT);
   text("CHAPTER " + sliderValue, 40, height-35);
 
-   
-  // LEGENDA
-  for (let l = 0; l < 4; l++){
-    fill("gray");
-    let rspace = width/8.5;
-    rect(width/2 + (rspace+10)*l, 10, rspace, 40, 20);
+  
+
+  //LEGENDA RETTANGOLI
+  let gutter;
+
+  if (windowWidth > 1630) {
+    gutter = 10;
+
+  } else {
+    gutter = 5;
   }
+  
+  fill("gray");
+  rect(width - 20 - width/10 - 3*gutter - width/12 - width/8 - width/11, 10, width/11, 40, 20);
+  rect(width - 20 - width/10 - 2*gutter - width/12 - width/8, 10, width/8, 40, 20);
+  rect(width - 20 - width/10 - gutter - width/12, 10, width/12, 40, 20);
+  rect(width - 20 - width/10, 10, width/10, 40, 20);
+
+  //LEGENDA CONTENUTO
   noStroke();
   fill (persone);
-  circle(width/2 +20, 30, 30);
+  circle(width - 20 - width/10 - 3*gutter - width/12 - width/8 - width/11 + 20, 30, 30);
 
   fill("none");
   stroke(persone);
   strokeWeight(3);
-  circle(width/2 + 30 + width/8.5, 30, 27);
+  circle(width - 20 - width/10 - 2*gutter - width/12 - width/8 + 20, 30, 27);
 
   fill(persone);
-  circle(width/2 + 30 + width/8.5, 30, 17);
+  circle(width - 20 - width/10 - 2*gutter - width/12 - width/8 + 20, 30, 17);
 
   noStroke();
   fill ("#1C5991");
-  drawHexagon (width/2 + 45 + 2*width/8.5, 30, 18);  
+  drawHexagon (width - 20 - width/10 - gutter - width/12 + 28, 30, 18);  
 
   stroke("white");
   strokeWeight(3);
-  line(width/2 + 50 + 3*width/8.5, 20, width/2 + 70 + 3*width/8.5, 40);
+  line(width - 20 - width/10 + 15, 20, width - 20 - width/10 +25, 40);
 
   noStroke();
   textFont(GentiumBold);
-  textSize(20);
+  if (windowWidth > 1630) {
+    textSize(20);
+
+  } else {
+    textSize(16);
+  }
+  
   fill("black");
-  text("Characters", width/2 + 40, 36);
-  text("Main characters", width/2 + 50 + width/8.5, 36);
-  text("Events", width/2 + 70 + 2*width/8.5, 36);
-  text("Connections", width/2 + 85 + 3*width/8.5, 36);
+  text("Characters", width - 20 - width/10 - 3*gutter - width/12 - width/8 - width/11 + 45, 36);
+  text("Main characters", width - 20 - width/10 - 2*gutter - width/12 - width/8 + 45, 36);
+  text("Events", width - 20 - width/10 - gutter - width/12 + 60, 36);
+  text("Connections", width - 20 - width/10 + 35, 36);
+  
+  //text("windowWidth " + width, 100, 100)
 
 
 
@@ -145,26 +165,46 @@ function draw() {
   for (let l = 0; l < 4; l++){
     fill("gray");
     let rspace = width/9;
-    rect(50 + (rspace+10)*l, 10, rspace, 40, 20);
+    rect(50 + (rspace+gutter)*l, 10, rspace, 40, 20);
+  }
+
+  if (windowWidth > 1630) {
+    textSize(20);
+
+  } else {
+    textSize(16);
   }
 
   noStroke();
   textFont(GentiumBold);
-  textSize(20);
+  textAlign(CENTER, CENTER);
   fill("black");
-  text("Characters", 50 + 40, 36);
-  text("Main characters", 50 + 50 + width/8.5, 36);
-  text("Events", 50 + 70 + 2*width/8.5, 36);
-  text("Connections", 50 + 85 + 3*width/8.5, 36);
+  text("Luke's Gospel", 50 + width/18, 30);
+  text("Mattew's Gospel", 50 + width/9 + gutter + width/18, 30);
+  text("Mark's Gospel", 50 + 2*width/9 + 2*gutter + width/18, 30);
+  text("John's Gospel", 50 + 3*width/9 + 3*gutter + width/18, 30);
 
-  button = createButton("");
+
+  // BOTTONE FRECCIA LANDING PAGE
+  
+  /*button = createButton("");
   button.position(15,20);
   button.size(10,20);
-  button.mousePressed(gotolink);
+  button.mousePressed(gotolink);*/
+
+  //disegno rettangolo clicclabile
+  fill("white");
+  rect(10, 16, 20, 30);
+
+  
+
   stroke("black");
   strokeWeight(3);
   line(15, 30, 25, 20);
   line(15, 30, 25, 40);
+
+  line.mousePressed(gotolink);
+  
 
   
 
@@ -370,8 +410,15 @@ function keyPressed() {
 }
 
 //funzione per link bottone 
-function gotolink() {
+/*function gotolink() {
 	window.open('../landing_page/landing.html');
-}
+}*/
 
+//funzione per link rettangolo
+function mousePressed(){
+  if (mouseX > 10 && mouseX < 30 && mouseY > 16 && mouseY < 46){
+    window.location.href = '../landing_page/landing.html';
+    cursor("pointer");
+  }  
+}
 
