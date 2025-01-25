@@ -22,9 +22,13 @@ let slider;
 let sliderValue = 1;
 let totalSteps = 25;
 
-// COLOR PALETTE 
-let blueSfondo = "#252850";
-let persone = "#FF8BBD";
+// COLORI PALETTE 
+let Sfondo = "#EFEEE5";
+let persone = "#113C0B";
+let colorText = "#CA9930";
+let colorEvent = "red";
+let colorEdges = "black";
+let grayShape = "red";
 
 //bottone
 let button;
@@ -39,8 +43,8 @@ let button;
 
 // caricamento dati
 function preload() {
-  tablePeople = loadTable("Assets/persone.csv", "csv", "header");
-  tableProva = loadTable("Assets/prova.csv", "csv", "header");
+  //tablePeople = loadTable("Assets/persone.csv", "csv", "header");
+  //tableProva = loadTable("Assets/prova.csv", "csv", "header");
   tableFiltro = loadTable("Assets/filtro.csv", "csv", "header");
   data = loadJSON("Assets/TimeNomi.json");
   GentiumRegular = loadFont("Fonts/gentium-basic/GenBasR.ttf");
@@ -56,30 +60,12 @@ function setup() {
   //Riempio l'array nodes con i dati di JASON
   nodes = data.nodes;
 
-  // Crea lo slider verticale
+  // Crea lo slider orizzontale
   slider = createSlider(0, totalSteps-1, 0); // Range da 0 a 24, valore iniziale 0
-  slider.position(20, height-30); // Posizione
-  slider.size(width-40);
-  //slider.style('height', '20px')
-  //slider.style('transform', 'rotate(90deg)'); // Ruota lo slider per renderlo verticale
-  slider.style('background', '#ddd');
-  slider.style('border-radius', '8px');
-  slider.style('outline', 'none'); 
-  
-  /* 
-  NON STA FUNZIONANDO
-  // Disegna una scala numerica accanto allo slider
-  let stepHeight = (height - 60) / totalSteps;
-  for (let i = 0; i < totalSteps; i++) {
-    let y = 500 + i * stepHeight - 10; // Calcola la posizione y per ogni numero
-    textAlign(RIGHT, CENTER);
-    textFont(GentiumBold);
-    textSize(16);
-    noStroke();
-    fill("black");
-    text(i, width - 45, y-419); // Posiziona i numeri accanto allo slider
-  }
-  */
+  slider.position(150, height-40); // Posizione
+  slider.size(width-300);
+  slider.style('background-color', '#8080FF');
+
 
 }
 
@@ -93,20 +79,35 @@ function draw() {
 
   // rettangolo sfondo grafica
   noStroke();
-  fill(blueSfondo)
+  fill(Sfondo)
   rect(0, 60, width, height -150); 
 
   // Scritta CAPITOLO
   fill("black");
-  textSize(25);
   textFont(GentiumBold);
-  textAlign(LEFT, LEFT);
-  text("CHAPTER " + sliderValue, 40, height-35);
+  textAlign(CENTER, CENTER);
+  if (sliderValue === 0){
+    textSize(18);
+    text("Click the arrows to change chapter", width/2, height-65);
+
+  }else{
+    textSize(24);
+    text("CHAPTER " + sliderValue, width/2, height-65);
+  }
+  
+
+  //scritte ai bordi dello slider
+  textSize(20);
+  text("All", 130, height-40);
+  text("24", width-130, height-40);
+
 
   
 
   //LEGENDA RETTANGOLI
   let gutter;
+  textAlign(LEFT, LEFT);
+
 
   if (windowWidth > 1630) {
     gutter = 10;
@@ -156,8 +157,6 @@ function draw() {
   text("Main characters", width - 20 - width/10 - 2*gutter - width/12 - width/8 + 45, 36);
   text("Events", width - 20 - width/10 - gutter - width/12 + 60, 36);
   text("Connections", width - 20 - width/10 + 35, 36);
-  
-  //text("windowWidth " + width, 100, 100)
 
 
 
@@ -179,10 +178,10 @@ function draw() {
   textFont(GentiumBold);
   textAlign(CENTER, CENTER);
   fill("black");
-  text("Luke's Gospel", 50 + width/18, 30);
-  text("Mattew's Gospel", 50 + width/9 + gutter + width/18, 30);
-  text("Mark's Gospel", 50 + 2*width/9 + 2*gutter + width/18, 30);
-  text("John's Gospel", 50 + 3*width/9 + 3*gutter + width/18, 30);
+  text("Gospel of Luke", 50 + width/18, 30);
+  text("Gospel of Matthew", 50 + width/9 + gutter + width/18, 30);
+  text("Gospel of Mark", 50 + 2*width/9 + 2*gutter + width/18, 30);
+  text("Gospel of John", 50 + 3*width/9 + 3*gutter + width/18, 30);
 
   //disegno rettangolo clicclabile
   fill("white");
@@ -221,23 +220,43 @@ function draw() {
     }
   }
 
+  //disegno iniziale di tutti gli edges
+  if (sliderValue === 0){
+    drawInitialEdges();
+  }
 
   //disegno EDGES - sotto tutto
   drawEdges(matchingIDs);
+  drawGrayEdges (minorIDs);
 
   // CICLO FOR PER DISEGNARE COSE 
   for (let i = 0; i < nodes.length; i++) {
 
     // MAP x, y, size 
     let x = map (nodes[i].attributes.x, -1335.7671, 1328.8036, 20+padding, width-20-padding);
-    let y = map (nodes[i].attributes.y, -1335.1002, 1331.486,  60 + padding2, height-60-padding2);
+    let y = map (nodes[i].attributes.y, -1335.1002, 1331.486,  60 + padding2, height-90-padding2);
     let size = map (nodes[i].attributes.size, 25, 80 , 15, 70);
+    
+    // disegna cerchi ed esagoni all'inizio
+    if (sliderValue === 0) {
+  
+    
+      drawCircle(x, y, size, nodes[i].attributes.type);  // Poi disegna il cerchio
+    
+      fill(colorText); 
+      textSize(14);
+      textAlign(CENTER, CENTER);
+      textFont(GentiumBold);
+      text(nodes[i].attributes.label, x-50, y, 100);  // Infine, scrivi il testo
+    }
 
     // DISEGNA COSE GRIGIE
     //disegna nodi se l'array minorIDs include key (=ID personaggio)
     if (minorIDs.includes(nodes[i].key)) {
-      drawGrayCircle(x, y, size, nodes[i].attributes.type);
+      drawGrayCircle(x, y, size, nodes[i].attributes.type); 
+      
     }
+
 
     // DISEGNA COSE COLORATE 
     //disegna nodi se l'array matchingIDs include key (=ID personaggio)
@@ -246,7 +265,7 @@ function draw() {
       drawCircle (x, y, size, nodes[i].attributes.type);
 
       // Disegna il testo al centro
-      fill("white"); 
+      fill(colorText); 
       textSize(14);
       textAlign(CENTER, CENTER);
       textFont(GentiumBold);
@@ -257,21 +276,73 @@ function draw() {
 
   // sopra EDJES 
   // disegna CERCHI FISSI per God e Jesus -> personaggi princ
-  if (sliderValue > 0){
+  if (sliderValue >= 0){
     let xGod = map (-93.604515, -1335.7671, 1328.8036, 20+padding, width-20-padding);
-    let yGod = map (-41.32583, -1335.1002, 1331.486,  60 + padding2, height-60-padding2);
-    fill(100, 100, 100, 0);
+    let yGod = map (-41.32583, -1335.1002, 1331.486,  60 + padding2, height-90-padding2);
+    fill(100, 100, 100, 0); //fill trasparente
     stroke(persone);
     strokeWeight(4);
     circle(xGod, yGod, 68)
   
     let xJes = map (-37.821632, -1335.7671, 1328.8036, 20+padding, width-20-padding);
-    let yJes = map (-347.98218, -1335.1002, 1331.486,  60 + padding2, height-60-padding2);
+    let yJes = map (-347.98218, -1335.1002, 1331.486,  60 + padding2, height-90-padding2);
     circle(xJes, yJes, 83)
   }
 
+  
+    
+    
+
 }
 
+
+//disegno TUTTI GLI EDGES all'inizio
+function drawInitialEdges (){
+
+  let height = windowHeight;
+  let width = windowWidth;
+  let padding = 60;
+
+  for(let k = 0; k < data.edges.length; k++){
+
+
+    let source = data.edges[k].source; // Ottieni il nome della sorgente
+    let target = data.edges[k].target; // Ottieni il nome del bersaglio
+
+      // Trova i nodi corrispondenti per source e target
+      let sourceNode = nodes.find(node => node.key === source);
+      let targetNode = nodes.find(node => node.key === target);
+
+      if (sourceNode && targetNode) {
+
+        //definisco costanti per la x e la y massime e minime dei nodi 
+        const minOriginalX = Math.min(...nodes.map(node => node.attributes.x));
+        const maxOriginalX = Math.max(...nodes.map(node => node.attributes.x));
+        const minOriginalY = Math.min(...nodes.map(node => node.attributes.y));
+        const maxOriginalY = Math.max(...nodes.map(node => node.attributes.y));
+
+
+
+        // Se entrambi i nodi esistono, calcola le coordinate
+        if (sourceNode && targetNode) {
+
+          //ridimensiono edges con stessi valori massimi e minimi di cerchi ed esagoni 
+          let x = map (sourceNode.attributes.x,minOriginalX, maxOriginalX, 20+padding, width-20-padding);
+          let y = map (sourceNode.attributes.y, minOriginalY,  maxOriginalY, 60 + padding2, height-90-padding2);
+          let x1 = map(targetNode.attributes.x,minOriginalX, maxOriginalX, 20+padding, width-20-padding);
+          let y1 = map(targetNode.attributes.y, minOriginalY, maxOriginalY,  60 + padding2, height-90-padding2);
+
+          // Disegno linea edges
+          stroke(colorEdges);
+          strokeWeight(0.5);
+          line(x, y, x1, y1);
+        }     
+      
+
+    }
+
+  }
+} 
 
 // FUNZIONE PER DISEGNARE CERCHI ED ESAGONI GRIGI SOTTO
 function drawGrayCircle (x, y, size, type) {
@@ -282,12 +353,12 @@ function drawGrayCircle (x, y, size, type) {
 
   if (type === "persona"){
     noStroke();
-    fill ("#464971");
+    fill (grayShape);
     circle (x, y, size);
     
   } else {
     noStroke();
-    fill ("#464971");
+    fill (grayShape);
     drawHexagon (x, y, size); //con il raggio = size anche gli eventi cambiano dimensione; 
     // se vogliamo possiamo definire un valore fisso del raggio 
 
@@ -304,7 +375,7 @@ function drawCircle (x, y, size, type){
 
   if (type === "evento"){
     noStroke();
-    fill ("#1C5991");
+    fill (colorEvent);
     drawHexagon (x, y, size*1.3); //con il raggio = size anche gli eventi cambiano dimensione; 
     // se vogliamo possiamo definire un valore fisso del raggio  
   } else {
@@ -353,55 +424,93 @@ function drawEdges (matchingIDs){
     // Controlla se source e target sono inclusi in matchingIDs
     if (matchingIDs.includes(source) && matchingIDs.includes(target)) {
 
-    // Trova i nodi corrispondenti per source e target
-    let sourceNode = nodes.find(node => node.key === source);
-    let targetNode = nodes.find(node => node.key === target);
+      // Trova i nodi corrispondenti per source e target
+      let sourceNode = nodes.find(node => node.key === source);
+      let targetNode = nodes.find(node => node.key === target);
 
-    if (sourceNode && targetNode) {
+      if (sourceNode && targetNode) {
 
-    //definisco costanti per la x e la y massime e minime dei nodi 
-    const minOriginalX = Math.min(...nodes.map(node => node.attributes.x));
-    const maxOriginalX = Math.max(...nodes.map(node => node.attributes.x));
-    const minOriginalY = Math.min(...nodes.map(node => node.attributes.y));
-    const maxOriginalY = Math.max(...nodes.map(node => node.attributes.y));
+        //definisco costanti per la x e la y massime e minime dei nodi 
+        const minOriginalX = Math.min(...nodes.map(node => node.attributes.x));
+        const maxOriginalX = Math.max(...nodes.map(node => node.attributes.x));
+        const minOriginalY = Math.min(...nodes.map(node => node.attributes.y));
+        const maxOriginalY = Math.max(...nodes.map(node => node.attributes.y));
 
 
 
-    // Se entrambi i nodi esistono, calcola le coordinate
-    if (sourceNode && targetNode) {
+        // Se entrambi i nodi esistono, calcola le coordinate
+        if (sourceNode && targetNode) {
 
-      //ridimensiono edges con stessi valori massimi e minimi di cerchi ed esagoni 
-      let x = map (sourceNode.attributes.x,minOriginalX, maxOriginalX, 20+padding, width-20-padding);
-      let y = map (sourceNode.attributes.y, minOriginalY,  maxOriginalY, 60 + padding2, height-60-padding2);
-      let x1 = map(targetNode.attributes.x,minOriginalX, maxOriginalX, 20+padding, width-20-padding);
-      let y1 = map(targetNode.attributes.y, minOriginalY, maxOriginalY,  60 + padding2, height-60-padding2);
+          //ridimensiono edges con stessi valori massimi e minimi di cerchi ed esagoni 
+          let x = map (sourceNode.attributes.x,minOriginalX, maxOriginalX, 20+padding, width-20-padding);
+          let y = map (sourceNode.attributes.y, minOriginalY,  maxOriginalY, 60 + padding2, height-90-padding2);
+          let x1 = map(targetNode.attributes.x,minOriginalX, maxOriginalX, 20+padding, width-20-padding);
+          let y1 = map(targetNode.attributes.y, minOriginalY, maxOriginalY,  60 + padding2, height-90-padding2);
 
-      // Disegno linea edges
-      stroke("#b8b7c7");
-      strokeWeight(0.5);
-      line(x, y, x1, y1);
-    }     
+          // Disegno linea edges
+          stroke(colorEdges);
+          strokeWeight(0.5);
+          line(x, y, x1, y1);
+        }     
+      }
+
+    }
+
   }
+} 
 
-}
+//disegno EDGES grigi 
+function drawGrayEdges (minorIDs){
 
-}
+  let height = windowHeight;
+  let width = windowWidth;
+  let padding = 60;
+
+  for(let k = 0; k < data.edges.length; k++){
+
+
+    let source = data.edges[k].source; // Ottieni il nome della sorgente
+    let target = data.edges[k].target; // Ottieni il nome del bersaglio
+
+    // Controlla se source e target sono inclusi in matchingIDs
+    if (minorIDs.includes(source) && minorIDs.includes(target)) {
+
+      // Trova i nodi corrispondenti per source e target
+      let sourceNode = nodes.find(node => node.key === source);
+      let targetNode = nodes.find(node => node.key === target);
+
+      if (sourceNode && targetNode) {
+
+        //definisco costanti per la x e la y massime e minime dei nodi 
+        const minOriginalX = Math.min(...nodes.map(node => node.attributes.x));
+        const maxOriginalX = Math.max(...nodes.map(node => node.attributes.x));
+        const minOriginalY = Math.min(...nodes.map(node => node.attributes.y));
+        const maxOriginalY = Math.max(...nodes.map(node => node.attributes.y));
+
+
+
+        // Se entrambi i nodi esistono, calcola le coordinate
+        if (sourceNode && targetNode) {
+
+          //ridimensiono edges con stessi valori massimi e minimi di cerchi ed esagoni 
+          let x = map (sourceNode.attributes.x,minOriginalX, maxOriginalX, 20+padding, width-20-padding);
+          let y = map (sourceNode.attributes.y, minOriginalY,  maxOriginalY, 60 + padding2, height-90-padding2);
+          let x1 = map(targetNode.attributes.x,minOriginalX, maxOriginalX, 20+padding, width-20-padding);
+          let y1 = map(targetNode.attributes.y, minOriginalY, maxOriginalY,  60 + padding2, height-90-padding2);
+
+          // Disegno linea edges
+          stroke(grayShape);
+          strokeWeight(0.5);
+          line(x, y, x1, y1);
+        }     
+      }
+
+    }
+
+  }
 } 
 
 
-//funzione che muove pallina NUOVA
-function keyPressed() {
-  if (keyCode === LEFT_ARROW) {
-    slider.value(max(0, slider.value() - 1)); // Riduci il valore senza scendere sotto 0
-  } else if (keyCode === RIGHT_ARROW) {
-    slider.value(min(totalSteps - 1, slider.value() + 1)); // Aumenta il valore senza superare il massimo
-  }
-}
-
-//funzione per link bottone 
-/*function gotolink() {
-	window.open('../landing_page/landing.html');
-}*/
 
 //funzione per link rettangolo
 function mousePressed(){
@@ -424,6 +533,13 @@ function mousePressed(){
 
 }
 
-
+//funzione che muove SLIDER
+function keyPressed() {
+  if (keyCode === LEFT_ARROW) {
+    slider.value(max(0, slider.value() - 1)); // Riduci il valore senza scendere sotto 0
+  } else if (keyCode === RIGHT_ARROW) {
+    slider.value(min(totalSteps - 1, slider.value() + 1)); // Aumenta il valore senza superare il massimo
+  }
+}
 
 
