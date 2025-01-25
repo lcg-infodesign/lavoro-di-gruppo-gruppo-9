@@ -14,8 +14,8 @@ body {
 
 @font-face {
   font-family: 'ZTFormom';
-  src: url('fonts/ZT\ Formom.woff2') format('woff2'),
-       url('fonts/ZT\ Formom\ Italic.woff2') format('woff');
+  src: url('Fonts/ZT/ZT.ttf') format('truetype'),
+       url('Fonts/ZT/ZTItalic.ttf') format('truetype');
 
   font-weight: normal; /* Specifica il peso (opzionale) */
   font-style: normal; /* Specifica lo stile (opzionale) */
@@ -23,7 +23,7 @@ body {
 
 @font-face {
   font-family: 'Behind';
-  src: url('fonts/behind-the-nineties/Behind\ The\ Nineties\ Semi\ Bold.ttf') format('truetype');
+  src: url('Fonts/BE/BESemibold.ttf') format('truetype');
   font-weight:normal; /* Specifica il peso (opzionale) */
   font-style: normal; /* Specifica lo stile (opzionale) */
 }
