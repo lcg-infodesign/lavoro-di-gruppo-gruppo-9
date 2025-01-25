@@ -20,7 +20,7 @@ let width;
 //variabili slider 
 let slider;
 let sliderValue = 1;
-let totalSteps = 25;
+let totalSteps = 22;
 
 // COLORI PALETTE 
 let Sfondo = "#EFEEE5";
@@ -104,7 +104,7 @@ function draw() {
   //scritte ai bordi dello slider
   textSize(20);
   text("All", 130, height-40);
-  text("24", width-130, height-40);
+  text("21", width-130, height-40);
 
 
   

@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>About the project</title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="about.css">
+
+        <script src="libraries/p5.min.js"></script>
+        <script src="libraries/p5.sound.min.js"></script>
+
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="buttons">
+              <div id="home"><a href='index.html'><span id="fontdiverso">HOME </span>page</a></div>
+              <div id="gospels"><a href='index.html#secondpage'>the <span id="fontdiverso">Gospels</span></a></div>
+              <div class="button"><a href="about.html"><div id="about"><span id="font1">About</span></div></a></div>
+            </div>
+        </div>
+        <script>
+            window.addEventListener("scroll", function() {
+                const navbar = document.querySelector(".navbar");
+                if (window.scrollY > 0) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+        </script>
+
+        <section class="abouttheproject" id="abouttheproject">
+            <h2 class="titolosezioni">
+                <span class="font1"><i>
+                    about
+                    <br>
+                    the</span></i>
+                <span id="fontdiverso">PROJECT</span>
+            </h2>
+
+            <div class="text">
+                <div class="column">
+                    <h3><i>The project</i></h3>
+                    <p>This project is an interactive visualization of the four Gospels from the King James Bible, focusing on the presence and interactions of characters across chapters. The aim is to provide a clear and engaging way to explore the narrative structure and the relationships between characters.</p>
+                </div>
+                
+                <div class="column">
+                    <h3><i>The visualization</i></h3>
+                    <p>Using a slider, users can navigate through the chapters, revealing the characters appearing in each section. Characters from previous chapters remain visible in the background, while active ones stay highlighted. This layered approach offers a dynamic view of how characters evolve through the story.</p>
+                </div>
+                
+                <div class="column">
+                    <h3><i>The data</i></h3>
+                    <p>The project is based on a dataset sourced from Airtable, created by Robert Rouse. The data was cleaned, processed and restructured to create a JSON file optimized for the purpose of the visualization.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <div class="aboutus">
+            <div class="titoloabout">
+                <h2><span class="font1"><i>about</i> </span><span id="fontdiverso"> US</span></h2>
+
+            </div>
+
+            <div class="testo">
+                <p>We are six Communication Design students from Politecnico di Milano.
+                    This project was created as part of the Computer Graphics for Information Design course.
+                    
+                    Our team worked collaboratively to combine our skills in data processing, interactive design, and visualization, aiming to present a complex narrative in a user-friendly and visually appealing way.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="contenuto">
+              <p>Coppi Lorenzo, Di Biase Marta, Ghezzi Martina, Guerra Matteo, Miyake Alice, Zerboni Lucia</p>
+              <p>Laboratorio di Computer Grafica per l'Information Design</p>
+              <p>Anno Accademico 2024/2025</p>
+              <p>Docenti: Mauri Michele e Conficconi Davide</p>
+            </div>
+            <div class="logo"></div>
+          </div>
+    
+
+
+    </body>
+</html>

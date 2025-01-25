@@ -14,5 +14,79 @@
 
   <body>
     <script src="sketch.js"></script>
+
+    <script src="sketch.js"></script>
+
+    <div class="navbar">
+         <div class="buttons">
+           <div id="home"><a href='#landinpage'><span id="fontdiverso">HOME </span>page</a></div>
+           <div id="gospels"><a href='#secondpage'>the <span id="fontdiverso">Gospels</span></a></div>
+           <div class="button"><a href="about.html"><div id="about"><span id="font1">About</span></div></a></div>
+         </div>
+     </div>
+
+     <script>
+         window.addEventListener("scroll", function() {
+             const navbar = document.querySelector(".navbar");
+             if (window.scrollY > 0) {
+                 navbar.classList.add("scrolled");
+             } else {
+                 navbar.classList.remove("scrolled");
+             }
+         });
+     </script>
+
+  <div id="landingpage">
+    <div class="text">
+      <div class="title">
+        <h1 id="titolone"><i>the </i><span id="fontdiverso">GOSPELS</span></h1>
+        <h2 id="subheading"><i>exploring</i></h2>
+      </div>
+      <div class="body">
+        Discover the carachters mentioned in the Gospels 
+        of the King James Bible and the events that involve them.
+      </div>
+
+    </div>
+    <div class="image"></div>
+  </div> 
+
+  <div id="secondpage">
+    <div class="titolo2">Choose your gospel</div>
+    <div class=" vetrate">
+      <div class="luca">
+        <div class="label">Gospel of Luke</div>
+        <div class="immagine"></div>
+      </div>
+
+      <div class="marco">
+        <div class="label">Gospel of Mark</div>
+        <div class="immagine"></div>
+      </div>
+
+      <div class="giovanni">
+        <div class="label">Gospel of John</div>
+        <div class="immagine"></div>
+      </div>
+
+      <div class="matteo">
+        <div class="label">Gospel of Matthew</div>
+        <div class="immagine"></div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <div class="contenuto">
+      <p>Coppi Lorenzo, Di Biase Marta, Ghezzi Martina, Guerra Matteo, Miyake Alice, Zerboni Lucia</p>
+      <p>Laboratorio di Computer Grafica per l’Information Design</p>
+      <p>Anno Accademico 2024/2025</p>
+      <p>Docenti: Mauri Michele e Conficconi Davide</p>
+    </div>
+    <div class="logo"></div>
+  </div>
+
   </body>
 </html>
