@@ -6,3 +6,61 @@ html, body {
 canvas {
   display: block;
 }
+
+
+
+/* Target slider */
+input[type="range"] {
+  -webkit-appearance: none; /* Rimuove lo stile predefinito in alcuni browser */
+  appearance: none;
+  width: 100%; /* Larghezza dello slider */
+  height: 5px; /* Altezza del track */
+  background: #b4b4b4; /* Colore di sfondo del track */
+  border-radius: 5px; /* Bordo arrotondato */
+  outline: none; /* Rimuove il bordo predefinito quando lo slider è selezionato */
+}
+
+/* SFONDO (parte vuota dello slider) in Webkit/Chrome/Safari */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #b4b4b4; /* Colore di sfondo del track */
+  height: 5px;
+  border-radius: 5px;
+}
+
+/* PALLINA (la parte che si sposta) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #000000; /* Colore del thumb */
+  border-radius: 50%;
+  cursor: pointer; /* Cambia il cursore quando si passa sopra */
+  margin-top: -8px; /* Posiziona il thumb al centro del track */
+}
+
+
+
+/* PARTE RIEMPITA - Modifica lo sfondo a sinistra della pallina in Firefox (parte "riempita") */
+input[type="range"]::-moz-range-progress {
+  background: #293133; /* Colore della parte a sinistra della pallina */
+  height: 5px;
+  border-radius: 5px;
+}
+
+/* SFONDO del track in Firefox (parte vuota) */
+input[type="range"]::-moz-range-track {
+  background: #b4b4b4; /* Colore di sfondo del track */
+  height: 5px;
+  border-radius: 5px;
+}
+
+/* PALLINA per Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+

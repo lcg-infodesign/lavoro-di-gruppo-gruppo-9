@@ -24,11 +24,11 @@ let totalSteps = 25;
 
 // COLOR PALETTE 
 let Sfondo = "#EFEEE5";
-let persone = "#113C0B";
-let colorText = "#CA9930";
-let colorEvent = "red";
+let persone = "#A17AC9";
+let colorText = "black";
+let colorEvent = "#A99366";
 let colorEdges = "black";
-let grayShape = "red";
+let grayShape = "#D9D0B8";
 
 //bottone
 let button;
@@ -47,8 +47,9 @@ function preload() {
   //tableProva = loadTable("Assets/prova.csv", "csv", "header");
   tableFiltro = loadTable("../Assets/filtro_matteo.csv", "csv", "header");
   data = loadJSON("../Assets/matteo.json");
-  GentiumRegular = loadFont("../Fonts/gentium-basic/GenBasR.ttf");
-  GentiumBold = loadFont("../Fonts/gentium-basic/GenBasB.ttf");
+  GentiumRegular = loadFont("../Fonts/PO/Poppins-Medium.ttf");
+  GentiumBold = loadFont("../Fonts/PO/Poppins-Medium.ttf");
+
 }
 
 function setup() {
@@ -259,7 +260,7 @@ function draw() {
       drawCircle(x, y, size, nodes[i].attributes.type);  // Poi disegna il cerchio
     
       fill(colorText); 
-      textSize(14);
+      textSize(12);
       textAlign(CENTER, CENTER);
       textFont(GentiumBold);
       text(nodes[i].attributes.label, x-50, y, 100);  // Infine, scrivi il testo
@@ -280,7 +281,7 @@ function draw() {
 
       // Disegna il testo al centro
       fill(colorText); 
-      textSize(14);
+      textSize(12);
       textAlign(CENTER, CENTER);
       textFont(GentiumBold);
       text(nodes[i].attributes.label, x-50, y, 100); // Scrivi il nome al centro del cerchio
@@ -335,7 +336,7 @@ function drawInitialEdges (){
 
           // Disegno linea edges
           stroke(colorEdges);
-          strokeWeight(0.5);
+          strokeWeight(0.3);
           line(x, y, x1, y1);
         }     
       
@@ -519,7 +520,7 @@ function mousePressed(){
   let width = windowWidth;
 
   if (mouseX > 10 && mouseX < 30 && mouseY > 16 && mouseY < 46){
-    window.location.href = '../landing_page/landing.html';
+    window.location.href = '../index.html';
     cursor("pointer");
   }else if (mouseX > 50 + 3 * width/9 + 30 && mouseX < 50 + 4 * width/9 + 30 && mouseY > 10 && mouseY < 40){
     window.location.href = '../vangelo_giovanni/giovanni.html';
