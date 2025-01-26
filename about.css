@@ -264,7 +264,9 @@ a{
 .marti{
     width: 12vw;
     height: 12vw;
-    background-image: url(img/foto.jpeg);
+    background-image: url(img/marti.jpeg);
+    
+
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 100%;

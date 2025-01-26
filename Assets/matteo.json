@@ -14,7 +14,7 @@
     {
       "key": "people_6a2e469e45e442e49529006a2af412e4",
       "attributes": {
-        "label": "abel_13",
+        "label": "Abel",
         "x": 1005.09595,
         "y": -287.552,
         "size": 10.0,
@@ -27,7 +27,7 @@
     {
       "key": "people_7bc8a6abf56dd142863cb02d67267fb4",
       "attributes": {
-        "label": "abijah_38",
+        "label": "Abijah",
         "x": 441.9723,
         "y": 767.7738,
         "size": 10.0,
@@ -40,7 +40,7 @@
     {
       "key": "people_586153f8442cee22100a58acfc3ede2a",
       "attributes": {
-        "label": "abiud_56",
+        "label": "Abiud",
         "x": 303.13196,
         "y": 990.4446,
         "size": 10.0,
@@ -53,7 +53,7 @@
     {
       "key": "people_f37710aa0d0f87130c8fecfd990e9164",
       "attributes": {
-        "label": "abraham_58",
+        "label": "Abraham",
         "x": -442.40015,
         "y": 567.84094,
         "size": 10.581395,
@@ -66,7 +66,7 @@
     {
       "key": "people_cf866c754a525f88f4cebba1d2255209",
       "attributes": {
-        "label": "achim_65",
+        "label": "Achim",
         "x": 451.8879,
         "y": 930.6744,
         "size": 10.0,
@@ -79,7 +79,7 @@
     {
       "key": "people_8f97f67acb47182d3e43ed222201d8e5",
       "attributes": {
-        "label": "ahaz_118",
+        "label": "Ahaz",
         "x": 1030.8552,
         "y": 44.55916,
         "size": 10.0,
@@ -92,7 +92,7 @@
     {
       "key": "people_05435dfd7c9658e93f0549ab9041d7d1",
       "attributes": {
-        "label": "alphaeus_192",
+        "label": "Alphaeus",
         "x": 416.61908,
         "y": -599.34875,
         "size": 10.0,
@@ -105,7 +105,7 @@
     {
       "key": "people_2c2c84d779e0bcfb5116be66a67228d7",
       "attributes": {
-        "label": "amminadab_228",
+        "label": "Amminadab",
         "x": -51.99725,
         "y": 869.232,
         "size": 10.0,
@@ -118,7 +118,7 @@
     {
       "key": "people_84a36936271e0100a108ac9aa18cb071",
       "attributes": {
-        "label": "amon_236",
+        "label": "Amon",
         "x": -727.9664,
         "y": 506.75177,
         "size": 10.0,
@@ -131,7 +131,7 @@
     {
       "key": "people_69d08968322add3c3a91d3f2c8d416cf",
       "attributes": {
-        "label": "andrew_264",
+        "label": "Andrew",
         "x": -311.18228,
         "y": -382.1038,
         "size": 10.116279,
@@ -144,7 +144,7 @@
     {
       "key": "people_557243adc58437fd6088ee2a9f0c3de1",
       "attributes": {
-        "label": "archelaus_291",
+        "label": "Archelaus",
         "x": 107.12,
         "y": -876.84436,
         "size": 10.0,
@@ -157,7 +157,7 @@
     {
       "key": "people_57a28606b9c740827a5f01bb35533e3a",
       "attributes": {
-        "label": "asa_318",
+        "label": "Asa",
         "x": 518.6697,
         "y": -889.5577,
         "size": 10.116279,
@@ -170,7 +170,7 @@
     {
       "key": "people_823c1a1db9f366b637d3574c70175e82",
       "attributes": {
-        "label": "azor_559",
+        "label": "Azor",
         "x": -853.0099,
         "y": -214.84274,
         "size": 10.116279,
@@ -183,7 +183,7 @@
     {
       "key": "people_afc894c8ce784ab84a6fc8a729649a32",
       "attributes": {
-        "label": "barabbas_399",
+        "label": "Aarabbas",
         "x": 264.21454,
         "y": -882.206,
         "size": 10.4651165,
@@ -196,7 +196,7 @@
     {
       "key": "people_d72f26a2420994badb603a8a6a52cbff",
       "attributes": {
-        "label": "bartholomew_405",
+        "label": "Bartholomew",
         "x": -285.77353,
         "y": -683.1154,
         "size": 10.0,
@@ -209,7 +209,7 @@
     {
       "key": "people_d5695541350b91009b713566d3e6395e",
       "attributes": {
-        "label": "boaz_519",
+        "label": "Boaz",
         "x": 18.176508,
         "y": -1037.8495,
         "size": 10.0,
@@ -222,7 +222,7 @@
     {
       "key": "people_db4584018d1e7f706bb6d658907621e8",
       "attributes": {
-        "label": "caiaphas_532",
+        "label": "Caiaphas",
         "x": 1008.7472,
         "y": 197.29373,
         "size": 10.116279,
@@ -235,7 +235,7 @@
     {
       "key": "people_55bceebfaa267768c6012321cc5cc675",
       "attributes": {
-        "label": "canaan_914",
+        "label": "Canaan",
         "x": -741.4633,
         "y": -719.2835,
         "size": 10.0,
@@ -248,7 +248,7 @@
     {
       "key": "people_4d0451e25ef8abd8964fb571650cbd68",
       "attributes": {
-        "label": "daniel_975",
+        "label": "Daniel",
         "x": -157.09718,
         "y": -1028.0803,
         "size": 10.0,
@@ -261,7 +261,7 @@
     {
       "key": "people_a31bb3a09cf7e96fb92bf3ecf97614fe",
       "attributes": {
-        "label": "daughter_of_herodias_983",
+        "label": "Daughter of Herodias",
         "x": -633.0443,
         "y": 810.9753,
         "size": 10.0,
@@ -274,7 +274,7 @@
     {
       "key": "people_bd51343ae1296e5fcfbc1ff629830b3a",
       "attributes": {
-        "label": "david_994",
+        "label": "David",
         "x": -47.170784,
         "y": -304.68433,
         "size": 11.627907,
@@ -287,7 +287,7 @@
     {
       "key": "people_248b2fdbdc8b507fbdeccc549ebc6993",
       "attributes": {
-        "label": "eleazar_1069",
+        "label": "Eleazar",
         "x": 593.888,
         "y": 848.8371,
         "size": 10.0,
@@ -300,7 +300,7 @@
     {
       "key": "people_53edb9dcf5c117e0d12ff621108a96f8",
       "attributes": {
-        "label": "eliakim_1087",
+        "label": "Eliakim",
         "x": -997.4149,
         "y": 304.65546,
         "size": 10.0,
@@ -313,7 +313,7 @@
     {
       "key": "people_670098ef71f00335389b123e7829f7d5",
       "attributes": {
-        "label": "elijah_1131",
+        "label": "Elijah",
         "x": 722.7267,
         "y": 405.69913,
         "size": 10.930233,
@@ -326,7 +326,7 @@
     {
       "key": "people_3758206665779a884109493c52672c88",
       "attributes": {
-        "label": "eliud_1164",
+        "label": "Eliud",
         "x": -615.91516,
         "y": 621.45154,
         "size": 10.116279,
@@ -339,7 +339,7 @@
     {
       "key": "people_12f80b516bb106941288062f032b4401",
       "attributes": {
-        "label": "god_1324",
+        "label": "God",
         "x": 253.04193,
         "y": -31.205902,
         "size": 20.930233,
@@ -352,7 +352,7 @@
     {
       "key": "people_63620cdc6db0292f5c56a472a04048bc",
       "attributes": {
-        "label": "herod_1504",
+        "label": "Herod son by Malthace",
         "x": 627.04297,
         "y": -602.5928,
         "size": 10.930233,
@@ -365,7 +365,7 @@
     {
       "key": "people_da236410e101d089087d0b92b7c0d9f6",
       "attributes": {
-        "label": "herod_1505",
+        "label": "King Herod",
         "x": -321.98846,
         "y": 696.3873,
         "size": 10.232558,
@@ -378,7 +378,7 @@
     {
       "key": "people_5f5e6bedfea474f66d9e99dc876bc893",
       "attributes": {
-        "label": "herodias_1507",
+        "label": "Herodias",
         "x": -703.6416,
         "y": 169.3537,
         "size": 10.0,
@@ -391,7 +391,7 @@
     {
       "key": "people_d88a46b8f9a573819a709f49f44c1a16",
       "attributes": {
-        "label": "hezekiah_1512",
+        "label": "Hezekiah",
         "x": -503.7072,
         "y": 917.7876,
         "size": 10.116279,
@@ -404,7 +404,7 @@
     {
       "key": "people_4fa6d45c4aa8199bf8d21e69fec0b932",
       "attributes": {
-        "label": "hezron_1520",
+        "label": "Hezron",
         "x": 1029.1104,
         "y": -117.593956,
         "size": 10.0,
@@ -417,7 +417,7 @@
     {
       "key": "people_8f367c1b11a63a2c205a984f71382a98",
       "attributes": {
-        "label": "holy_spirit_7400",
+        "label": "Holy Spirit",
         "x": 214.51097,
         "y": -163.46082,
         "size": 11.16279,
@@ -430,7 +430,7 @@
     {
       "key": "people_8392c0923cc9ae5b21f55fb5281ae163",
       "attributes": {
-        "label": "isaac_616",
+        "label": "Isaac",
         "x": -494.21497,
         "y": 726.11487,
         "size": 10.232558,
@@ -443,7 +443,7 @@
     {
       "key": "people_ba558dd3dc06148c4093ceee8081d5ab",
       "attributes": {
-        "label": "isaiah_617",
+        "label": "Isaiah",
         "x": 299.6515,
         "y": 453.01358,
         "size": 10.581395,
@@ -456,7 +456,7 @@
     {
       "key": "people_db78b6b7bb3cbb577eb291deb4937965",
       "attributes": {
-        "label": "israel_682",
+        "label": "Israel",
         "x": -842.0415,
         "y": -63.36247,
         "size": 10.348837,
@@ -469,7 +469,7 @@
     {
       "key": "people_3e47554bdced89caf1fbf41ad2ed6e1b",
       "attributes": {
-        "label": "jacob_683",
+        "label": "Jacob",
         "x": 663.0734,
         "y": -802.0672,
         "size": 10.116279,
@@ -482,7 +482,7 @@
     {
       "key": "people_d46156824b4c9499d434dea5198b29ec",
       "attributes": {
-        "label": "james_717",
+        "label": "James son of Zebedee",
         "x": -300.63635,
         "y": 243.96616,
         "size": 10.232558,
@@ -495,7 +495,7 @@
     {
       "key": "people_828b8622f88b3694cc31c2274110e3d9",
       "attributes": {
-        "label": "james_718",
+        "label": "James son of Alphaeus",
         "x": 34.751076,
         "y": -728.9545,
         "size": 10.0,
@@ -508,7 +508,7 @@
     {
       "key": "people_4f7b3a73656bff7de74161977342b79f",
       "attributes": {
-        "label": "james_719",
+        "label": "James",
         "x": -105.0581,
         "y": 496.87717,
         "size": 10.116279,
@@ -521,7 +521,7 @@
     {
       "key": "people_89d7ee39cdedae1364407a6a49728f9f",
       "attributes": {
-        "label": "jehoiachin_791",
+        "label": "Jehoiachin",
         "x": -863.708,
         "y": 583.56964,
         "size": 10.116279,
@@ -534,7 +534,7 @@
     {
       "key": "people_d47a54326157b2d99e98758f7f8179b9",
       "attributes": {
-        "label": "jehoiada_793",
+        "label": "Jehoiada",
         "x": 190.42732,
         "y": -1027.7621,
         "size": 10.0,
@@ -547,7 +547,7 @@
     {
       "key": "people_3d8009469f67bff8af4faf17e75a0ea3",
       "attributes": {
-        "label": "jehoram_803",
+        "label": "Jehoram",
         "x": -1024.3972,
         "y": -13.360503,
         "size": 10.0,
@@ -560,7 +560,7 @@
     {
       "key": "people_4fa39b20bb93641742fe92019681eb1b",
       "attributes": {
-        "label": "jehoshaphat_808",
+        "label": "Jehoshaphat",
         "x": 834.3016,
         "y": 631.84406,
         "size": 10.0,
@@ -573,7 +573,7 @@
     {
       "key": "people_cfa5fef77cff8b9e730be4eb47e74e8d",
       "attributes": {
-        "label": "jeremiah_853",
+        "label": "Jeremiah",
         "x": 556.6675,
         "y": -36.757946,
         "size": 10.232558,
@@ -586,7 +586,7 @@
     {
       "key": "people_f02951ae64b776ef8ca2411ad120f484",
       "attributes": {
-        "label": "jesse_903",
+        "label": "Jesse",
         "x": -790.7946,
         "y": -355.02847,
         "size": 10.116279,
@@ -599,7 +599,7 @@
     {
       "key": "people_74fc34c0591dc0c0a09fa2413e4e4e51",
       "attributes": {
-        "label": "jesus_905",
+        "label": "Jesus",
         "x": 100.14202,
         "y": 49.93381,
         "size": 40.0,
@@ -612,7 +612,7 @@
     {
       "key": "people_a3c19bfcb377f94f19ab0eca9e103d02",
       "attributes": {
-        "label": "john_1676",
+        "label": "John the Baptist",
         "x": 39.447716,
         "y": 549.48395,
         "size": 12.55814,
@@ -625,7 +625,7 @@
     {
       "key": "people_9677ec1950702c663e9a9cfd90e98100",
       "attributes": {
-        "label": "john_1677",
+        "label": "John",
         "x": 401.21262,
         "y": 31.397364,
         "size": 10.232558,
@@ -638,7 +638,7 @@
     {
       "key": "people_3d11f6fac80de3aaca53ca9135077ea4",
       "attributes": {
-        "label": "jonah_1689",
+        "label": "Jonah",
         "x": -692.7087,
         "y": 8.90137,
         "size": 10.348837,
@@ -651,7 +651,7 @@
     {
       "key": "people_7d80d364071b3f9dcb768ced77741c16",
       "attributes": {
-        "label": "joseph_1715",
+        "label": "Joseph husband of Mary",
         "x": 777.9971,
         "y": -326.34827,
         "size": 10.697675,
@@ -664,7 +664,7 @@
     {
       "key": "people_68001227cf22370ef85b27769401ecac",
       "attributes": {
-        "label": "joseph_1716",
+        "label": "Joseph",
         "x": -606.42566,
         "y": -644.00195,
         "size": 10.116279,
@@ -677,7 +677,7 @@
     {
       "key": "people_e4323b2dbe1bf9463e06f6223587e1db",
       "attributes": {
-        "label": "joses_1721",
+        "label": "Joses",
         "x": 877.08044,
         "y": -33.3819,
         "size": 10.116279,
@@ -690,7 +690,7 @@
     {
       "key": "people_5001f21d1ab4ccc630f917f23d1a115b",
       "attributes": {
-        "label": "josiah_1730",
+        "label": "Josiah ancestor of Jesus",
         "x": 886.29193,
         "y": 486.21844,
         "size": 10.116279,
@@ -703,7 +703,7 @@
     {
       "key": "people_8e7cf573394e8deacb012532c152bbcd",
       "attributes": {
-        "label": "josiah_1731",
+        "label": "Josiah",
         "x": -55.84884,
         "y": -891.25244,
         "size": 10.0,
@@ -716,7 +716,7 @@
     {
       "key": "people_6ba609430529b3380e54cea0f3f7f5df",
       "attributes": {
-        "label": "jotham_1735",
+        "label": "Jotham",
         "x": 148.84058,
         "y": 1025.5249,
         "size": 10.0,
@@ -729,7 +729,7 @@
     {
       "key": "people_7d2f5bd6921e95e8849674d851c612fa",
       "attributes": {
-        "label": "judas_1760",
+        "label": "Judas",
         "x": -411.84995,
         "y": -536.5106,
         "size": 10.4651165,
@@ -742,7 +742,7 @@
     {
       "key": "people_1a2afaf91761c7835a4674485b2abf84",
       "attributes": {
-        "label": "jude_1756",
+        "label": "Jude",
         "x": -126.96433,
         "y": -730.13684,
         "size": 10.0,
@@ -755,7 +755,7 @@
     {
       "key": "people_ac214bdb16ea74390dc9da8a9fe2cc35",
       "attributes": {
-        "label": "lebbaeus_1815",
+        "label": "Lebbaeus",
         "x": -631.52277,
         "y": -331.33658,
         "size": 10.0,
@@ -768,7 +768,7 @@
     {
       "key": "people_ea66793b6e33bea1e1b75846573317ca",
       "attributes": {
-        "label": "manasseh_1930",
+        "label": "Manasseh",
         "x": -727.05817,
         "y": -504.08228,
         "size": 10.0,
@@ -781,7 +781,7 @@
     {
       "key": "people_180e55a375351699d60182aeb74308f9",
       "attributes": {
-        "label": "mary_1938",
+        "label": "Mary mother of Jesus",
         "x": 371.1074,
         "y": -763.1316,
         "size": 10.4651165,
@@ -794,7 +794,7 @@
     {
       "key": "people_1a5d2e2edcfd900819e6f554077feace",
       "attributes": {
-        "label": "mary_1940",
+        "label": "Mary magdalene",
         "x": -201.7619,
         "y": 834.92444,
         "size": 10.232558,
@@ -807,7 +807,7 @@
     {
       "key": "people_65fc31445556e182fa8c07f307ecbb3d",
       "attributes": {
-        "label": "mary_1943",
+        "label": "Mary of Bethany",
         "x": -1017.7464,
         "y": -161.43428,
         "size": 10.232558,
@@ -820,7 +820,7 @@
     {
       "key": "people_6b7d634ab990dc3fc87cd56aa28fe348",
       "attributes": {
-        "label": "matthan_1968",
+        "label": "Matthan",
         "x": -866.7875,
         "y": 83.34453,
         "size": 10.0,
@@ -833,7 +833,7 @@
     {
       "key": "people_d2e557b48945df786b9bebca1c143585",
       "attributes": {
-        "label": "matthew_1971",
+        "label": "Matthew",
         "x": 620.0676,
         "y": -340.40787,
         "size": 10.116279,
@@ -846,7 +846,7 @@
     {
       "key": "people_54391b8dee1376fe9bffd83cebd93a08",
       "attributes": {
-        "label": "moses_2108",
+        "label": "Moses",
         "x": 601.8827,
         "y": -183.65724,
         "size": 10.581395,
@@ -859,7 +859,7 @@
     {
       "key": "people_3b3c5f175c377700e16ccd023e721849",
       "attributes": {
-        "label": "mother_of_the_wife_of_simon_2111",
+        "label": "Mother of the wife of Simon",
         "x": 696.1627,
         "y": 562.4714,
         "size": 10.0,
@@ -872,7 +872,7 @@
     {
       "key": "people_6ec68534b4e1c4810335a87803ed2625",
       "attributes": {
-        "label": "mother_of_zebedees_children_2112",
+        "label": "Mother of Zebedees children",
         "x": 382.52682,
         "y": -972.40356,
         "size": 10.116279,
@@ -885,7 +885,7 @@
     {
       "key": "people_683fce80a490f77ad1a63da6639e2582",
       "attributes": {
-        "label": "nahshon_2144",
+        "label": "Nahshon",
         "x": -847.00616,
         "y": -601.6781,
         "size": 10.0,
@@ -898,7 +898,7 @@
     {
       "key": "people_04e174acd910c726abfe5cd641bf5034",
       "attributes": {
-        "label": "naphtali_2149",
+        "label": "Naphtali",
         "x": -315.76288,
         "y": 989.3055,
         "size": 10.116279,
@@ -911,7 +911,7 @@
     {
       "key": "people_6b8d004e4a8ac1c7433c48fefbb9826a",
       "attributes": {
-        "label": "noah_2210",
+        "label": "Noah",
         "x": -164.50552,
         "y": 1013.4299,
         "size": 10.116279,
@@ -924,7 +924,7 @@
     {
       "key": "people_07babe3d9d1ebc6df1b952cf58523532",
       "attributes": {
-        "label": "obed_2228",
+        "label": "Obed",
         "x": 107.95122,
         "y": 875.4294,
         "size": 10.0,
@@ -937,7 +937,7 @@
     {
       "key": "people_45c0ff7229d4da2688dd795f2da58e10",
       "attributes": {
-        "label": "peter_2745",
+        "label": "Peter",
         "x": -11.096316,
         "y": 156.16608,
         "size": 12.906977,
@@ -950,7 +950,7 @@
     {
       "key": "people_9cc2e6d94571c3cb8b951f1fae99f8c4",
       "attributes": {
-        "label": "pharez_2338",
+        "label": "Pharez",
         "x": -220.21198,
         "y": -866.4381,
         "size": 10.0,
@@ -963,7 +963,7 @@
     {
       "key": "people_70c3165210467b0110fd7c4fe46def03",
       "attributes": {
-        "label": "philip_2344",
+        "label": "Philip",
         "x": -689.4266,
         "y": -170.17546,
         "size": 10.0,
@@ -976,7 +976,7 @@
     {
       "key": "people_5d313e05dbb4d49400c73d786e9ac621",
       "attributes": {
-        "label": "philip_2345",
+        "label": "Philip brother of Herod",
         "x": -569.96204,
         "y": 452.2215,
         "size": 10.0,
@@ -989,7 +989,7 @@
     {
       "key": "people_df38e94bf75563d2ee4e067af0d2101f",
       "attributes": {
-        "label": "pilate_2365",
+        "label": "Pilate",
         "x": -755.854,
         "y": 707.75464,
         "size": 10.813953,
@@ -1002,7 +1002,7 @@
     {
       "key": "people_ed58cf33c51aecbb52cc4e7e4def4f13",
       "attributes": {
-        "label": "rachab_2385",
+        "label": "Rachab",
         "x": 846.77405,
         "y": 299.05435,
         "size": 10.0,
@@ -1015,7 +1015,7 @@
     {
       "key": "people_98a6289a18b8cb4ad5f4441f056a787f",
       "attributes": {
-        "label": "rachel_2386",
+        "label": "Rachel",
         "x": -458.84906,
         "y": -693.58203,
         "size": 10.0,
@@ -1028,7 +1028,7 @@
     {
       "key": "people_e8fe71afc0f0c76e0a6ed42e6de85cbb",
       "attributes": {
-        "label": "ram_2391",
+        "label": "Ram",
         "x": -1025.3762,
         "y": 141.8845,
         "size": 10.116279,
@@ -1041,7 +1041,7 @@
     {
       "key": "people_a75329b56c15eb6a05b360d84637c406",
       "attributes": {
-        "label": "rehoboam_2412",
+        "label": "Rehoboam",
         "x": -918.2996,
         "y": 437.82507,
         "size": 10.0,
@@ -1054,7 +1054,7 @@
     {
       "key": "people_d2e9fd4c9c851f84c3bd8dd7cf7c5f9d",
       "attributes": {
-        "label": "ruth_2450",
+        "label": "Ruth",
         "x": -378.0721,
         "y": -823.84106,
         "size": 10.0,
@@ -1067,7 +1067,7 @@
     {
       "key": "people_bee029728b52f9b1bc855e1b86f31a5d",
       "attributes": {
-        "label": "sadoc_2454",
+        "label": "Sadoc",
         "x": -920.982,
         "y": -460.46417,
         "size": 10.0,
@@ -1080,7 +1080,7 @@
     {
       "key": "people_e18ea6d97780c690a97f4b055ccd6aca",
       "attributes": {
-        "label": "salmon_2463",
+        "label": "Salmon",
         "x": 279.70667,
         "y": 837.4803,
         "size": 10.116279,
@@ -1093,7 +1093,7 @@
     {
       "key": "people_bdbfbef30547259326122c9c051c91ad",
       "attributes": {
-        "label": "satan_2476",
+        "label": "Satan",
         "x": 110.41029,
         "y": -281.83524,
         "size": 10.581395,
@@ -1106,7 +1106,7 @@
     {
       "key": "people_603311dee62226af16f20ae0c65f5c9b",
       "attributes": {
-        "label": "shealtiel_2456",
+        "label": "Shealtiel",
         "x": -498.33902,
         "y": -915.70087,
         "size": 10.0,
@@ -1119,7 +1119,7 @@
     {
       "key": "people_d6e0dedd11e45e894616ce6a4b99b0a3",
       "attributes": {
-        "label": "simon_2746",
+        "label": "Simon the canaanite",
         "x": 189.71149,
         "y": 563.53345,
         "size": 10.0,
@@ -1132,7 +1132,7 @@
     {
       "key": "people_a0a46951f963f77025373fb90a898faf",
       "attributes": {
-        "label": "simon_2747",
+        "label": "Simon",
         "x": 919.53125,
         "y": -418.9421,
         "size": 10.0,
@@ -1145,7 +1145,7 @@
     {
       "key": "people_4bf67500f08793f129cf5ab316d3977b",
       "attributes": {
-        "label": "simon_2748",
+        "label": "Simon the leper",
         "x": 983.9371,
         "y": 361.5576,
         "size": 10.0,
@@ -1158,7 +1158,7 @@
     {
       "key": "people_64edd915bba88b3de89e9050a7d71faa",
       "attributes": {
-        "label": "simon_2749",
+        "label": "Simon of Cyrene",
         "x": -855.96405,
         "y": 239.81555,
         "size": 10.0,
@@ -1171,7 +1171,7 @@
     {
       "key": "people_dd55f8b07f89d58897b64c3cf2d09594",
       "attributes": {
-        "label": "solomon_2762",
+        "label": "Solomon",
         "x": -16.689548,
         "y": 706.8199,
         "size": 10.348837,
@@ -1184,7 +1184,7 @@
     {
       "key": "people_fcca0444987a5079a15a040d5c39555b",
       "attributes": {
-        "label": "tamar_2821",
+        "label": "Tamar",
         "x": -758.04724,
         "y": 357.9945,
         "size": 10.0,
@@ -1197,7 +1197,7 @@
     {
       "key": "people_2440393fcbccc440f09aac3cdcfeb5a1",
       "attributes": {
-        "label": "thomas_2851",
+        "label": "Thomas",
         "x": 578.3571,
         "y": 304.2589,
         "size": 10.0,
@@ -1210,7 +1210,7 @@
     {
       "key": "people_72daa23c5b8ff48c2e84bfd87132d45e",
       "attributes": {
-        "label": "uriah_2898",
+        "label": "Uriah",
         "x": -569.7731,
         "y": -490.65192,
         "size": 10.0,
@@ -1223,7 +1223,7 @@
     {
       "key": "people_0623bfea7df23a1621eb8dce6f318357",
       "attributes": {
-        "label": "uzziah_375",
+        "label": "Uzziah",
         "x": 873.18536,
         "y": -562.29895,
         "size": 10.116279,
@@ -1236,7 +1236,7 @@
     {
       "key": "people_16c785add09c2758b120151627f38ee1",
       "attributes": {
-        "label": "wife_of_simon_2943",
+        "label": "Wife of Simon",
         "x": 560.55383,
         "y": 661.17676,
         "size": 10.0,
@@ -1249,7 +1249,7 @@
     {
       "key": "people_05ffe84a3f84b6f7763fd9b21402fe7b",
       "attributes": {
-        "label": "zacharias_3011",
+        "label": "Zacharias",
         "x": -368.89713,
         "y": 846.64923,
         "size": 10.0,
@@ -1262,7 +1262,7 @@
     {
       "key": "people_30469efa198a8c9581922372eef941b3",
       "attributes": {
-        "label": "zebedee_2998",
+        "label": "Zebedee",
         "x": -549.9606,
         "y": -44.827625,
         "size": 10.4651165,
@@ -1275,7 +1275,7 @@
     {
       "key": "people_10a967596c86b67d3e3fce6338e1ac10",
       "attributes": {
-        "label": "zebulun_3002",
+        "label": "Zebulun",
         "x": 706.5672,
         "y": 743.3805,
         "size": 10.116279,
@@ -1288,7 +1288,7 @@
     {
       "key": "people_4ddbc04a39213f9988008e5d09a9a081",
       "attributes": {
-        "label": "zerah_2984",
+        "label": "Zerah",
         "x": -330.30054,
         "y": -989.67224,
         "size": 10.0,
@@ -1301,7 +1301,7 @@
     {
       "key": "people_57baae6de10be31140da419d18163556",
       "attributes": {
-        "label": "zerubbabel_3054",
+        "label": "Zerubbabel",
         "x": -614.53766,
         "y": -816.9729,
         "size": 10.116279,
@@ -1314,7 +1314,7 @@
     {
       "key": "event_439df57432318c6d7584df8a10e28dab",
       "attributes": {
-        "label": "2nd rejection at nazareth",
+        "label": "Second rejection at Nazareth",
         "x": 310.7296,
         "y": -282.13788,
         "size": 10.4651165,
@@ -1327,7 +1327,7 @@
     {
       "key": "event_b6936d4974d4b39d191d18b1ec33d781",
       "attributes": {
-        "label": "3rd tour of galilee",
+        "label": "Third tour of Galilee",
         "x": 251.66962,
         "y": 128.88924,
         "size": 15.0,
@@ -1340,7 +1340,7 @@
     {
       "key": "event_8dbd95cb8d4e66aa586abf13aa892251",
       "attributes": {
-        "label": "an angel speaks to joseph in a dream",
+        "label": "An angel speaks to Joseph in a dream",
         "x": 209.54097,
         "y": -414.24075,
         "size": 10.697675,
@@ -1353,7 +1353,7 @@
     {
       "key": "event_af0d6cc9d87809e16b176e3b6943e8dc",
       "attributes": {
-        "label": "apostles chosen, 3rd tour of galilee",
+        "label": "Apostles chosen, third tour of Galilee",
         "x": -74.37289,
         "y": -159.04698,
         "size": 10.232558,
@@ -1366,7 +1366,7 @@
     {
       "key": "event_fe57cd76745c5780ca62f2e8c846b4c2",
       "attributes": {
-        "label": "blind and dumb demoniac and following discourse",
+        "label": "Blind and dumb demoniac and following discourse",
         "x": -201.58035,
         "y": 97.07975,
         "size": 13.255814,
@@ -1379,7 +1379,7 @@
     {
       "key": "event_ac7440db5ee170b1aa437ade4c3e8ffe",
       "attributes": {
-        "label": "capernaum miracles",
+        "label": "Capernaum miracles",
         "x": -144.31207,
         "y": -423.20053,
         "size": 11.860465,
@@ -1392,7 +1392,7 @@
     {
       "key": "event_f1c757653d4e7b7b8b25e6e3a1be5377",
       "attributes": {
-        "label": "commandments and tradition discourse",
+        "label": "Commandments and tradition discourse",
         "x": 64.96937,
         "y": -98.54761,
         "size": 12.209302,
@@ -1405,7 +1405,7 @@
     {
       "key": "event_a7d9a01f97c8b9753c835983abf4fd76",
       "attributes": {
-        "label": "corn on the sabbath",
+        "label": "Corn on the Sabbath",
         "x": 415.70038,
         "y": 188.63803,
         "size": 10.813953,
@@ -1418,7 +1418,7 @@
     {
       "key": "event_d745a0ae477a8c715404a9704e5ee1ea",
       "attributes": {
-        "label": "discourse with pharisees and saducees",
+        "label": "Discourse with pharisees and saducees",
         "x": -370.29135,
         "y": -207.71065,
         "size": 11.27907,
@@ -1431,7 +1431,7 @@
     {
       "key": "event_b97ab026f081bdb51887e5e280949294",
       "attributes": {
-        "label": "espousal of mary",
+        "label": "Espousal of Mary",
         "x": 384.21503,
         "y": -432.75647,
         "size": 10.0,
@@ -1444,7 +1444,7 @@
     {
       "key": "event_77cf2299b8b0feb4b093c29d1c5d029a",
       "attributes": {
-        "label": "fasting question",
+        "label": "Fasting question",
         "x": 313.00302,
         "y": 669.2081,
         "size": 10.116279,
@@ -1457,7 +1457,7 @@
     {
       "key": "event_9764cdef43ee55a298c276741642a06c",
       "attributes": {
-        "label": "feast of tabernacles",
+        "label": "Feast of tabernacles",
         "x": -603.826,
         "y": 293.0487,
         "size": 10.0,
@@ -1470,7 +1470,7 @@
     {
       "key": "event_aa34077aa797b68943e420f8b263714d",
       "attributes": {
-        "label": "feeding of five thousand",
+        "label": "Feeding of five thousand",
         "x": -533.5481,
         "y": 117.60569,
         "size": 10.930233,
@@ -1483,7 +1483,7 @@
     {
       "key": "event_7d54f3540fb59773a796cd869beebd88",
       "attributes": {
-        "label": "feeding of four thousand",
+        "label": "Feeding of four thousand",
         "x": 851.46124,
         "y": 127.27681,
         "size": 10.813953,
@@ -1496,7 +1496,7 @@
     {
       "key": "event_37dcb7300f24b81bb96deade2bd55ee1",
       "attributes": {
-        "label": "fishers of men",
+        "label": "Fishers of men",
         "x": -233.64178,
         "y": -72.45467,
         "size": 10.4651165,
@@ -1509,7 +1509,7 @@
     {
       "key": "event_469d4fc4d5c305481fd4b14a72da264b",
       "attributes": {
-        "label": "foretelling the death and resurrection",
+        "label": "Foretelling the death and resurrection",
         "x": 406.78726,
         "y": -129.65648,
         "size": 10.813953,
@@ -1522,7 +1522,7 @@
     {
       "key": "event_808b012e320c52cbcc416205ba11fea0",
       "attributes": {
-        "label": "gadarene demoniacs",
+        "label": "Gadarene demoniacs",
         "x": 705.6091,
         "y": 213.5876,
         "size": 10.697675,
@@ -1535,7 +1535,7 @@
     {
       "key": "event_5fb05991727b265893f8c517e59c8675",
       "attributes": {
-        "label": "healing a boy with a demon",
+        "label": "Healing a boy with a demon",
         "x": -243.73807,
         "y": -538.06683,
         "size": 10.813953,
@@ -1548,7 +1548,7 @@
     {
       "key": "event_facc7c19960225bb394a7517140da30e",
       "attributes": {
-        "label": "healing a crowd near sea of galilee",
+        "label": "Healing a crowd near sea of Galilee",
         "x": 707.55334,
         "y": 39.645508,
         "size": 10.232558,
@@ -1561,7 +1561,7 @@
     {
       "key": "event_6cce9cd1cc32a6c13e5414ee5a682397",
       "attributes": {
-        "label": "healing a withered hand",
+        "label": "Healing a withered hand",
         "x": 772.7526,
         "y": -682.7221,
         "size": 10.581395,
@@ -1574,7 +1574,7 @@
     {
       "key": "event_f0d37a4f69df9e55d5ec50567e11daea",
       "attributes": {
-        "label": "healing canaanite daughter",
+        "label": "Healing canaanite daughter",
         "x": -461.1363,
         "y": -363.01178,
         "size": 10.813953,
@@ -1587,7 +1587,7 @@
     {
       "key": "event_88121cbda113d22a64d7d67087710bd2",
       "attributes": {
-        "label": "healing centurion\u0027s servant",
+        "label": "Healing centurion\u0027s servant",
         "x": -460.06815,
         "y": 268.77707,
         "size": 10.930233,
@@ -1600,7 +1600,7 @@
     {
       "key": "event_f79bd890f123234cef66442606e34487",
       "attributes": {
-        "label": "healing in gennesaret",
+        "label": "Healing in gennesaret",
         "x": -75.544235,
         "y": -585.6932,
         "size": 10.232558,
@@ -1613,7 +1613,7 @@
     {
       "key": "event_e56f7a67743a978ad194ccc981f84248",
       "attributes": {
-        "label": "healing multitudes",
+        "label": "Healing multitudes",
         "x": 562.06476,
         "y": 131.78017,
         "size": 10.697675,
@@ -1626,7 +1626,7 @@
     {
       "key": "event_6225c363f7a5c1f6312cc5bdf9377766",
       "attributes": {
-        "label": "healing the leper",
+        "label": "Healing the leper",
         "x": 725.64264,
         "y": -475.70084,
         "size": 10.348837,
@@ -1639,7 +1639,7 @@
     {
       "key": "event_fa064bb00915c7f5ea2305c237968411",
       "attributes": {
-        "label": "healing the man with palsy",
+        "label": "Healing the man with palsy",
         "x": 36.103012,
         "y": -445.63623,
         "size": 10.813953,
@@ -1652,7 +1652,7 @@
     {
       "key": "event_d6c961ee6f5f1c6adbfa491e9889d214",
       "attributes": {
-        "label": "herod slays male children",
+        "label": "Herod slays male children",
         "x": 106.43617,
         "y": -582.95483,
         "size": 10.232558,
@@ -1665,7 +1665,7 @@
     {
       "key": "event_acb4d47e8f28632c76f5369373f5f69d",
       "attributes": {
-        "label": "jesus calls matthew",
+        "label": "Jesus calls Matthew",
         "x": 536.8445,
         "y": -471.99033,
         "size": 10.4651165,
@@ -1678,7 +1678,7 @@
     {
       "key": "event_ea4de07a6f4431a1abf09048a5ad668c",
       "attributes": {
-        "label": "jesus in capernaum",
+        "label": "Jesus in capernaum",
         "x": 146.76793,
         "y": 721.8298,
         "size": 10.4651165,
@@ -1691,7 +1691,7 @@
     {
       "key": "event_790f5a904a89d96c69f9fdb896a2a21f",
       "attributes": {
-        "label": "jesus leaves judea toward galilee, jesus visits galilee",
+        "label": "Jesus leaves Judea toward Galilee, Jesus visits Galilee",
         "x": -81.95697,
         "y": 8.941192,
         "size": 10.0,
@@ -1704,7 +1704,7 @@
     {
       "key": "event_8074f61af2afd5a9c8748e0ff9ae718a",
       "attributes": {
-        "label": "jesus walks on water",
+        "label": "Jesus walks on water",
         "x": -213.72943,
         "y": -242.58159,
         "size": 11.27907,
@@ -1717,7 +1717,7 @@
     {
       "key": "event_2f95b79a44a32863c553e197d0ff6124",
       "attributes": {
-        "label": "jesus\u0027 1st tour of galilee",
+        "label": "Jesus\u0027 1st tour of Galilee",
         "x": -157.62799,
         "y": 663.06885,
         "size": 10.232558,
@@ -1730,7 +1730,7 @@
     {
       "key": "event_951ee4f78bac6e3c0509b8e229c014fb",
       "attributes": {
-        "label": "jesus\u0027 message on john the baptist",
+        "label": "Jesus\u0027 message on John the baptist",
         "x": 554.72217,
         "y": 474.5892,
         "size": 11.976744,
@@ -1743,7 +1743,7 @@
     {
       "key": "event_8be73a7575c9733cfce195dbed9b9d61",
       "attributes": {
-        "label": "john baptizes jesus",
+        "label": "John baptizes Jesus",
         "x": 119.725784,
         "y": 239.86734,
         "size": 10.4651165,
@@ -1756,7 +1756,7 @@
     {
       "key": "event_8c5b38afdd6964eefabe2cafc0b33155",
       "attributes": {
-        "label": "john beheaded",
+        "label": "John beheaded",
         "x": -397.08258,
         "y": 415.36484,
         "size": 10.697675,
@@ -1769,7 +1769,7 @@
     {
       "key": "event_fe07358fe6347d49865da346e5eefe02",
       "attributes": {
-        "label": "john the baptist begins ministry",
+        "label": "John the baptist begins ministry",
         "x": 132.3196,
         "y": 399.13547,
         "size": 11.27907,
@@ -1782,7 +1782,7 @@
     {
       "key": "event_43cc62185419d808a343f0ce0dbd7999",
       "attributes": {
-        "label": "john the baptist imprisoned",
+        "label": "John the baptist imprisoned",
         "x": -273.14554,
         "y": 537.8221,
         "size": 10.4651165,
@@ -1795,7 +1795,7 @@
     {
       "key": "event_b52173f210290cf0792ecafa7005ee02",
       "attributes": {
-        "label": "joseph and mary flee to egypt",
+        "label": "Joseph and Mary flee to egypt",
         "x": 732.6192,
         "y": -126.25369,
         "size": 10.232558,
@@ -1808,7 +1808,7 @@
     {
       "key": "event_047ad5b894c8f9435786dd1556504129",
       "attributes": {
-        "label": "joseph and mary return from egypt",
+        "label": "Joseph and Mary return from egypt",
         "x": 869.18005,
         "y": -204.4716,
         "size": 10.232558,
@@ -1821,7 +1821,7 @@
     {
       "key": "event_9fda9d59337c7ed31805a16228b23bd7",
       "attributes": {
-        "label": "joseph and mary return from egypt, joseph and mary return to nazareth",
+        "label": "Joseph and Mary return from egypt, Joseph and Mary return to Nazareth",
         "x": 521.08685,
         "y": -717.79865,
         "size": 10.0,
@@ -1834,7 +1834,7 @@
     {
       "key": "event_6935516f09702fa1ad2df218094baa49",
       "attributes": {
-        "label": "joseph and mary return to nazareth",
+        "label": "Joseph and Mary return to Nazareth",
         "x": -10.615052,
         "y": 1033.4319,
         "size": 10.0,
@@ -1847,7 +1847,7 @@
     {
       "key": "event_ae4f4dbb5930d402cd354f4eed4b2a64",
       "attributes": {
-        "label": "parable of the winseskins",
+        "label": "Parable of the winseskins",
         "x": -985.8235,
         "y": -317.99597,
         "size": 10.116279,
@@ -1860,7 +1860,7 @@
     {
       "key": "event_d810e7a6ae9e0e787b5c3cbe20f071b1",
       "attributes": {
-        "label": "peter\u0027s confession \"upon this rock\"",
+        "label": "Peter\u0027s confession \"upon this rock\"",
         "x": 431.11685,
         "y": 356.44702,
         "size": 10.813953,
@@ -1873,7 +1873,7 @@
     {
       "key": "event_0f77167740ba5d66760f65c237174878",
       "attributes": {
-        "label": "peter\u0027s mother-in-law and others healed",
+        "label": "Peter\u0027s mother-in-law and others healed",
         "x": 422.60236,
         "y": 556.0142,
         "size": 10.348837,
@@ -1886,7 +1886,7 @@
     {
       "key": "event_2c52d25668389a22bf26f47d2080d7da",
       "attributes": {
-        "label": "seaside parables and miracle",
+        "label": "Seaside parables and miracle",
         "x": -126.73793,
         "y": 254.42198,
         "size": 17.209301,
@@ -1899,7 +1899,7 @@
     {
       "key": "event_9bbcb6d922627bb5ea92a233fc2ecbae",
       "attributes": {
-        "label": "second foretelling of death and resurrection",
+        "label": "Second foretelling of death and resurrection",
         "x": -525.63556,
         "y": -201.49559,
         "size": 10.116279,
@@ -1912,7 +1912,7 @@
     {
       "key": "event_0aaffd55690fdeded882df95181e06b6",
       "attributes": {
-        "label": "sermon on the mount",
+        "label": "Sermon on the mount",
         "x": -17.404707,
         "y": 365.57294,
         "size": 22.790697,
@@ -1925,7 +1925,7 @@
     {
       "key": "event_496915dd3d9499cd80811f085fc0816d",
       "attributes": {
-        "label": "tax coin in a fish\u0027s mouth",
+        "label": "Tax coin in a fish\u0027s mouth",
         "x": -392.12332,
         "y": -46.460773,
         "size": 10.348837,
@@ -1938,7 +1938,7 @@
     {
       "key": "event_edb40125603b530dcc0769f3313348ed",
       "attributes": {
-        "label": "teachings on humility/temptation/reconciliation",
+        "label": "Teachings on humility/temptation/reconciliation",
         "x": -363.18292,
         "y": 100.23134,
         "size": 13.953488,
@@ -1951,7 +1951,7 @@
     {
       "key": "event_4e12fdf35e5c9827cd2ce1982de1030a",
       "attributes": {
-        "label": "temptations of jesus",
+        "label": "Temptations of Jesus",
         "x": 466.62213,
         "y": -281.09943,
         "size": 11.16279,
@@ -1964,7 +1964,7 @@
     {
       "key": "event_809e9d2cb56f0978e02c042da3aa8f36",
       "attributes": {
-        "label": "the transfiguation",
+        "label": "The transfiguation",
         "x": 278.11115,
         "y": 290.20288,
         "size": 11.395349,
@@ -1977,7 +1977,7 @@
     {
       "key": "event_1618e4382fb4e53c37fa14481c6aa92f",
       "attributes": {
-        "label": "wise men visit herod",
+        "label": "Wise men visit Herod",
         "x": 266.5896,
         "y": -564.4475,
         "size": 10.813953,
@@ -1990,7 +1990,7 @@
     {
       "key": "event_d6630a6a96fd5320f9dd9a06ea4cd44d",
       "attributes": {
-        "label": "wise men visit jesus",
+        "label": "Wise men visit Jesus",
         "x": 213.44423,
         "y": -716.5781,
         "size": 10.348837,
@@ -2003,7 +2003,7 @@
     {
       "key": "event_7c400819e60c7b521624bb0a83001c1e",
       "attributes": {
-        "label": "woe to chorazin and bethsaida",
+        "label": "Woe to chorazin and bethsaida",
         "x": -222.78445,
         "y": 381.97348,
         "size": 11.16279,
