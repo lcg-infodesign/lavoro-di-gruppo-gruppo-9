@@ -20,7 +20,7 @@ let width;
 //variabili slider 
 let slider;
 let sliderValue = 1;
-let totalSteps = 22;
+let totalSteps = 25;
 
 // COLORI PALETTE 
 let Sfondo = "#EFEEE5";
@@ -104,7 +104,7 @@ function draw() {
   //scritte ai bordi dello slider
   textSize(20);
   text("All", 130, height-40);
-  text("21", width-130, height-40);
+  text("24", width-130, height-40);
 
 
   
@@ -130,15 +130,15 @@ function draw() {
   //LEGENDA CONTENUTO
   noStroke();
   fill (persone);
-  circle(width - 20 - width/10 - 3*gutter - width/12 - width/8 - width/11 + 20, 30, 30);
+  circle(width - 20 - 280 - 75 - 80 - 55, 30, 25);
 
   fill("none");
   stroke(persone);
   strokeWeight(3);
-  circle(width - 20 - 280, 30, 27);
+  circle(width - 20 - 280 - 75, 30, 25);
 
   fill(persone);
-  circle(width - 20 - 280, 30, 17);
+  circle(width - 20 - 280 - 75, 30, 15);
 
   noStroke();
   fill (colorEvent);
@@ -161,7 +161,7 @@ function draw() {
 
   fill(colorLegenda);
   textAlign(CENTER, CENTER);
-  text("Characters", width - 20 - width/10 - 3*gutter - width/12 - width/8 - width/11 + 45, 28);
+  text("Characters", width - 20 - 280 - 75 - 80, 28);
   text("Main characters", width - 20 - 280, 28);
   text("Events", width - 20 - 148, 28);
   text("Connections", width - 20 - 40, 28);

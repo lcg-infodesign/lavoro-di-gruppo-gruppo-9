@@ -30,6 +30,7 @@ let colorEvent = "#A99366";
 let colorEdges = "black";
 let grayShape = "#D9D0B8";
 let colorLegenda = "#876315";
+let colorVangeli = "#876315";
 
 //bottone
 let button;
@@ -52,6 +53,7 @@ function preload() {
   GentiumBold = loadFont("../Fonts/PO/Poppins-Medium.ttf");
   FontBE = loadFont("../Fonts/BE/BEMedium.ttf");
   FontBEItalic = loadFont("../Fonts/BE/BEMediumItalic.ttf");
+  FontBEBold = loadFont("../Fonts/BE/BEBold.ttf");
 }
 
 function setup() {
@@ -166,7 +168,9 @@ function draw() {
 
   // LINK ALTRE PAGINE VANGELI
   for (let l = 0; l < 4; l++){
-    fill("gray");
+    noFill();
+    stroke(colorVangeli);
+    strokeWeight(2);
     let rspace = width/9;
     rect(50 + (rspace+gutter)*l, 10, rspace, 40, 20);
   }
@@ -179,9 +183,9 @@ function draw() {
   }
 
   noStroke();
-  textFont(FontBE);
+  textFont(FontBEBold);
   textAlign(CENTER, CENTER);
-  fill("black");
+  fill(colorVangeli);
   text("GOSPEL OF LUKE", 50 + width/18, 30);
   text("GOSPEL OF MATTHEW", 50 + width/9 + gutter + width/18, 30);
   text("GOSPEL OF MARK", 50 + 2*width/9 + 2*gutter + width/18, 30);

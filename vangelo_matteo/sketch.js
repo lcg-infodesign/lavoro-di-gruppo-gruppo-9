@@ -24,7 +24,7 @@ let totalSteps = 25;
 
 // COLOR PALETTE 
 let Sfondo = "#EFEEE5";
-let persone = "#A17AC9";
+let persone = "#C43953";
 let colorText = "black";
 let colorEvent = "#A99366";
 let colorEdges = "black";
