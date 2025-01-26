@@ -75,6 +75,7 @@ function setup() {
 
 function draw() {
   background("white");
+  mousehover();
 
   let height = windowHeight;
   let width = windowWidth;
@@ -101,7 +102,7 @@ function draw() {
 
   //scritte ai bordi dello slider
   textSize(20);
-  text("All", 130, height-40);
+  text("Overview", 130, height-40);
   text("16", width-130, height-40);
 
 
@@ -160,13 +161,13 @@ function draw() {
 
 
   // LINK ALTRE PAGINE VANGELI
-  for (let l = 0; l < 3; l++){
+  /*for (let l = 0; l < 3; l++){
     noFill();
     stroke(colorVangeli);
     strokeWeight(2);
     let rspace = width/9;
     rect(50 + gutter + width/9 + (rspace+gutter)*l, 13, rspace, 34, 20);
-  }
+  }*/
 
   if (windowWidth > 1630) {
     textSize(16);
@@ -180,9 +181,9 @@ function draw() {
   textAlign(CENTER, CENTER);
   fill(colorVangeli);
   text("GOSPEL OF MARK", 50 + width/18, 28);
-  text("GOSPEL OF MATTHEW", 50 + width/9 + gutter + width/18, 28);
-  text("GOSPEL OF JOHN", 50 + 2*width/9 + 2*gutter + width/18, 28);
-  text("GOSPEL OF LUKE", 50 + 3*width/9 + 3*gutter + width/18, 28);
+  //text("GOSPEL OF MATTHEW", 50 + width/9 + gutter + width/18, 28);
+  //text("GOSPEL OF JOHN", 50 + 2*width/9 + 2*gutter + width/18, 28);
+  //text("GOSPEL OF LUKE", 50 + 3*width/9 + 3*gutter + width/18, 28);
 
   //disegno rettangolo clicclabile
   fill("white");
@@ -541,6 +542,116 @@ function keyPressed() {
   } else if (keyCode === RIGHT_ARROW) {
     slider.value(min(totalSteps - 1, slider.value() + 1)); // Aumenta il valore senza superare il massimo
   }
+}
+
+//funzione per mousehover rettangoli
+function mousehover(){
+
+  //ridefinisco le variabili 
+  let gutter;
+  if (windowWidth > 1630) {
+    gutter = 10;
+
+  } else {
+    gutter = 5;
+  }
+
+  if (windowWidth > 1630) {
+    textSize(16);
+
+  } else {
+    textSize(14);
+  }
+
+  let width = windowWidth;
+  let colorVangeli = "#876315";
+  let rspace = width/9;
+
+  //rect 4
+  if ((mouseX > 50 + 3 * width/9 + 30) && (mouseX < 50 + 4 * width/9 + 30) && (mouseY > 10 && mouseY < 40)){
+    fill(colorVangeli);
+    noStroke()
+    cursor("pointer");
+  }else{
+    noFill();
+    stroke(colorVangeli);
+    strokeWeight(2);
+  }
+  rect(50 + gutter + width/9 + (rspace+gutter)*2, 13, rspace, 34, 20);
+
+  //testo 4 "GOSPEL OF LUKE"
+  if((mouseX > 50 + 3 * width/9 + 30) && (mouseX < 50 + 4 * width/9 + 30) && (mouseY > 10 && mouseY < 40)){
+    noStroke();
+    fill("white");
+    textFont(FontBEBold);
+    textAlign(CENTER, CENTER);
+    
+  }else{
+    noStroke();
+    fill(colorVangeli);
+    textFont(FontBEBold);
+    textAlign(CENTER, CENTER);
+    }
+    text("GOSPEL OF LUKE", 50 + 3*width/9 + 3*gutter + width/18, 28);
+  
+  
+  //rect 3
+  if (mouseX > 50 + 2 * width/9 + 20 && mouseX < 50 + 3 * width/9 + 20 && mouseY > 10 && mouseY < 40 ){
+    fill(colorVangeli);
+    noStroke()
+    cursor("pointer");
+  }else{
+  noFill();
+  stroke(colorVangeli);
+  strokeWeight(2);
+   }
+  rect(50 + gutter + width/9 + (rspace+gutter), 13, rspace, 34, 20);
+
+  //testo 3 "GOSPEL OF JOHN"
+  if((mouseX > 50 + 2 * width/9 + 20) && (mouseX < 50 + 3 * width/9 + 20) && (mouseY > 10 && mouseY < 40)){
+    noStroke();
+    fill("white");
+    textFont(FontBEBold);
+    textAlign(CENTER, CENTER);
+    
+  }else{
+    noStroke();
+    fill(colorVangeli);
+    textFont(FontBEBold);
+    textAlign(CENTER, CENTER);
+    }
+  
+  text("GOSPEL OF JOHN", 50 + 2*width/9 + 2*gutter + width/18, 28);
+
+
+  //rect 2
+  if (mouseX > 50 + width/9 + 10 && mouseX < 50 + 2 * width/9 + 10 && mouseY > 10 && mouseY < 40 ){
+    fill(colorVangeli);
+    noStroke()
+    cursor("pointer");
+  }else{
+    noFill();
+    stroke(colorVangeli);
+    strokeWeight(2);
+    
+  }
+  rect(50 + gutter + width/9, 13, rspace, 34, 20);
+
+  //testo 2 "GOSPEL OF MATTHEW"
+  if((mouseX > 50 + width/9 + 10) && (mouseX < 50 + 2 * width/9 + 10) && (mouseY > 10 && mouseY < 40)){
+    noStroke();
+    fill("white");
+    textFont(FontBEBold);
+    textAlign(CENTER, CENTER);
+    
+  }else{
+    noStroke();
+    fill(colorVangeli);
+    textFont(FontBEBold);
+    textAlign(CENTER, CENTER);
+    }
+    text("GOSPEL OF MATTHEW", 50 + width/9 + gutter + width/18, 28);
+
 }
 
 
