@@ -264,6 +264,7 @@ color:#876315;
   height: 15%;
  /*background-color: red;*/
   align-content:center;
+  text-align: center;
   font-style: italic;
   color: #164A7A;
   font-size: 130%;
@@ -272,8 +273,9 @@ color:#876315;
 
 
 .immagine {
-  width: 100%;
-  height: 85%;
+  width: 80%;
+  height: 55%;
+  border-radius: 100%;
   background-color: white;
 }
 
