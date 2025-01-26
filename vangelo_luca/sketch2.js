@@ -130,67 +130,67 @@ function draw() {
   //LEGENDA CONTENUTO
   noStroke();
   fill (persone);
-  circle(width - 20 - width/10 - 3*gutter - width/12 - width/8 - width/11 + 20, 30, 30);
+  circle(width - 20 - 280 - 75 - 80 - 55, 30, 25);
 
   fill("none");
   stroke(persone);
   strokeWeight(3);
-  circle(width - 20 - width/10 - 2*gutter - width/12 - width/8 + 20, 30, 27);
+  circle(width - 20 - 280 - 75, 30, 25);
 
   fill(persone);
-  circle(width - 20 - width/10 - 2*gutter - width/12 - width/8 + 20, 30, 17);
+  circle(width - 20 - 280 - 75, 30, 15);
 
   noStroke();
-  fill ("#1C5991");
-  drawHexagon (width - 20 - width/10 - gutter - width/12 + 28, 30, 18);  
+  fill (colorEvent);
+  drawHexagon (width - 20 - 148 - 24 - 14, 30, 12);  
 
   stroke("black");
-  strokeWeight(3);
-  line(width - 20 - width/10 + 15, 20, width - 20 - width/10 +25, 40);
+  strokeWeight(1.5);
+  line(width - 20 - 100, 25, width - 20 - 90, 38);
 
   noStroke();
   fill(colorLegenda);
   textFont(FontBEItalic);
+
+  if (windowWidth > 1630) {
+    textSize(16);
+
+  } else {
+    textSize(12);
+  }
+
+  fill(colorLegenda);
+  textAlign(CENTER, CENTER);
+  text("Characters", width - 20 - 280 - 75 - 80, 28);
+  text("Main characters", width - 20 - 280, 28);
+  text("Events", width - 20 - 148, 28);
+  text("Connections", width - 20 - 40, 28);
+
+  // LINK ALTRE PAGINE VANGELI
+  for (let l = 0; l < 3; l++){
+    noFill();
+    stroke(colorVangeli);
+    strokeWeight(2);
+    let rspace = width/9;
+    rect(50 + gutter + width/9 + (rspace+gutter)*l, 13, rspace, 34, 20);
+  }
+
   if (windowWidth > 1630) {
     textSize(16);
 
   } else {
     textSize(14);
   }
-  
-  fill(colorLegenda);
-  text("Characters", width - 20 - width/10 - 3*gutter - width/12 - width/8 - width/11 + 45, 36);
-  text("Main characters", width - 20 - width/10 - 2*gutter - width/12 - width/8 + 45, 36);
-  text("Events", width - 20 - width/10 - gutter - width/12 + 60, 36);
-  text("Connections", width - 20 - width/10 + 35, 36);
-
-
-
-  // LINK ALTRE PAGINE VANGELI
-  for (let l = 0; l < 4; l++){
-    noFill();
-    stroke(colorVangeli);
-    strokeWeight(2);
-    let rspace = width/9;
-    rect(50 + (rspace+gutter)*l, 10, rspace, 40, 20);
-  }
-
-  if (windowWidth > 1630) {
-    textSize(20);
-
-  } else {
-    textSize(16);
-  }
 
   noStroke();
   textFont(FontBEBold);
   textAlign(CENTER, CENTER);
   fill(colorVangeli);
-  text("GOSPEL OF LUKE", 50 + width/18, 30);
-  text("GOSPEL OF MATTHEW", 50 + width/9 + gutter + width/18, 30);
-  text("GOSPEL OF MARK", 50 + 2*width/9 + 2*gutter + width/18, 30);
-  text("GOSPEL OF JOHN", 50 + 3*width/9 + 3*gutter + width/18, 30);
-
+  text("GOSPEL OF LUKE", 50 + width/18, 28);
+  text("GOSPEL OF JOHN", 50 + width/9 + gutter + width/18, 28);
+  text("GOSPEL OF MARK", 50 + 2*width/9 + 2*gutter + width/18, 28);
+  text("GOSPEL OF MATTHEW", 50 + 3*width/9 + 3*gutter + width/18, 28);
+  
   //disegno rettangolo clicclabile
   fill("white");
   rect(10, 16, 20, 30);
@@ -529,13 +529,13 @@ function mousePressed(){
     window.location.href = '../index.html';
     cursor("pointer");
   }else if (mouseX > 50 + 3 * width/9 + 30 && mouseX < 50 + 4 * width/9 + 30 && mouseY > 10 && mouseY < 40){
-    window.location.href = '../vangelo_giovanni/giovanni.html';
+    window.location.href = '../vangelo_matteo/matteo.html';
     cursor("pointer");
   }else if (mouseX > 50 + 2 * width/9 + 20 && mouseX < 50 + 3 * width/9 + 20 && mouseY > 10 && mouseY < 40 ){
     window.location.href = '../vangelo_marco/marco.html';
     cursor("pointer");
   }else if (mouseX > 50 + width/9 + 10 && mouseX < 50 + 2 * width/9 + 10 && mouseY > 10 && mouseY < 40 ){
-    window.location.href = '../vangelo_matteo/matteo.html';
+    window.location.href = '../vangelo_giovanni/giovanni.html';
     cursor("pointer");
   }
 
