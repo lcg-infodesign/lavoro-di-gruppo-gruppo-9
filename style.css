@@ -1,6 +1,4 @@
 
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -183,7 +181,7 @@ a{
 
 #titolone {
 text-align: right;
-font-size: 500%;
+font-size: 600%;
 color:#876315;
 width: 100%;
 }
@@ -193,7 +191,7 @@ width: 100%;
 #subheading{
 text-align: right;
 font-size: 500%;
-margin-top: -10%;
+margin-top: -12%;
 color:#876315;
 
 }
@@ -213,7 +211,7 @@ color:#876315;
   height: 15%;
   /*background-color: blue;*/
   margin: auto;
-  padding-top: 7%;
+  padding-top: 15%;
   padding-bottom: 5%;
   text-align: center;
   font-size: 500%;
@@ -224,12 +222,15 @@ color:#876315;
 
 .vetrate {
   width: 90%;
-  height: 60%;
+  height: 90%;
   /*background-color: blue;*/
   margin: auto;
-  margin-bottom: 7%;
+  
+  margin-bottom: 1%;
   display: flex;
   flex-direction: row;
+  
+  
 }
 
 .luca{
@@ -237,6 +238,7 @@ color:#876315;
   height: 100%;
   /*background-color: white;*/
   margin-right: 2%;
+
 }
 
 .marco{
@@ -268,6 +270,7 @@ color:#876315;
   font-style: italic;
   color: #164A7A;
   font-size: 130%;
+  margin: 0 auto;
   
 }
 
@@ -277,6 +280,7 @@ color:#876315;
   height: 55%;
   border-radius: 100%;
   background-color: white;
+  margin: 0 auto;
 }
 
 

@@ -1,10 +1,3 @@
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  
-}
 
-function draw() {
-  background(220);
-  color("blue");
-  noLoop();
-}
+
+
