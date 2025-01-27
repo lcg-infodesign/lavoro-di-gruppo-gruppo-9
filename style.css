@@ -3,17 +3,19 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-
-  font-weight: 100;
-  font-stretch: expanded;
-
+body{
+  font: 'zt-formom-oblique';
+  
 }
+
+
+
 
 @font-face {
   font-family: 'ZTFormom';
   src: url('Fonts/ZT/ZT.ttf') format('truetype'),
-       url('Fonts/ZT/ZTItalic.ttf') format('truetype');
+       url('Fonts/ZT/zt-formom-oblique.ttf') format('truetype');
+
 
   font-weight: normal; /* Specifica il peso (opzionale) */
   font-style: normal; /* Specifica lo stile (opzionale) */
@@ -79,10 +81,7 @@ canvas {
 }
 
 
-body {
-  font-weight: 100;
-  font-stretch: expanded;
-}
+
 
 .navbar{
   position: fixed;
@@ -92,6 +91,8 @@ body {
   padding-top: 2.5%;
   height: 7%;
   width: 100%;
+ 
+  
 }
 
 .navbar.scrolled {
@@ -148,13 +149,14 @@ a{
 
 
 .image {
-  background-image: url(img/prova.jpg);
+  background-color:#164A7A;
   background-position: center;
   background-size: cover;
   background-position-y: center;
-  width: 40%;
+  width: 45%;
   height: 100%;
-  margin-left: 5%;
+  
+  margin-right: 1%;
   margin-top: 0%;
   background-repeat: no-repeat;
 
@@ -174,36 +176,62 @@ a{
   width: 90%;
   height: 50%;  
   margin: auto;
-  margin-top: 20%;
+  margin-top: 15%;
   align-content: end;
 
 }
 
 #titolone {
 text-align: right;
-font-size: 600%;
+font-size: 8vw;
 color:#876315;
 width: 100%;
+
+
+}
+
+#the {
+  font-size: 7vw;
+  font: 'zt-formom-oblique';
+  font-style: oblique;
 }
 
 
 
 #subheading{
 text-align: right;
-font-size: 500%;
-margin-top: -12%;
+font-size: 7vw;
+margin-top: -17%;
 color:#876315;
+z-index: 10;
+font: 'zt-formom-oblique';
+font-style: oblique;
+font-weight: 400;
+
 
 }
 
 .body {
   /*background-color: white;*/
   width: 50%;
-  height: 30%;  
+  height: 40%;  
   margin-left: 45%;
   text-align: right;
+  margin-top: 10%;
+
   font-size: 140%;
-  color: #164A7A;  
+  color: #164A7A;
+    
+}
+
+.freccia {
+  width: 3%;
+  height: 2%;
+  margin: auto;
+  background-image: url(img/freccia.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 54%;
 }
 
 .titolo2 {
@@ -211,12 +239,12 @@ color:#876315;
   height: 15%;
   /*background-color: blue;*/
   margin: auto;
-  padding-top: 15%;
-  padding-bottom: 5%;
+  padding-top: 12%;
+  padding-bottom: 7%;
   text-align: center;
-  font-size: 500%;
+  font-size: 600%;
   color:#876315;
-  font-style: italic;
+  
 
 }
 
@@ -237,6 +265,24 @@ color:#876315;
   height: 100%;
   /*background-color: white;*/
   margin-right: 2%;
+  transition: filter 0.3s ease; /* Aggiunge la transizione fluida */
+
+
+}
+
+#luca {
+  background-image: url(img/Toro_luca.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size:contain;
+  filter:brightness(95%);
+
+}
+
+
+
+.luca:hover{
+  filter: brightness(120%);
 
 }
 
@@ -245,6 +291,25 @@ color:#876315;
   height: 100%;
   /*background-color: white;*/
   margin-right: 2%;
+  transition: filter 0.3s ease; /* Aggiunge la transizione fluida */
+
+}
+
+
+#marco {
+  background-image: url(img/Toro_luca.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size:contain;
+  filter:brightness(95%);
+  
+
+}
+
+.marco:hover{
+  filter: brightness(120%);
+  
+
 }
 
 .giovanni{
@@ -252,12 +317,44 @@ color:#876315;
   height: 100%;
   /*background-color: white;*/
   margin-right: 2%;
+  transition: filter 0.3s ease; /* Aggiunge la transizione fluida */
+
+  
+}
+
+#giovanni {
+  background-image: url(img/Toro_luca.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size:contain;
+  filter:brightness(95%);
+  
+}
+
+.giovanni:hover{
+  filter: brightness(120%);
+
 }
 
 .matteo{
   width: 25%;
   height: 100%;
   /*background-color: white;*/
+  transition: filter 0.3s ease; /* Aggiunge la transizione fluida */
+
+}
+
+#matteo {
+  background-image: url(img/Toro_luca.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size:contain;
+  filter:brightness(95%);
+}
+
+.matteo:hover{
+  filter: brightness(120%);
+
 }
 
 .label {
@@ -266,21 +363,24 @@ color:#876315;
  /*background-color: red;*/
   align-content:center;
   text-align: center;
-  font-style: italic;
   color: #164A7A;
-  font-size: 130%;
+  font-size: 180%;
   margin: 0 auto;
+  margin-top: 10%;
   
 }
 
 
 .immagine {
-  width: 70%;
-  height: 40%;
+  width: 20vw;
+  height: 20vw;
   border-radius: 100%;
   background-color: rgb(217, 208, 184);
   margin: 0 auto;
+  
 }
+
+
 
 
 .contenuto {
@@ -289,6 +389,7 @@ color:#876315;
   margin-left: 5%;
   margin-top:4%;
   color: #876315;
+  
 
 }
 
@@ -300,6 +401,7 @@ color:#876315;
   background-size: contain;
   margin-top: 5.5%;
   margin-left: 30%;
+  
 
 }
 
@@ -308,9 +410,16 @@ a {
   color: #164A7A;
 }
 
-.luca .immagine  {
-  background-image: url(img/Toro_luca.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size:contain;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
