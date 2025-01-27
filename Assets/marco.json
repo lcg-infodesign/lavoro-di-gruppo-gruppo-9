@@ -14,7 +14,7 @@
     {
       "key": "people_1f651b8301bbf09b0e2527e929fde258",
       "attributes": {
-        "label": "abiathar",
+        "label": "Abiathar",
         "x": -791.4574,
         "y": 413.1144,
         "size": 10.0,
@@ -28,7 +28,7 @@
     {
       "key": "people_248706c023957db08d14f39749879207",
       "attributes": {
-        "label": "abraham",
+        "label": "Abraham",
         "x": -122.92715,
         "y": -722.3513,
         "size": 10.0,
@@ -42,7 +42,7 @@
     {
       "key": "people_dd22141acb5ea065acd5ed773729c98f",
       "attributes": {
-        "label": "alexander",
+        "label": "Alexander",
         "x": 892.73004,
         "y": -83.77486,
         "size": 10.0,
@@ -56,7 +56,7 @@
     {
       "key": "people_42bf05d1d4257474cef0af0caa3ccc6d",
       "attributes": {
-        "label": "alphaeus",
+        "label": "Alphaeus",
         "x": -569.04694,
         "y": -457.77316,
         "size": 11.290322,
@@ -70,7 +70,7 @@
     {
       "key": "people_d914e3ecf6cc481114a3f534a5faf90b",
       "attributes": {
-        "label": "andrew",
+        "label": "Andrew",
         "x": -363.49615,
         "y": 141.68501,
         "size": 13.870968,
@@ -84,7 +84,7 @@
     {
       "key": "people_715b2ada18d6074c62d1f50249b59f0a",
       "attributes": {
-        "label": "barabbas",
+        "label": "Barabbas",
         "x": -823.18134,
         "y": -320.2162,
         "size": 10.0,
@@ -98,7 +98,7 @@
     {
       "key": "people_c41f81b866f7f14986347551fd61260f",
       "attributes": {
-        "label": "bartholomew",
+        "label": "Bartholomew",
         "x": -325.39597,
         "y": 637.62787,
         "size": 10.0,
@@ -112,7 +112,7 @@
     {
       "key": "people_1b44a4d428a2d96164e8391b7747e2ae",
       "attributes": {
-        "label": "bartimaeus",
+        "label": "Bartimaeus",
         "x": -59.090317,
         "y": 893.3294,
         "size": 10.0,
@@ -126,7 +126,7 @@
     {
       "key": "people_aa47f8215c6f30a0dcdb2a36a9f4168e",
       "attributes": {
-        "label": "daniel",
+        "label": "Daniel",
         "x": 842.21454,
         "y": -304.99722,
         "size": 10.0,
@@ -140,7 +140,7 @@
     {
       "key": "people_018d3444ccfe1031fc6469d844a1dc11",
       "attributes": {
-        "label": "daughter of herodias",
+        "label": "Daughter of Herodias",
         "x": 829.70056,
         "y": 308.11063,
         "size": 10.0,
@@ -154,7 +154,7 @@
     {
       "key": "people_172522ec1028ab781d9dfd17eaca4427",
       "attributes": {
-        "label": "david",
+        "label": "David",
         "x": -871.5658,
         "y": 204.66403,
         "size": 13.870968,
@@ -168,7 +168,7 @@
     {
       "key": "people_a6ebe407fa6e2337cb2deb573d17791e",
       "attributes": {
-        "label": "elijah",
+        "label": "Elijah",
         "x": -176.1138,
         "y": 94.40777,
         "size": 13.870968,
@@ -182,7 +182,7 @@
     {
       "key": "people_a4757d7419ff3b48e92e90596f0e7548",
       "attributes": {
-        "label": "god",
+        "label": "God",
         "x": -121.8628,
         "y": -79.86216,
         "size": 34.51613,
@@ -196,7 +196,7 @@
     {
       "key": "people_b793e40d97ebfb571c9cefc1dfa89d45",
       "attributes": {
-        "label": "herod",
+        "label": "Herod",
         "x": 1.4491247,
         "y": 724.8105,
         "size": 12.580645,
@@ -210,7 +210,7 @@
     {
       "key": "people_830c10330c0cc3b612172937cc7ff181",
       "attributes": {
-        "label": "herodias",
+        "label": "Herodias",
         "x": 502.48975,
         "y": 742.1488,
         "size": 11.290322,
@@ -224,7 +224,7 @@
     {
       "key": "people_a05d08dd5b543d67b497d3adf3564d87",
       "attributes": {
-        "label": "holy spirit",
+        "label": "Holy Spirit",
         "x": 354.36145,
         "y": 119.18045,
         "size": 16.451612,
@@ -238,7 +238,7 @@
     {
       "key": "people_84311803c723cad9fcda143909218a89",
       "attributes": {
-        "label": "isaac",
+        "label": "Isaac",
         "x": -294.93594,
         "y": -833.16925,
         "size": 10.0,
@@ -252,7 +252,7 @@
     {
       "key": "people_562348edd2ded080999f748733fcc1b9",
       "attributes": {
-        "label": "isaiah",
+        "label": "Isaiah",
         "x": 451.23532,
         "y": -289.23917,
         "size": 10.0,
@@ -266,7 +266,7 @@
     {
       "key": "people_3f8454b7f2c12cebb1622b6b0dfd1021",
       "attributes": {
-        "label": "israel",
+        "label": "Israel",
         "x": -880.9216,
         "y": 18.936441,
         "size": 10.0,
@@ -280,7 +280,7 @@
     {
       "key": "people_eb38db69b8822e4973bc141f017eeba7",
       "attributes": {
-        "label": "jairus",
+        "label": "Jairus",
         "x": 372.23447,
         "y": 623.8003,
         "size": 10.0,
@@ -294,7 +294,7 @@
     {
       "key": "people_b4cc344d25a2efe540adbf2678e2304c",
       "attributes": {
-        "label": "james",
+        "label": "James",
         "x": -118.04874,
         "y": -250.22063,
         "size": 22.903225,
@@ -308,7 +308,7 @@
     {
       "key": "people_110d46fcd978c24f306cd7fa23464d73",
       "attributes": {
-        "label": "jesus",
+        "label": "Jesus",
         "x": 24.65719,
         "y": 19.341751,
         "size": 50.0,
@@ -322,7 +322,7 @@
     {
       "key": "people_527bd5b5d689e2c32ae974c6229ff785",
       "attributes": {
-        "label": "john",
+        "label": "John",
         "x": -6.0962815,
         "y": 197.32498,
         "size": 30.64516,
@@ -336,7 +336,7 @@
     {
       "key": "people_cb07901c53218323c4ceacdea4b23c98",
       "attributes": {
-        "label": "joseph",
+        "label": "Joseph",
         "x": -745.6128,
         "y": -489.619,
         "size": 10.0,
@@ -350,7 +350,7 @@
     {
       "key": "people_e6bbdd09808abe57246c0d557c5337fe",
       "attributes": {
-        "label": "joses",
+        "label": "Joses",
         "x": -215.43892,
         "y": 820.4838,
         "size": 11.290322,
@@ -364,7 +364,7 @@
     {
       "key": "people_9cb8af3f5c58553c270412eb3d751fc3",
       "attributes": {
-        "label": "judas",
+        "label": "Judas",
         "x": -422.62146,
         "y": -564.0079,
         "size": 11.290322,
@@ -378,7 +378,7 @@
     {
       "key": "people_b612c055b0f2daec0c4c4e9d841f7bfd",
       "attributes": {
-        "label": "jude",
+        "label": "Jude",
         "x": -541.03107,
         "y": 691.1242,
         "size": 10.0,
@@ -392,7 +392,7 @@
     {
       "key": "people_fdc1eaa5c8acb4907e6d4c0014bb275e",
       "attributes": {
-        "label": "lebbaeus",
+        "label": "Lebbaeus",
         "x": -452.52637,
         "y": -748.86163,
         "size": 10.0,
@@ -406,7 +406,7 @@
     {
       "key": "people_b8e7be5dfa2ce0714d21dcfc7d72382c",
       "attributes": {
-        "label": "mary",
+        "label": "Mary mother of Jesus",
         "x": -482.93167,
         "y": -179.93697,
         "size": 11.290322,
@@ -420,7 +420,7 @@
     {
       "key": "people_c9df37833cbbe75677a039628a8af1ec",
       "attributes": {
-        "label": "mary 1940",
+        "label": "Mary Magdalene",
         "x": 139.99802,
         "y": 877.9278,
         "size": 10.0,
@@ -434,7 +434,7 @@
     {
       "key": "people_49a9174b0db12bb87290d1c43795b6c4",
       "attributes": {
-        "label": "mary 1943",
+        "label": "Mary mother of Joses",
         "x": 744.1305,
         "y": -490.18915,
         "size": 10.0,
@@ -445,24 +445,11 @@
         "attr_2_1": "\u003c[1970-01-01T01:00:00.016+01:00, 1970-01-01T01:00:00.017+01:00, n/a]\u003e"
       }
     },
-    {
-      "key": "people_76be805e417ee2cadea26456a6d9e0e7",
-      "attributes": {
-        "label": "mary of jesus",
-        "x": -675.53094,
-        "y": 570.25903,
-        "size": 10.0,
-        "type": "persona",
-        "attr_type": "\u003c[-Infinity, Infinity, people]\u003e",
-        "global_occurrences": "\u003c[-Infinity, Infinity, 1]\u003e",
-        "attr_1_3": "\u003c[1970-01-01T01:00:00.015+01:00, 1970-01-01T01:00:00.016+01:00, 2]\u003e",
-        "attr_2_1": "\u003c[1970-01-01T01:00:00.015+01:00, 1970-01-01T01:00:00.016+01:00, n/a]\u003e"
-      }
-    },
+    
     {
       "key": "people_b11b7c10d594825ffd23426c16ce6322",
       "attributes": {
-        "label": "mary of john mark",
+        "label": "Mary mother of John Mark",
         "x": 613.09863,
         "y": -644.8227,
         "size": 10.0,
@@ -476,7 +463,7 @@
     {
       "key": "people_e6a5ba0842a531163425d66839569a68",
       "attributes": {
-        "label": "matthew",
+        "label": "Matthew",
         "x": 79.2771,
         "y": -862.5601,
         "size": 11.290322,
@@ -490,7 +477,7 @@
     {
       "key": "people_52bd43d37ed62eb4c226e31841bc03dc",
       "attributes": {
-        "label": "moses",
+        "label": "Moses",
         "x": 180.52318,
         "y": 165.30559,
         "size": 15.16129,
@@ -504,7 +491,7 @@
     {
       "key": "people_c31f76c7f477fd879a39cd6c46d175b0",
       "attributes": {
-        "label": "mother of the wife of simon",
+        "label": "Mother of the wife of Simon",
         "x": 719.21027,
         "y": 30.832403,
         "size": 10.0,
@@ -518,7 +505,7 @@
     {
       "key": "people_51dc30ddc473d43a6011e9ebba6ca770",
       "attributes": {
-        "label": "peter",
+        "label": "Peter",
         "x": 58.995476,
         "y": -162.54343,
         "size": 25.483871,
@@ -532,7 +519,7 @@
     {
       "key": "people_7b40760b8ebbfb7da8ebe42af07de0e5",
       "attributes": {
-        "label": "philip",
+        "label": "Philip",
         "x": 155.91803,
         "y": -325.81183,
         "size": 11.290322,
@@ -546,7 +533,7 @@
     {
       "key": "people_17868be5cd81796d9423432b4e530f39",
       "attributes": {
-        "label": "pilate",
+        "label": "Pilate",
         "x": -612.64233,
         "y": -648.1756,
         "size": 10.0,
@@ -560,7 +547,7 @@
     {
       "key": "people_3a2967f3d7e135a55d8bb158e61d95d4",
       "attributes": {
-        "label": "rufus",
+        "label": "Rufus",
         "x": 880.38477,
         "y": 121.87908,
         "size": 10.0,
@@ -574,7 +561,7 @@
     {
       "key": "people_d71a104f87c82c79b6001afbf74c3e88",
       "attributes": {
-        "label": "salome",
+        "label": "Salome",
         "x": 269.21948,
         "y": -857.60583,
         "size": 11.290322,
@@ -588,7 +575,7 @@
     {
       "key": "people_87df2cd1570fd297de238aeee667fe0a",
       "attributes": {
-        "label": "satan",
+        "label": "Satan",
         "x": 159.30728,
         "y": -524.9904,
         "size": 13.870968,
@@ -602,7 +589,7 @@
     {
       "key": "people_b30bd351371c686298d32281b337e8e9",
       "attributes": {
-        "label": "simon",
+        "label": "Simon",
         "x": -142.71849,
         "y": 618.38,
         "size": 15.16129,
@@ -616,7 +603,7 @@
     {
       "key": "people_ef6e65efc188e7dffd7335b646a85a21",
       "attributes": {
-        "label": "thomas",
+        "label": "Thomas",
         "x": -707.1176,
         "y": 247.47476,
         "size": 10.0,
@@ -630,7 +617,7 @@
     {
       "key": "people_f8a9fae5d65ced2c3191bf54b8a1203c",
       "attributes": {
-        "label": "timateus",
+        "label": "Timateus",
         "x": 260.77344,
         "y": -686.6335,
         "size": 10.0,
@@ -644,7 +631,7 @@
     {
       "key": "people_e6da0d255c7cde0d55c5423453c06241",
       "attributes": {
-        "label": "wife of simon",
+        "label": "Wife of Simon",
         "x": -389.6089,
         "y": 804.96484,
         "size": 10.0,
@@ -658,7 +645,7 @@
     {
       "key": "people_11af01d092444a317cb33faa6b8304b8",
       "attributes": {
-        "label": "zebedee",
+        "label": "Zebedee",
         "x": -589.0932,
         "y": 398.91855,
         "size": 12.580645,
@@ -1204,7 +1191,7 @@
     {
       "key": "event_edb40125603b530dcc0769f3313348ed",
       "attributes": {
-        "label": "teachings on humility/temptation/reconciliation",
+        "label": "teachings on humility temptation reconciliation",
         "x": -405.4965,
         "y": -366.07397,
         "size": 12.580645,

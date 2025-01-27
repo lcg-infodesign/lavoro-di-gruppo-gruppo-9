@@ -104,7 +104,7 @@ function draw() {
 
   //scritte ai bordi dello slider
   textSize(20);
-  text("Overview", 118, height-40);
+  text("Overview", 100, height-42);
   text("28", width-130, height-40);
 
 
