@@ -146,16 +146,11 @@ a{
 .image {
   background-image: url(img/vetrata.png);
   background-position: center;
-  background-size: 70%;
+  background-size: contain;
   background-position-y: center;
-  
-  
   width: 45%;
   height: 90%;
-  
-  
   margin-right: 7%;
-  
   background-repeat: no-repeat;
 
 }
@@ -399,7 +394,6 @@ font-weight: 100;
   color: #8763158d;
   display: flex;
   flex-direction: row;
-  background-color: red;
 }
 
 .titoletto {
@@ -416,11 +410,10 @@ font-weight: 100;
   width:80%;
   height: 100%;
   line-height: 100%;
-  background-color: green;
 }
 
 .line{
-  height: 80%;
+  height: 90%;
   width: 2px;
   background-color: rgb(217, 208, 184);
   margin-top: 1%;
