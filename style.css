@@ -409,9 +409,10 @@ font-weight: 100;
 }
 
 .contatti {
-  width:50vw;
+  width:80%;
   height: 100%;
   line-height: 100%;
+  background-color: green;
 }
 
 .line{
@@ -419,7 +420,7 @@ font-weight: 100;
   width: 2px;
   background-color: rgb(217, 208, 184);
   margin-top: 1%;
-  margin-left: 2vw;
+  
 }
 
 .info {
