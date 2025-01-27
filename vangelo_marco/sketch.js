@@ -225,16 +225,40 @@ function draw() {
     }
   }
 
-  //disegno iniziale di tutti gli edges
+
+
+
+
+  // DISEGNA CERCHI/ESAGONI/CONNECTIONS
+  //OVERVIEW - disegno iniziale di tutti gli edges
   if (sliderValue === 0){
     drawInitialEdges();
   }
 
+
+
+  // DISEGNA EVENTI/PERSONE PASSATE
   //disegno EDGES - sotto tutto
-  drawEdges(matchingIDs);
   drawGrayEdges (minorIDs);
 
-  // CICLO FOR PER DISEGNARE COSE 
+  for (let i = 0; i < nodes.length; i++){
+    // MAP x, y, size 
+    let x = map (nodes[i].attributes.x, -871.5658, 892.73004, 20+padding, width-20-padding);
+    let y = map (nodes[i].attributes.y, -885.98145, 893.3294,  60 + padding2, height-90-padding2);
+    let size = map (nodes[i].attributes.size, 10, 50 , 15, 70);
+
+    // DISEGNA COSE GRIGIE
+    //disegna nodi se l'array minorIDs include key (=ID personaggio)
+    if (minorIDs.includes(nodes[i].key)) {
+      drawGrayCircle(x, y, size, nodes[i].attributes.type);
+    }
+  }
+
+
+
+  // DISEGNA COSE COLORATE
+  drawEdges(matchingIDs);
+
   for (let i = 0; i < nodes.length; i++) {
 
     // MAP x, y, size 
@@ -242,10 +266,9 @@ function draw() {
     let y = map (nodes[i].attributes.y, -885.98145, 893.3294,  60 + padding2, height-90-padding2);
     let size = map (nodes[i].attributes.size, 10, 50 , 15, 70);
     
-    // disegna cerchi ed esagoni all'inizio
+    // OVERVIEW - disegna cerchi ed esagoni all'inizio
     if (sliderValue === 0) {
   
-    
       drawCircle(x, y, size, nodes[i].attributes.type);  // Poi disegna il cerchio
     
       fill(colorText); 
@@ -255,12 +278,6 @@ function draw() {
       text(nodes[i].attributes.label, x-50, y, 100);  // Infine, scrivi il testo
     }
 
-    // DISEGNA COSE GRIGIE
-    //disegna nodi se l'array minorIDs include key (=ID personaggio)
-    if (minorIDs.includes(nodes[i].key)) {
-      drawGrayCircle(x, y, size, nodes[i].attributes.type); 
-      
-    }
 
 
     // DISEGNA COSE COLORATE 
@@ -302,6 +319,7 @@ function draw() {
   circle(xJes, yJes, 82)
   
 }
+
 
 
 //disegno TUTTI GLI EDGES all'inizio
@@ -352,6 +370,8 @@ function drawInitialEdges (){
   }
 } 
 
+
+
 // FUNZIONE PER DISEGNARE CERCHI ED ESAGONI GRIGI SOTTO
 function drawGrayCircle (x, y, size, type) {
   for (let j=0; j<nodes.length;j++){
@@ -373,6 +393,8 @@ function drawGrayCircle (x, y, size, type) {
   } 
 }
 
+
+
 // FUNZIONE PER DISEGNARE CERCHI 
 function drawCircle (x, y, size, type){
 
@@ -392,6 +414,7 @@ function drawCircle (x, y, size, type){
     circle (x, y, size);
   }
 }
+
 
 
 // FUNZIONE PER DISEGNARE ESAGONI
@@ -662,5 +685,3 @@ function mousehover(){
     text("GOSPEL OF MATTHEW", 50 + width/9 + gutter + width/18, 28);
 
 }
-
-

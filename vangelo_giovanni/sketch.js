@@ -124,12 +124,6 @@ function draw() {
   } else {
     gutter = 12;
   }
-  
-  /*fill("gray");
-  rect(width - 20 - width/10 - 3*gutter - width/12 - width/8 - width/11, 10, width/11, 40, 20);
-  rect(width - 20 - width/10 - 2*gutter - width/12 - width/8, 10, width/8, 40, 20);
-  rect(width - 20 - width/10 - gutter - width/12, 10, width/12, 40, 20);
-  rect(width - 20 - width/10, 10, width/10, 40, 20);*/
 
   //LEGENDA CONTENUTO
   noStroke();
@@ -195,15 +189,13 @@ function draw() {
   textAlign(CENTER, CENTER);
   fill(colorVangeli);
   text("GOSPEL OF JOHN", 50 + width/18, 28);
-  //text("GOSPEL OF MATTHEW", 50 + width/9 + gutter + width/18, 28);
-  //text("GOSPEL OF MARK", 50 + 2*width/9 + 2*gutter + width/18, 28);
-  //text("GOSPEL OF LUKE", 50 + 3*width/9 + 3*gutter + width/18, 28);
 
   //disegno rettangolo clicclabile
+  // INUTILE - serve solo a prendere la mira
   fill("white");
   rect(10, 16, 20, 30);
 
-  //disegno linee freccia
+  //disegno linee freccia per tornare alla Home
   stroke("black");
   strokeWeight(3);
   line(15, 30, 25, 20);
@@ -236,14 +228,36 @@ function draw() {
     }
   }
 
+
+
+
+
   //disegno iniziale di tutti gli edges
   if (sliderValue === 0){
     drawInitialEdges();
   }
 
+
+  // DISEGNO COSE GRIGIE SFONDO - PERSONAGGI/EVENTI PASSATI
   //disegno EDGES - sotto tutto
-  drawEdges(matchingIDs);
   drawGrayEdges (minorIDs);
+
+  for (let i = 0; i < nodes.length; i++){
+    // MAP x, y, size 
+    let x = map (nodes[i].attributes.x, -748.78217, 755.52203, 20+padding, width-20-padding);
+    let y = map (nodes[i].attributes.y, -751.83026, 757.02936,  60 + padding2, height-90-padding2);
+    let size = map (nodes[i].attributes.size, 10, 50 , 15, 70);
+
+    // DISEGNA COSE GRIGIE
+    //disegna nodi se l'array minorIDs include key (=ID personaggio)
+    if (minorIDs.includes(nodes[i].key)) {
+      drawGrayCircle(x, y, size, nodes[i].attributes.type); 
+    }
+  }
+
+
+  // DISEGNA COSE COLORATE - QUELLE NEL CAPITOLO
+  drawEdges(matchingIDs);
 
   // CICLO FOR PER DISEGNARE COSE 
   for (let i = 0; i < nodes.length; i++) {
@@ -253,10 +267,9 @@ function draw() {
     let y = map (nodes[i].attributes.y, -751.83026, 757.02936,  60 + padding2, height-90-padding2);
     let size = map (nodes[i].attributes.size, 10, 50 , 15, 70);
     
-    // disegna cerchi ed esagoni all'inizio
+    // OVERVIEW - disegna cerchi ed esagoni all'inizio
     if (sliderValue === 0) {
   
-    
       drawCircle(x, y, size, nodes[i].attributes.type);  // Poi disegna il cerchio
     
       fill(colorText); 
@@ -265,14 +278,6 @@ function draw() {
       textFont(GentiumBold);
       text(nodes[i].attributes.label, x-50, y, 100);  // Infine, scrivi il testo
     }
-
-    // DISEGNA COSE GRIGIE
-    //disegna nodi se l'array minorIDs include key (=ID personaggio)
-    if (minorIDs.includes(nodes[i].key)) {
-      drawGrayCircle(x, y, size, nodes[i].attributes.type); 
-      
-    }
-
 
     // DISEGNA COSE COLORATE 
     //disegna nodi se l'array matchingIDs include key (=ID personaggio)
@@ -288,7 +293,6 @@ function draw() {
       text(nodes[i].attributes.label, x-50, y, 100); // Scrivi il nome al centro del cerchio
     }    
   } 
-
 
   // sopra TUTTO 
   // disegna CERCHI FISSI per God e Jesus -> personaggi princ

@@ -323,8 +323,8 @@
       "key": "people_527bd5b5d689e2c32ae974c6229ff785",
       "attributes": {
         "label": "John",
-        "x": -6.0962815,
-        "y": 197.32498,
+        "x": -15.0962815,
+        "y": 205.32498,
         "size": 30.64516,
         "type": "persona",
         "attr_type": "\u003c[-Infinity, Infinity, people]\u003e",
