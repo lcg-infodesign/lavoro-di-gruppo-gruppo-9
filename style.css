@@ -388,7 +388,7 @@ font-weight: 100;
 
 
 .contenuto {
-  width: 60%;
+  width: 60vw;
   height: 70%;
   margin-left: 5%;
   margin-top:4%;
@@ -409,7 +409,7 @@ font-weight: 100;
 }
 
 .contatti {
-  width:60%;
+  width:50vw;
   height: 100%;
   line-height: 50%;
 }
@@ -419,12 +419,13 @@ font-weight: 100;
   width: 2px;
   background-color: rgb(217, 208, 184);
   margin-top: 1%;
+  margin-left: 2vw;
 }
 
 .info {
-  width: 70%;
+  width: 70vw;
   height: 40%;
-  padding-left:2.5vw ;
+  padding-left:2vw ;
   line-height: 50%;
   
    
