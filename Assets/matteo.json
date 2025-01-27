@@ -613,8 +613,8 @@
       "key": "people_a3c19bfcb377f94f19ab0eca9e103d02",
       "attributes": {
         "label": "John the Baptist",
-        "x": 39.447716,
-        "y": 549.48395,
+        "x": 43.447716,
+        "y": 620.48395,
         "size": 12.55814,
         "type": "persona",
         "attr_type": "\u003c[-Infinity, Infinity, people]\u003e",
@@ -1328,8 +1328,8 @@
       "key": "event_b6936d4974d4b39d191d18b1ec33d781",
       "attributes": {
         "label": "Third tour of Galilee",
-        "x": 251.66962,
-        "y": 128.88924,
+        "x": 281.66962,
+        "y": 150.88924,
         "size": 15.0,
         "type": "evento",
         "attr_type": "\u003c[-Infinity, Infinity, event]\u003e",
@@ -1393,8 +1393,8 @@
       "key": "event_f1c757653d4e7b7b8b25e6e3a1be5377",
       "attributes": {
         "label": "Commandments and tradition discourse",
-        "x": 64.96937,
-        "y": -98.54761,
+        "x": 45.96937,
+        "y": -190.54761,
         "size": 12.209302,
         "type": "evento",
         "attr_type": "\u003c[-Infinity, Infinity, event]\u003e",
@@ -1744,8 +1744,8 @@
       "key": "event_8be73a7575c9733cfce195dbed9b9d61",
       "attributes": {
         "label": "John baptizes Jesus",
-        "x": 119.725784,
-        "y": 239.86734,
+        "x": 155.725784,
+        "y": 245.86734,
         "size": 10.4651165,
         "type": "evento",
         "attr_type": "\u003c[-Infinity, Infinity, event]\u003e",
@@ -1770,8 +1770,8 @@
       "key": "event_fe07358fe6347d49865da346e5eefe02",
       "attributes": {
         "label": "Beginning of John's ministry",
-        "x": 132.3196,
-        "y": 399.13547,
+        "x": 145.3196,
+        "y": 405.13547,
         "size": 11.27907,
         "type": "evento",
         "attr_type": "\u003c[-Infinity, Infinity, event]\u003e",
@@ -1901,8 +1901,8 @@
       "key": "event_0aaffd55690fdeded882df95181e06b6",
       "attributes": {
         "label": "Sermon on the mount",
-        "x": -17.404707,
-        "y": 365.57294,
+        "x": -2.404707,
+        "y": 405.57294,
         "size": 22.790697,
         "type": "evento",
         "attr_type": "\u003c[-Infinity, Infinity, event]\u003e",
@@ -1914,7 +1914,7 @@
       "key": "event_496915dd3d9499cd80811f085fc0816d",
       "attributes": {
         "label": "Tax coin in a fish's mouth",
-        "x": -392.12332,
+        "x": -432.12332,
         "y": -46.460773,
         "size": 10.348837,
         "type": "evento",
@@ -1953,7 +1953,7 @@
       "key": "event_809e9d2cb56f0978e02c042da3aa8f36",
       "attributes": {
         "label": "Transfiguration",
-        "x": 278.11115,
+        "x": 330.11115,
         "y": 290.20288,
         "size": 11.395349,
         "type": "evento",
