@@ -1,7 +1,7 @@
 Chapter,ID,People/Event
-1,people_0a51bbe3a106e8677a3fe928d66da5f4,aaron_1
-1,people_b4453b717e475ced274b75b973647897,abijah_36
-1,people_f37710aa0d0f87130c8fecfd990e9164,abraham_58
+1,people_0a51bbe3a106e8677a3fe928d66da5f4,Aaron
+1,people_b4453b717e475ced274b75b973647897,Abijah
+1,people_f37710aa0d0f87130c8fecfd990e9164,Abraham
 1,people_bd51343ae1296e5fcfbc1ff629830b3a,david_994
 1,people_670098ef71f00335389b123e7829f7d5,elijah_1131
 1,people_d36b57458c47342095d3aabd80eba16e,elisabeth_1152
@@ -128,7 +128,7 @@ Chapter,ID,People/Event
 3,people_ef1e83525c802969eb165b3b462f608c,semei_2488
 3,people_f02951ae64b776ef8ca2411ad120f484,jesse_903
 3,people_f31944fda00bce801bcb6fc79c51c53f,methuselah_2042
-3,people_f37710aa0d0f87130c8fecfd990e9164,abraham_58
+3,people_f37710aa0d0f87130c8fecfd990e9164,Abraham
 3,people_f77aa558b76801bc8e87faad275678b4,rhesa_2438
 3,timeline_43cc62185419d808a343f0ce0dbd7999,john the baptist imprisoned
 3,timeline_8a1d5a9fef364c1ef25dfdeeb3795252,birth of cainan
@@ -258,7 +258,7 @@ Chapter,ID,People/Event
 13,people_da236410e101d089087d0b92b7c0d9f6,herod_1505
 13,people_db78b6b7bb3cbb577eb291deb4937965,israel_682
 13,people_df38e94bf75563d2ee4e067af0d2101f,pilate_2365
-13,people_f37710aa0d0f87130c8fecfd990e9164,abraham_58
+13,people_f37710aa0d0f87130c8fecfd990e9164,Abraham
 14,people_12f80b516bb106941288062f032b4401,god_1324
 14,people_74fc34c0591dc0c0a09fa2413e4e4e51,jesus_905
 15,people_12f80b516bb106941288062f032b4401,god_1324
@@ -268,7 +268,7 @@ Chapter,ID,People/Event
 16,people_54391b8dee1376fe9bffd83cebd93a08,moses_2108
 16,people_74fc34c0591dc0c0a09fa2413e4e4e51,jesus_905
 16,people_a3c19bfcb377f94f19ab0eca9e103d02,john_1676
-16,people_f37710aa0d0f87130c8fecfd990e9164,abraham_58
+16,people_f37710aa0d0f87130c8fecfd990e9164,Abraham
 17,people_12f80b516bb106941288062f032b4401,god_1324
 17,people_6b8d004e4a8ac1c7433c48fefbb9826a,noah_2210
 17,people_74fc34c0591dc0c0a09fa2413e4e4e51,jesus_905
@@ -280,7 +280,7 @@ Chapter,ID,People/Event
 19,people_12f80b516bb106941288062f032b4401,god_1324
 19,people_6d881684fc4b690f3b07c306a812b5e0,zacchaeus_2961
 19,people_74fc34c0591dc0c0a09fa2413e4e4e51,jesus_905
-19,people_f37710aa0d0f87130c8fecfd990e9164,abraham_58
+19,people_f37710aa0d0f87130c8fecfd990e9164,Abraham
 20,people_12f80b516bb106941288062f032b4401,god_1324
 20,people_54391b8dee1376fe9bffd83cebd93a08,moses_2108
 20,people_74fc34c0591dc0c0a09fa2413e4e4e51,jesus_905
@@ -288,7 +288,7 @@ Chapter,ID,People/Event
 20,people_a3c19bfcb377f94f19ab0eca9e103d02,john_1676
 20,people_bd51343ae1296e5fcfbc1ff629830b3a,david_994
 20,people_db78b6b7bb3cbb577eb291deb4937965,israel_682
-20,people_f37710aa0d0f87130c8fecfd990e9164,abraham_58
+20,people_f37710aa0d0f87130c8fecfd990e9164,Abraham
 21,people_12f80b516bb106941288062f032b4401,god_1324
 21,people_74fc34c0591dc0c0a09fa2413e4e4e51,jesus_905
 22,people_12f80b516bb106941288062f032b4401,god_1324
