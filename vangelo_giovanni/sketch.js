@@ -56,6 +56,8 @@ function preload() {
   FontBEBold = loadFont("../Fonts/BE/BEBold.ttf");
 }
 
+
+
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
@@ -73,6 +75,7 @@ function setup() {
 
 
 }
+
 
 
 function draw() {
@@ -116,10 +119,10 @@ function draw() {
 
 
   if (windowWidth > 1630) {
-    gutter = 10;
+    gutter = 16;
 
   } else {
-    gutter = 5;
+    gutter = 12;
   }
   
   /*fill("gray");
@@ -181,10 +184,10 @@ function draw() {
   }
 
   if (windowWidth > 1630) {
-    textSize(16);
+    textSize(17);
 
   } else {
-    textSize(14);
+    textSize(15);
   }
 
   noStroke();
@@ -287,26 +290,33 @@ function draw() {
   } 
 
 
-  // sopra EDJES 
+  // sopra TUTTO 
   // disegna CERCHI FISSI per God e Jesus -> personaggi princ
-  if (sliderValue >= 0){
-    let xGod = map (-0.34251824, -748.78217, 755.52203, 20+padding, width-20-padding);
-    let yGod = map (-162.03683, -751.83026, 757.02936,  60 + padding2, height-90-padding2);
-    fill(100, 100, 100, 0); //fill trasparente
-    stroke(persone);
-    strokeWeight(4);
-    circle(xGod, yGod, 68)
-  
-    let xJes = map (126.231606,  -748.78217, 755.52203, 20+padding, width-20-padding);
-    let yJes = map (-10.351669, -751.83026, 757.02936,  60 + padding2, height-90-padding2);
-    circle(xJes, yJes, 83)
+  // GOD
+  let xGod = map (-0.34251824, -748.78217, 755.52203, 20+padding, width-20-padding);
+  let yGod = map (-162.03683, -751.83026, 757.02936,  60 + padding2, height-90-padding2);
+  fill(100, 100, 100, 0); //fill trasparente
+  stroke(persone);
+  strokeWeight(4);
+
+  if(sliderValue === 21){
+    stroke(grayShape);
   }
 
+  circle(xGod, yGod, 69)
   
-    
-    
+  //JESUS
+  let xJes = map (126.231606,  -748.78217, 755.52203, 20+padding, width-20-padding);  
+  let yJes = map (-10.351669, -751.83026, 757.02936,  60 + padding2, height-90-padding2);
+  stroke(persone);
 
+  if(sliderValue === 15){
+    stroke(grayShape);
+  }
+
+  circle(xJes, yJes, 81)  
 }
+
 
 
 //disegno TUTTI GLI EDGES all'inizio
@@ -357,6 +367,8 @@ function drawInitialEdges (){
   }
 } 
 
+
+
 // FUNZIONE PER DISEGNARE CERCHI ED ESAGONI GRIGI SOTTO
 function drawGrayCircle (x, y, size, type) {
   for (let j=0; j<nodes.length;j++){
@@ -377,6 +389,8 @@ function drawGrayCircle (x, y, size, type) {
 
   } 
 }
+
+
 
 // FUNZIONE PER DISEGNARE CERCHI 
 function drawCircle (x, y, size, type){
@@ -399,16 +413,17 @@ function drawCircle (x, y, size, type){
 }
 
 
-// FUNZIONE PER FORMA ESAGONI
+
+// FUNZIONE PER DISEGNARE ESAGONI
 function drawHexagon(xPos, yPos, radius) {
   beginShape();
   for (let i = 0; i < 6; i++) {
-    let angle = TWO_PI / 6 * i; // Divide the circle into 6 parts
-    let vx = xPos + cos(angle) * radius; // Calculate x-coordinate of the vertex
-    let vy = yPos + sin(angle) * radius; // Calculate y-coordinate of the vertex
-    vertex(vx, vy); // Add the vertex
+    let angle = TWO_PI / 6 * i - PI / 6; // Ruota di 30 gradi (PI/6)
+    let vx = xPos + cos(angle) * radius; // Calcola la coordinata x del vertice
+    let vy = yPos + sin(angle) * radius; // Calcola la coordinata y del vertice
+    vertex(vx, vy); // Aggiungi il vertice
   }
-  endShape(CLOSE); // Close the shape
+  endShape(CLOSE); // Chiudi la forma
 }
 
 
@@ -472,6 +487,8 @@ function drawEdges (matchingIDs){
   }
 } 
 
+
+
 //disegno EDGES grigi 
 function drawGrayEdges (minorIDs){
 
@@ -525,6 +542,9 @@ function drawGrayEdges (minorIDs){
 
 
 
+
+
+// FUNZIONI DI INTERAZIONE
 //funzione per link rettangolo
 function mousePressed(){
 
@@ -561,17 +581,17 @@ function mousehover(){
   //ridefinisco le variabili 
   let gutter;
   if (windowWidth > 1630) {
-    gutter = 10;
+    gutter = 16;
 
   } else {
-    gutter = 5;
+    gutter = 12;
   }
 
   if (windowWidth > 1630) {
-    textSize(16);
+    textSize(15);
 
   } else {
-    textSize(14);
+    textSize(13);
   }
 
   let width = windowWidth;
@@ -587,6 +607,7 @@ function mousehover(){
     noFill();
     stroke(colorVangeli);
     strokeWeight(2);
+    cursor(ARROW);
   }
   rect(50 + gutter + width/9 + (rspace+gutter)*2, 13, rspace, 34, 20);
 

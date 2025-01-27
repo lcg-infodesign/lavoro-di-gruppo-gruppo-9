@@ -119,17 +119,11 @@ function draw() {
 
 
   if (windowWidth > 1630) {
-    gutter = 10;
+    gutter = 16;
 
   } else {
-    gutter = 5;
+    gutter = 12;
   }
-  
-  /*fill("gray");
-  rect(width - 20 - width/10 - 3*gutter - width/12 - width/8 - width/11, 10, width/11, 40, 20);
-  rect(width - 20 - width/10 - 2*gutter - width/12 - width/8, 10, width/8, 40, 20);
-  rect(width - 20 - width/10 - gutter - width/12, 10, width/12, 40, 20);
-  rect(width - 20 - width/10, 10, width/10, 40, 20);*/
 
   //LEGENDA CONTENUTO
   noStroke();
@@ -180,10 +174,10 @@ function draw() {
   }
 
   if (windowWidth > 1630) {
-    textSize(16);
+    textSize(17);
 
   } else {
-    textSize(14);
+    textSize(15);
   }
 
   noStroke();
@@ -237,9 +231,31 @@ function draw() {
     drawInitialEdges();
   }
 
+
+
   //disegno EDGES - sotto tutto
-  drawEdges(matchingIDs);
   drawGrayEdges (minorIDs);
+  
+  // CICLO PER COSE GRIGIE
+  for (let i = 0; i < nodes.length; i++){
+    // MAP x, y, size 
+    let x = map (nodes[i].attributes.x, -1335.7671, 1328.8036, 20+padding, width-20-padding);
+    let y = map (nodes[i].attributes.y, -1335.1002, 1331.486,  60 + padding2, height-90-padding2);
+    let size = map (nodes[i].attributes.size, 25, 80 , 15, 70);
+
+    // DISEGNA COSE GRIGIE
+    //disegna nodi se l'array minorIDs include key (=ID personaggio)
+    if (minorIDs.includes(nodes[i].key)) {
+      drawGrayCircle(x, y, size, nodes[i].attributes.type); 
+    }
+
+  }
+  
+
+
+
+  // DISEGNA COSE COLORATE - SOPRA
+  drawEdges(matchingIDs);
 
   // CICLO FOR PER DISEGNARE COSE 
   for (let i = 0; i < nodes.length; i++) {
@@ -248,11 +264,11 @@ function draw() {
     let x = map (nodes[i].attributes.x, -1335.7671, 1328.8036, 20+padding, width-20-padding);
     let y = map (nodes[i].attributes.y, -1335.1002, 1331.486,  60 + padding2, height-90-padding2);
     let size = map (nodes[i].attributes.size, 25, 80 , 15, 70);
-    
-    // disegna cerchi ed esagoni all'inizio
+
+    // disegna cerchi ed esagoni all'inizio 
+    // SLIDER VALUE = 0
     if (sliderValue === 0) {
-  
-    
+
       drawCircle(x, y, size, nodes[i].attributes.type);  // Poi disegna il cerchio
     
       fill(colorText); 
@@ -260,13 +276,6 @@ function draw() {
       textAlign(CENTER, CENTER);
       textFont(GentiumBold);
       text(nodes[i].attributes.label, x-50, y, 100);  // Infine, scrivi il testo
-    }
-
-    // DISEGNA COSE GRIGIE
-    //disegna nodi se l'array minorIDs include key (=ID personaggio)
-    if (minorIDs.includes(nodes[i].key)) {
-      drawGrayCircle(x, y, size, nodes[i].attributes.type); 
-      
     }
 
 
@@ -286,7 +295,7 @@ function draw() {
   } 
 
 
-  // sopra EDJES 
+  // sopra TUTTO 
   // disegna CERCHI FISSI per God e Jesus -> personaggi princ
   if (sliderValue >= 0){
     let xGod = map (-93.604515, -1335.7671, 1328.8036, 20+padding, width-20-padding);
@@ -300,12 +309,10 @@ function draw() {
     let yJes = map (-347.98218, -1335.1002, 1331.486,  60 + padding2, height-90-padding2);
     circle(xJes, yJes, 83)
   }
-
-  
-    
-    
-
 }
+
+
+
 
 
 //disegno TUTTI GLI EDGES all'inizio
@@ -321,42 +328,40 @@ function drawInitialEdges (){
     let source = data.edges[k].source; // Ottieni il nome della sorgente
     let target = data.edges[k].target; // Ottieni il nome del bersaglio
 
-      // Trova i nodi corrispondenti per source e target
-      let sourceNode = nodes.find(node => node.key === source);
-      let targetNode = nodes.find(node => node.key === target);
+    // Trova i nodi corrispondenti per source e target
+    let sourceNode = nodes.find(node => node.key === source);
+    let targetNode = nodes.find(node => node.key === target);
 
+    if (sourceNode && targetNode) {
+      //definisco costanti per la x e la y massime e minime dei nodi 
+      const minOriginalX = Math.min(...nodes.map(node => node.attributes.x));
+      const maxOriginalX = Math.max(...nodes.map(node => node.attributes.x));
+      const minOriginalY = Math.min(...nodes.map(node => node.attributes.y));
+      const maxOriginalY = Math.max(...nodes.map(node => node.attributes.y));
+
+
+
+      // Se entrambi i nodi esistono, calcola le coordinate
       if (sourceNode && targetNode) {
 
-        //definisco costanti per la x e la y massime e minime dei nodi 
-        const minOriginalX = Math.min(...nodes.map(node => node.attributes.x));
-        const maxOriginalX = Math.max(...nodes.map(node => node.attributes.x));
-        const minOriginalY = Math.min(...nodes.map(node => node.attributes.y));
-        const maxOriginalY = Math.max(...nodes.map(node => node.attributes.y));
+        //ridimensiono edges con stessi valori massimi e minimi di cerchi ed esagoni 
+        let x = map (sourceNode.attributes.x,minOriginalX, maxOriginalX, 20+padding, width-20-padding);
+        let y = map (sourceNode.attributes.y, minOriginalY,  maxOriginalY, 60 + padding2, height-90-padding2);
+        let x1 = map(targetNode.attributes.x,minOriginalX, maxOriginalX, 20+padding, width-20-padding);
+        let y1 = map(targetNode.attributes.y, minOriginalY, maxOriginalY,  60 + padding2, height-90-padding2);
 
-
-
-        // Se entrambi i nodi esistono, calcola le coordinate
-        if (sourceNode && targetNode) {
-
-          //ridimensiono edges con stessi valori massimi e minimi di cerchi ed esagoni 
-          let x = map (sourceNode.attributes.x,minOriginalX, maxOriginalX, 20+padding, width-20-padding);
-          let y = map (sourceNode.attributes.y, minOriginalY,  maxOriginalY, 60 + padding2, height-90-padding2);
-          let x1 = map(targetNode.attributes.x,minOriginalX, maxOriginalX, 20+padding, width-20-padding);
-          let y1 = map(targetNode.attributes.y, minOriginalY, maxOriginalY,  60 + padding2, height-90-padding2);
-
-          // Disegno linea edges
-          stroke(colorEdges);
-          strokeWeight(0.5);
-          line(x, y, x1, y1);
-        }     
-      
-
+        // Disegno linea edges
+        stroke(colorEdges);
+        strokeWeight(0.5);
+        line(x, y, x1, y1);
+      }     
     }
-
   }
 } 
 
-// FUNZIONE PER DISEGNARE CERCHI ED ESAGONI GRIGI SOTTO
+
+
+// FUNZIONE PER DISEGNARE CERCHI ED ESAGONI GRIGI IN SOTTOFONDO
 function drawGrayCircle (x, y, size, type) {
   for (let j=0; j<nodes.length;j++){
     let type = nodes[j].attributes.type
@@ -376,6 +381,8 @@ function drawGrayCircle (x, y, size, type) {
 
   } 
 }
+
+
 
 // FUNZIONE PER DISEGNARE CERCHI 
 function drawCircle (x, y, size, type){
@@ -398,19 +405,18 @@ function drawCircle (x, y, size, type){
 }
 
 
-// FUNZIONE PER FORMA ESAGONI
+
+// FUNZIONE PER DISEGNARE ESAGONI
 function drawHexagon(xPos, yPos, radius) {
   beginShape();
   for (let i = 0; i < 6; i++) {
-    let angle = TWO_PI / 6 * i; // Divide the circle into 6 parts
-    let vx = xPos + cos(angle) * radius; // Calculate x-coordinate of the vertex
-    let vy = yPos + sin(angle) * radius; // Calculate y-coordinate of the vertex
-    vertex(vx, vy); // Add the vertex
+    let angle = TWO_PI / 6 * i - PI / 6; // Ruota di 30 gradi (PI/6)
+    let vx = xPos + cos(angle) * radius; // Calcola la coordinata x del vertice
+    let vy = yPos + sin(angle) * radius; // Calcola la coordinata y del vertice
+    vertex(vx, vy); // Aggiungi il vertice
   }
-  endShape(CLOSE); // Close the shape
+  endShape(CLOSE); // Chiudi la forma
 }
-
-
 
 
 
@@ -418,7 +424,6 @@ function drawHexagon(xPos, yPos, radius) {
 //associamo le source e i target di edges alle key di nodes
 //in modo da prendere la x e la y delle key di nodes per ogni source o target
 //disegnamo linee con x e y della source e x1 e y1 del target
-
 
 // FUNZIONE PER EDGES
 function drawEdges (matchingIDs){
@@ -470,6 +475,8 @@ function drawEdges (matchingIDs){
 
   }
 } 
+
+
 
 //disegno EDGES grigi 
 function drawGrayEdges (minorIDs){
@@ -524,6 +531,8 @@ function drawGrayEdges (minorIDs){
 
 
 
+
+// FUNZIONI PER INTERAZIONI
 //funzione per link rettangolo
 function mousePressed(){
 
@@ -545,6 +554,8 @@ function mousePressed(){
 
 }
 
+
+
 //funzione che muove SLIDER
 function keyPressed() {
   if (keyCode === LEFT_ARROW) {
@@ -554,23 +565,25 @@ function keyPressed() {
   }
 }
 
+
+
 //funzione per mousehover rettangoli
 function mousehover(){
 
   //ridefinisco le variabili 
   let gutter;
   if (windowWidth > 1630) {
-    gutter = 10;
+    gutter = 16;
 
   } else {
-    gutter = 5;
+    gutter = 12;
   }
 
   if (windowWidth > 1630) {
-    textSize(16);
+    textSize(15);
 
   } else {
-    textSize(14);
+    textSize(13);
   }
 
   let width = windowWidth;
@@ -586,6 +599,7 @@ function mousehover(){
     noFill();
     stroke(colorVangeli);
     strokeWeight(2);
+    cursor(ARROW);
   }
   rect(50 + gutter + width/9 + (rspace+gutter)*2, 13, rspace, 34, 20);
 

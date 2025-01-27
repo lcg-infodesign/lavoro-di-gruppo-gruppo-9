@@ -35,6 +35,7 @@ let colorVangeli = "#876315";
 //bottone
 let button;
 
+//angleMode(DEGREES);
 
 
 
@@ -56,11 +57,15 @@ function preload() {
   FontBEBold = loadFont("../Fonts/BE/BEBold.ttf");
 }
 
+
+
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
   let height = windowHeight;
   let width = windowWidth;
+
+  //angleMode(DEGREES);
 
   //Riempio l'array nodes con i dati di JASON
   nodes = data.nodes;
@@ -71,6 +76,7 @@ function setup() {
   slider.size(width-300);
   slider.style('background-color', '#8080FF');
 }
+
 
 
 function draw() {
@@ -113,29 +119,34 @@ function draw() {
   textAlign(LEFT, LEFT);
 
   if (windowWidth > 1630) {
-    gutter = 10;
+    gutter = 15;
 
   } else {
-    gutter = 8;
+    gutter = 12;
   }
 
   //LEGENDA CONTENUTO
+  // cerchio 1
   noStroke();
   fill (persone);
   circle(width - 20 - 280 - 75 - 80 - 55, 30, 25);
 
+  //cerchio con stroke
   fill("none");
   stroke(persone);
   strokeWeight(3);
   circle(width - 20 - 280 - 75, 30, 25);
 
+  //cerchio 2
   fill(persone);
   circle(width - 20 - 280 - 75, 30, 15);
 
+  //esagono
   noStroke();
   fill (colorEvent);
   drawHexagon (width - 20 - 148 - 24 - 14, 30, 12);  
 
+  //linea
   stroke("black");
   strokeWeight(1.5);
   line(width - 20 - 100, 25, width - 20 - 90, 38);
@@ -144,6 +155,7 @@ function draw() {
   fill(colorLegenda);
   textFont(FontBEItalic);
 
+  // ridimensiono testo legenda
   if (windowWidth > 1630) {
     textSize(16);
 
@@ -159,21 +171,12 @@ function draw() {
   text("Connections", width - 20 - 40, 28);
 
 
-
-  // LINK ALTRE PAGINE VANGELI
-  /*for (let l = 0; l < 3; l++){
-    noFill();
-    stroke(colorVangeli);
-    strokeWeight(2);
-    let rspace = width/9;
-    rect(50 + gutter + width/9 + (rspace+gutter)*l, 13, rspace, 34, 20);
-  }*/
-
+  // testo gospel
   if (windowWidth > 1630) {
-    textSize(16);
+    textSize(17);
 
   } else {
-    textSize(14);
+    textSize(15);
   }
 
   noStroke();
@@ -276,25 +279,28 @@ function draw() {
   } 
 
 
-  // sopra EDJES 
+  // sopra TUTTO 
   // disegna CERCHI FISSI per God e Jesus -> personaggi princ
-  if (sliderValue >= 0){
-    let xGod = map (-121.8628,  -871.5658, 892.73004, 20+padding, width-20-padding);
-    let yGod = map (-79.86216, -885.98145, 893.3294,  60 + padding2, height-90-padding2);
-    fill(100, 100, 100, 0); //fill trasparente
-    stroke(persone);
-    strokeWeight(4);
-    circle(xGod, yGod, 60)
+  // GOD
+  let xGod = map (-121.8628,  -871.5658, 892.73004, 20+padding, width-20-padding);
+  let yGod = map (-79.86216, -885.98145, 893.3294,  60 + padding2, height-90-padding2);
+  fill(100, 100, 100, 0); //fill trasparente
+  stroke(persone);
+  strokeWeight(4);
+  circle(xGod, yGod, 58)
   
-    let xJes = map (24.65719,  -871.5658, 892.73004, 20+padding, width-20-padding);
-    let yJes = map (19.341751, -885.98145, 893.3294,  60 + padding2, height-90-padding2);
-    circle(xJes, yJes, 83)
+  // JESUS
+  let xJes = map (24.65719,  -871.5658, 892.73004, 20+padding, width-20-padding);
+  let yJes = map (19.341751, -885.98145, 893.3294,  60 + padding2, height-90-padding2);
+
+  stroke(persone);
+
+  if(sliderValue === 4){
+    stroke(grayShape);
   }
 
+  circle(xJes, yJes, 82)
   
-    
-    
-
 }
 
 
@@ -388,17 +394,18 @@ function drawCircle (x, y, size, type){
 }
 
 
-// FUNZIONE PER FORMA ESAGONI
+// FUNZIONE PER DISEGNARE ESAGONI
 function drawHexagon(xPos, yPos, radius) {
   beginShape();
   for (let i = 0; i < 6; i++) {
-    let angle = TWO_PI / 6 * i; // Divide the circle into 6 parts
-    let vx = xPos + cos(angle) * radius; // Calculate x-coordinate of the vertex
-    let vy = yPos + sin(angle) * radius; // Calculate y-coordinate of the vertex
-    vertex(vx, vy); // Add the vertex
+    let angle = TWO_PI / 6 * i - PI / 6; // Ruota di 30 gradi (PI/6)
+    let vx = xPos + cos(angle) * radius; // Calcola la coordinata x del vertice
+    let vy = yPos + sin(angle) * radius; // Calcola la coordinata y del vertice
+    vertex(vx, vy); // Aggiungi il vertice
   }
-  endShape(CLOSE); // Close the shape
+  endShape(CLOSE); // Chiudi la forma
 }
+
 
 
 
@@ -408,7 +415,6 @@ function drawHexagon(xPos, yPos, radius) {
 //associamo le source e i target di edges alle key di nodes
 //in modo da prendere la x e la y delle key di nodes per ogni source o target
 //disegnamo linee con x e y della source e x1 e y1 del target
-
 
 // FUNZIONE PER EDGES
 function drawEdges (matchingIDs){
@@ -514,6 +520,8 @@ function drawGrayEdges (minorIDs){
 
 
 
+
+// FUNZIONI INTERAZIONE
 //funzione per link rettangolo
 function mousePressed(){
 
@@ -550,17 +558,17 @@ function mousehover(){
   //ridefinisco le variabili 
   let gutter;
   if (windowWidth > 1630) {
-    gutter = 10;
+    gutter = 16;
 
   } else {
-    gutter = 5;
+    gutter = 12;
   }
 
   if (windowWidth > 1630) {
-    textSize(16);
+    textSize(15);
 
   } else {
-    textSize(14);
+    textSize(13);
   }
 
   let width = windowWidth;
@@ -576,6 +584,7 @@ function mousehover(){
     noFill();
     stroke(colorVangeli);
     strokeWeight(2);
+    cursor(ARROW);
   }
   rect(50 + gutter + width/9 + (rspace+gutter)*2, 13, rspace, 34, 20);
 

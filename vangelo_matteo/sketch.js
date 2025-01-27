@@ -43,6 +43,7 @@ let button;
 
 
 
+
 // caricamento dati
 function preload() {
   //tablePeople = loadTable("Assets/persone.csv", "csv", "header");
@@ -56,6 +57,8 @@ function preload() {
   FontBEBold = loadFont("../Fonts/BE/BEBold.ttf");
 
 }
+
+
 
 function setup() {
 
@@ -116,18 +119,12 @@ function draw() {
 
 
   if (windowWidth > 1630) {
-    gutter = 10;
+    gutter = 16;
 
   } else {
-    gutter = 5;
+    gutter = 12;
   }
   
-  /*fill("gray");
-  rect(width - 20 - width/10 - 3*gutter - width/12 - width/8 - width/11, 10, width/11, 40, 20);
-  rect(width - 20 - width/10 - 2*gutter - width/12 - width/8, 10, width/8, 40, 20);
-  rect(width - 20 - width/10 - gutter - width/12, 10, width/12, 40, 20);
-  rect(width - 20 - width/10, 10, width/10, 40, 20);*/
-
   //LEGENDA CONTENUTO
   noStroke();
   fill (persone);
@@ -182,10 +179,10 @@ function draw() {
   }
 
   if (windowWidth > 1630) {
-    textSize(16);
+    textSize(17);
 
   } else {
-    textSize(14);
+    textSize(15);
   }
 
   noStroke();
@@ -193,9 +190,6 @@ function draw() {
   textAlign(CENTER, CENTER);
   fill(colorVangeli);
   text("GOSPEL OF MATTHEW", 50 + width/18, 28);
-  //text("GOSPEL OF JOHN", 50 + width/9 + gutter + width/18, 28);
-  //text("GOSPEL OF MARK", 50 + 2*width/9 + 2*gutter + width/18, 28);
-  //text("GOSPEL OF LUKE", 50 + 3*width/9 + 3*gutter + width/18, 28);
 
 
   //disegno rettangolo clicclabile
@@ -235,30 +229,39 @@ function draw() {
     }
   }
 
+
+
+
+  // DISEGNA EDGES GRIGI SOTTO SE SLIDER VALUE =0
   //disegno iniziale di tutti gli Edges
   if (sliderValue === 0){
     drawInitialEdges();
   }
 
-  //disegno EDGES - sotto tutto
-  drawEdges(matchingIDs);
+
+
+  // DISEGNA COSE GRIGIE
+  //disegno GRAY EDGES - sotto tutto
   drawGrayEdges (minorIDs);
 
+  for (let i = 0; i < nodes.length; i++){
+    // MAP x, y, size 
+    let x = map (nodes[i].attributes.x, -1025.3762, 1030.8552, 20+padding, width-20-padding);
+    let y = map (nodes[i].attributes.y, -1037.8495, 1033.4319,  60 + padding2, height-90-padding2);
+    let size = map (nodes[i].attributes.size, 10, 40 , 15, 70);
 
-  // sopra EDJES 
-  // disegna CERCHI FISSI per God e Jesus -> personaggi princ
-  if (sliderValue >= 0){
-    let xGod = map (253.04193, -1025.3762, 1030.8552, 20+padding, width-20-padding);
-    let yGod = map (-31.205902, -1037.8495, 1033.4319,  60 + padding2, height-90-padding2);
-    fill(100, 100, 100, 0);
-    stroke(persone);
-    strokeWeight(4);
-    circle(xGod, yGod, 50)
-  
-    let xJes = map (100.14202, -1025.3762, 1030.8552, 20+padding, width-20-padding);
-    let yJes = map (49.93381, -1037.8495, 1033.4319,  60 + padding2, height-90-padding2);
-    circle(xJes, yJes, 83)
+    // DISEGNA COSE GRIGIE
+    //disegna nodi se l'array minorIDs include key (=ID personaggio)
+    if (minorIDs.includes(nodes[i].key)) {
+      drawGrayCircle(x, y, size, nodes[i].attributes.type); 
+    }
   }
+
+
+
+
+  // DISEGNA COSE COLORATE
+  drawEdges(matchingIDs);
 
   // CICLO FOR PER DISEGNARE COSE 
   for (let i = 0; i < nodes.length; i++) {
@@ -269,9 +272,8 @@ function draw() {
     let size = map (nodes[i].attributes.size, 10, 40 , 15, 70);
     
     // disegna TUTTO all'inizio
+    // SLIDER VALUE =0
     if (sliderValue === 0) {
-  
-    
       drawCircle(x, y, size, nodes[i].attributes.type);  // Poi disegna il cerchio
     
       fill(colorText); 
@@ -279,13 +281,6 @@ function draw() {
       textAlign(CENTER, CENTER);
       textFont(GentiumBold);
       text(nodes[i].attributes.label, x-50, y, 100);  // Infine, scrivi il testo
-    }
-
-    // DISEGNA COSE GRIGIE
-    //disegna nodi se l'array minorIDs include key (=ID personaggio)
-    if (minorIDs.includes(nodes[i].key)) {
-      drawGrayCircle(x, y, size, nodes[i].attributes.type); 
-      
     }
 
     // DISEGNA COSE COLORATE 
@@ -300,17 +295,43 @@ function draw() {
       textAlign(CENTER, CENTER);
       textFont(GentiumBold);
       text(nodes[i].attributes.label, x-50, y, 100); // Scrivi il nome al centro del cerchio
-    }    
-  } 
-
-
-  
+    }
+  }
 
   
-    
-    
 
+  // sopra TUTTO 
+  // disegna CERCHI FISSI per God e Jesus -> personaggi princ
+  // GOD
+  let xGod = map (253.04193, -1025.3762, 1030.8552, 20+padding, width-20-padding);
+  let yGod = map (-31.205902, -1037.8495, 1033.4319,  60 + padding2, height-90-padding2);
+  fill(100, 100, 100, 0);
+  stroke(persone);
+
+  if(sliderValue === 17){
+    stroke(grayShape);
+  }
+
+  strokeWeight(4);
+
+  circle(xGod, yGod, 45)
+    
+  // JESUS
+  let xJes = map (100.14202, -1025.3762, 1030.8552, 20+padding, width-20-padding);
+  let yJes = map (49.93381, -1037.8495, 1033.4319,  60 + padding2, height-90-padding2);
+
+  stroke(persone);
+
+  if(sliderValue === 6){
+    stroke(grayShape);
+  }
+
+  circle(xJes, yJes, 81)
+  
 }
+
+
+
 
 
 //disegno TUTTI GLI EDGES all'inizio
@@ -403,16 +424,16 @@ function drawCircle (x, y, size, type){
 }
 
 
-// FUNZIONE PER FORMA ESAGONI
+// FUNZIONE PER DISEGNARE ESAGONI
 function drawHexagon(xPos, yPos, radius) {
   beginShape();
   for (let i = 0; i < 6; i++) {
-    let angle = TWO_PI / 6 * i; // Divide the circle into 6 parts
-    let vx = xPos + cos(angle) * radius; // Calculate x-coordinate of the vertex
-    let vy = yPos + sin(angle) * radius; // Calculate y-coordinate of the vertex
-    vertex(vx, vy); // Add the vertex
+    let angle = TWO_PI / 6 * i - PI / 6; // Ruota di 30 gradi (PI/6)
+    let vx = xPos + cos(angle) * radius; // Calcola la coordinata x del vertice
+    let vy = yPos + sin(angle) * radius; // Calcola la coordinata y del vertice
+    vertex(vx, vy); // Aggiungi il vertice
   }
-  endShape(CLOSE); // Close the shape
+  endShape(CLOSE); // Chiudi la forma
 }
 
 
@@ -423,7 +444,6 @@ function drawHexagon(xPos, yPos, radius) {
 //associamo le source e i target di edges alle key di nodes
 //in modo da prendere la x e la y delle key di nodes per ogni source o target
 //disegnamo linee con x e y della source e x1 e y1 del target
-
 
 // FUNZIONE PER EDGES
 function drawEdges (matchingIDs){
@@ -529,6 +549,9 @@ function drawGrayEdges (minorIDs){
 
 
 
+
+
+// FUNZIONI DI INTERAZIONI
 //funzione per link rettangolo
 function mousePressed(){
 
@@ -565,17 +588,17 @@ function mousehover(){
   //ridefinisco le variabili 
   let gutter;
   if (windowWidth > 1630) {
-    gutter = 10;
+    gutter = 16;
 
   } else {
-    gutter = 5;
+    gutter = 12;
   }
 
   if (windowWidth > 1630) {
-    textSize(16);
+    textSize(15);
 
   } else {
-    textSize(14);
+    textSize(13);
   }
 
   let width = windowWidth;
@@ -591,6 +614,7 @@ function mousehover(){
     noFill();
     stroke(colorVangeli);
     strokeWeight(2);
+    cursor(ARROW);
   }
   rect(50 + gutter + width/9 + (rspace+gutter)*2, 13, rspace, 34, 20);
 
