@@ -144,14 +144,15 @@ a{
 
 
 .image {
-  background-color:#164A7A;
+  background-image: url(img/vetrata.png);
   background-position: center;
-  background-size: cover;
-  background-position-y: center;
+  background-size: 70%;
+  background-position-y: top;
+  transform: translateY(5%);
   width: 45%;
   height: 100%;
   
-  margin-right: 1%;
+  margin-right: 7%;
   margin-top: 0%;
   background-repeat: no-repeat;
 
@@ -173,6 +174,7 @@ a{
   margin: auto;
   margin-top: 15%;
   align-content: end;
+  margin-left: 15%;
   
 
 }
@@ -211,7 +213,7 @@ font-weight: 100;
   /*background-color: white;*/
   width: 50%;
   height: 40%;  
-  margin-left: 45%;
+  margin-left: 55%;
   text-align: right;
   margin-top: 7%;
 
@@ -293,10 +295,10 @@ font-weight: 100;
 
 
 #marco {
-  background-image: url(img/Leone_marco.png);
+  background-image: url(img/leone.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-size:contain;
+  
   filter:brightness(95%);
   
 
@@ -319,7 +321,7 @@ font-weight: 100;
 }
 
 #giovanni {
-  background-image: url(img/Toro_luca.png);
+  background-image: url(img/aquila.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-size:contain;
@@ -341,10 +343,10 @@ font-weight: 100;
 }
 
 #matteo {
-  background-image: url(img/Toro_luca.png);
+  background-image: url(img/angelo.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-size:contain;
+  background-size: 100%;
+  
   filter:brightness(95%);
 }
 
