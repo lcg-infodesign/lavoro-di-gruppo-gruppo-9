@@ -147,14 +147,15 @@ a{
   background-image: url(img/vetrata.png);
   background-position: center;
   background-size: 70%;
-  background-position-y: top;
-  transform: translateY(5%);
+  background-position-y: center;
+  
+  
   width: 45%;
-  height: 90vh;
-  padding: 1%;
+  height: 90%;
+  
   
   margin-right: 7%;
-  margin-top: 0%;
+  
   background-repeat: no-repeat;
 
 }
