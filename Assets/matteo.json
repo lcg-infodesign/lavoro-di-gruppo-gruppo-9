@@ -261,7 +261,7 @@
     {
       "key": "people_a31bb3a09cf7e96fb92bf3ecf97614fe",
       "attributes": {
-        "label": "Daughter of Herodias",
+        "label": "Herodias's daughter",
         "x": -633.0443,
         "y": 810.9753,
         "size": 10.0,
@@ -352,7 +352,7 @@
     {
       "key": "people_63620cdc6db0292f5c56a472a04048bc",
       "attributes": {
-        "label": "Herod son by Malthace",
+        "label": "Herod Malthace's son",
         "x": 627.04297,
         "y": -602.5928,
         "size": 10.930233,
@@ -482,7 +482,7 @@
     {
       "key": "people_d46156824b4c9499d434dea5198b29ec",
       "attributes": {
-        "label": "James son of Zebedee",
+        "label": "James Zebedee's son",
         "x": -300.63635,
         "y": 243.96616,
         "size": 10.232558,
@@ -495,7 +495,7 @@
     {
       "key": "people_828b8622f88b3694cc31c2274110e3d9",
       "attributes": {
-        "label": "James son of Alphaeus",
+        "label": "James Alphaeus's son",
         "x": 34.751076,
         "y": -728.9545,
         "size": 10.0,
@@ -612,7 +612,7 @@
     {
       "key": "people_a3c19bfcb377f94f19ab0eca9e103d02",
       "attributes": {
-        "label": "John the Baptist",
+        "label": "John Baptist",
         "x": 39.447716,
         "y": 549.48395,
         "size": 12.55814,
@@ -651,7 +651,7 @@
     {
       "key": "people_7d80d364071b3f9dcb768ced77741c16",
       "attributes": {
-        "label": "Joseph husband of Mary",
+        "label": "Joseph Mary's husband",
         "x": 777.9971,
         "y": -326.34827,
         "size": 10.697675,
@@ -690,7 +690,7 @@
     {
       "key": "people_5001f21d1ab4ccc630f917f23d1a115b",
       "attributes": {
-        "label": "Josiah ancestor of Jesus",
+        "label": "Josiah Jesus's ancestor",
         "x": 886.29193,
         "y": 486.21844,
         "size": 10.116279,
@@ -781,7 +781,7 @@
     {
       "key": "people_180e55a375351699d60182aeb74308f9",
       "attributes": {
-        "label": "Mary mother of Jesus",
+        "label": "Mary Jesus's mother",
         "x": 371.1074,
         "y": -763.1316,
         "size": 10.4651165,
@@ -794,7 +794,7 @@
     {
       "key": "people_1a5d2e2edcfd900819e6f554077feace",
       "attributes": {
-        "label": "Mary magdalene",
+        "label": "Mary Magdalene",
         "x": -201.7619,
         "y": 834.92444,
         "size": 10.232558,
@@ -859,7 +859,7 @@
     {
       "key": "people_3b3c5f175c377700e16ccd023e721849",
       "attributes": {
-        "label": "Mother of the wife of Simon",
+        "label": "Mother of Simon's wife",
         "x": 696.1627,
         "y": 562.4714,
         "size": 10.0,
@@ -872,7 +872,7 @@
     {
       "key": "people_6ec68534b4e1c4810335a87803ed2625",
       "attributes": {
-        "label": "Mother of Zebedees children",
+        "label": "Zebedees's wife",
         "x": 382.52682,
         "y": -972.40356,
         "size": 10.116279,
@@ -976,7 +976,7 @@
     {
       "key": "people_5d313e05dbb4d49400c73d786e9ac621",
       "attributes": {
-        "label": "Philip brother of Herod",
+        "label": "Philip Herod's brother",
         "x": -569.96204,
         "y": 452.2215,
         "size": 10.0,
@@ -1236,7 +1236,7 @@
     {
       "key": "people_16c785add09c2758b120151627f38ee1",
       "attributes": {
-        "label": "Wife of Simon",
+        "label": "Simon's wife",
         "x": 560.55383,
         "y": 661.17676,
         "size": 10.0,
@@ -1340,7 +1340,7 @@
     {
       "key": "event_8dbd95cb8d4e66aa586abf13aa892251",
       "attributes": {
-        "label": "An angel speaks to Joseph in a dream",
+        "label": "An angel speaks to Joseph",
         "x": 209.54097,
         "y": -414.24075,
         "size": 10.697675,
@@ -1392,7 +1392,7 @@
     {
       "key": "event_f1c757653d4e7b7b8b25e6e3a1be5377",
       "attributes": {
-        "label": "Commandments and tradition discourse",
+        "label": "Commandments discourse",
         "x": 64.96937,
         "y": -98.54761,
         "size": 12.209302,
@@ -1782,7 +1782,7 @@
     {
       "key": "event_43cc62185419d808a343f0ce0dbd7999",
       "attributes": {
-        "label": "John the baptist imprisoned",
+        "label": "John Baptist imprisoned",
         "x": -273.14554,
         "y": 537.8221,
         "size": 10.4651165,
@@ -1926,7 +1926,7 @@
     {
       "key": "event_edb40125603b530dcc0769f3313348ed",
       "attributes": {
-        "label": "Teachings on humility and temptation",
+        "label": "Teachings on humility",
         "x": -363.18292,
         "y": 100.23134,
         "size": 13.953488,
@@ -1991,7 +1991,7 @@
     {
       "key": "event_7c400819e60c7b521624bb0a83001c1e",
       "attributes": {
-        "label": "Woe to chorazin and bethsaida",
+        "label": "Chorazin and Bethsaida",
         "x": -222.78445,
         "y": 381.97348,
         "size": 11.16279,
