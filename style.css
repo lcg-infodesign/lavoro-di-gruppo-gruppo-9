@@ -147,10 +147,11 @@ a{
   background-image: url(img/vetrata.png);
   background-position: center;
   background-size: contain;
-  background-position-y: center;
+  
   width: 45%;
   height: 90%;
   margin-right: 7%;
+  margin-top: 2%;
   background-repeat: no-repeat;
 
 }
