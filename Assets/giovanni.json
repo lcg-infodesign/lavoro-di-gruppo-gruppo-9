@@ -322,7 +322,7 @@
     {
       "key": "people_1cbe7a672a8f75352eb31a9ba98f6d55",
       "attributes": {
-        "label": "Mary mother of Jesus",
+        "label": "Mary Jesus's mother",
         "x": 397.6441,
         "y": -637.42993,
         "size": 10.0,
@@ -336,7 +336,7 @@
     {
       "key": "people_41bc7dbb7496f7011558d45bdedb1571",
       "attributes": {
-        "label": "Mary mother of John Mark",
+        "label": "Mary John Mark's mother",
         "x": 196.13469,
         "y": -270.14468,
         "size": 11.333333,
