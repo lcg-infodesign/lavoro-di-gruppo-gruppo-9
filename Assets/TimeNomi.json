@@ -938,7 +938,7 @@
       {
         "key": "people_7d80d364071b3f9dcb768ced77741c16",
         "attributes": {
-          "label": "Joseph father of Jesus",
+          "label": "Joseph Jesus's father",
           "x": -657.1761,
           "y": -3.8295276,
           "size": 26.35468,
@@ -966,7 +966,7 @@
       {
         "key": "people_9e30389651b487e5c8a2a2b54cdac1a5",
         "attributes": {
-          "label": "Joseph father of Janna",
+          "label": "Joseph Janna's father",
           "x": 933.76385,
           "y": -940.5714,
           "size": 25.0,
@@ -980,7 +980,7 @@
       {
         "key": "people_c71cfa00aa45cf28f442f5f67c4c93de",
         "attributes": {
-          "label": "Joseph father of Semei",
+          "label": "Joseph Semei's father",
           "x": -732.0343,
           "y": 906.81116,
           "size": 25.0,
@@ -994,7 +994,7 @@
       {
         "key": "people_68d9348a1c25ed93e5eb0c73dfd4718c",
         "attributes": {
-          "label": "Joseph father of Juda",
+          "label": "Joseph Juda's father",
           "x": -995.0967,
           "y": 616.2207,
           "size": 25.0,
@@ -1022,7 +1022,7 @@
       {
         "key": "people_37b760e2e124de8fe2ab91ab12c1954e",
         "attributes": {
-          "label": "Juda father of Joseph",
+          "label": "Juda Joseph's father",
           "x": 1292.0757,
           "y": -325.33286,
           "size": 25.0,
@@ -1036,7 +1036,7 @@
       {
         "key": "people_b8a40e42d836f5b5682f48c222902e38",
         "attributes": {
-          "label": "Juda father of Simeon",
+          "label": "Juda Simeon's father",
           "x": -33.0603,
           "y": 1001.98096,
           "size": 25.0,
@@ -1106,7 +1106,7 @@
       {
         "key": "people_8e76788fe30fc9cdb4503c1f315aea69",
         "attributes": {
-          "label": "Levi father of Matthat",
+          "label": "Levi Matthat's father",
           "x": 450.8557,
           "y": -1262.2461,
           "size": 25.0,
@@ -1120,7 +1120,7 @@
       {
         "key": "people_2cf86cbd6815e7cc469c18811ae54fa8",
         "attributes": {
-          "label": "Levi father of Matthat",
+          "label": "Levi Matthat's father",
           "x": 921.6446,
           "y": 966.75946,
           "size": 25.0,
@@ -1204,7 +1204,7 @@
       {
         "key": "people_180e55a375351699d60182aeb74308f9",
         "attributes": {
-          "label": "Mary mother of Jesus",
+          "label": "Mary Jesus's mother",
           "x": -254.20277,
           "y": 91.70992,
           "size": 27.980295,
@@ -1218,7 +1218,7 @@
       {
         "key": "people_acd0247234254172a6d0c2b7c2ff969a",
         "attributes": {
-          "label": "Mary sister of Matha",
+          "label": "Mary Martha's sister",
           "x": 310.60968,
           "y": 907.266,
           "size": 25.270935,
@@ -1232,7 +1232,7 @@
       {
         "key": "people_1a5d2e2edcfd900819e6f554077feace",
         "attributes": {
-          "label": "Mary mother of James",
+          "label": "Mary James's mother",
           "x": -216.42297,
           "y": 966.15015,
           "size": 25.0,
@@ -1274,7 +1274,7 @@
       {
         "key": "people_a4008742690c79c0a16a6d67e06812b4",
         "attributes": {
-          "label": "Mattathias son of Amos",
+          "label": "Mattathias Amos's son",
           "x": 1086.2305,
           "y": -397.27423,
           "size": 25.0,
@@ -1288,7 +1288,7 @@
       {
         "key": "people_1c66c2c9b3559f1f73c3ad14dc66d2ff",
         "attributes": {
-          "label": "Mattathias son of Semei",
+          "label": "Mattathias Semei's son",
           "x": -400.9679,
           "y": 922.21594,
           "size": 25.0,
@@ -1302,7 +1302,7 @@
       {
         "key": "people_b0223e4d9fd34f5ae781786944f3e32e",
         "attributes": {
-          "label": "Matthat son of Levi",
+          "label": "Matthat Levi's son",
           "x": -268.79303,
           "y": 1303.9546,
           "size": 25.0,
@@ -1316,7 +1316,7 @@
       {
         "key": "people_7ff5c8c5d34ad4eab730d3717c0d27eb",
         "attributes": {
-          "label": "Matthat son of Jorim",
+          "label": "Matthat Jorim's son",
           "x": 778.8104,
           "y": 1094.6362,
           "size": 25.0,
@@ -1344,7 +1344,7 @@
       {
         "key": "people_76689b5632fb3f0a3779fae80b45317b",
         "attributes": {
-          "label": "Melchi son of Janna",
+          "label": "Melchi Janna's son",
           "x": 310.9925,
           "y": 1300.0973,
           "size": 25.0,
@@ -1358,7 +1358,7 @@
       {
         "key": "people_35ba3e62cb388ad5178273e8d0ae80c0",
         "attributes": {
-          "label": "Melchi son of Addi",
+          "label": "Melchi Addi's son",
           "x": 424.23218,
           "y": 778.15344,
           "size": 25.0,
@@ -1638,7 +1638,7 @@
       {
         "key": "people_5d313e05dbb4d49400c73d786e9ac621",
         "attributes": {
-          "label": "Philip husband of Herodias",
+          "label": "Philip Herodias's husband",
           "x": 1011.7367,
           "y": 301.46298,
           "size": 25.0,
@@ -1652,7 +1652,7 @@
       {
         "key": "people_b88b78694c41b29937c8adfd0b865632",
         "attributes": {
-          "label": "Philip brother of Herod",
+          "label": "Philip Herod's brother",
           "x": 874.4706,
           "y": 440.78995,
           "size": 25.0,
@@ -1848,7 +1848,7 @@
       {
         "key": "people_2a6f6a44a02b5281b1865084ca836fd9",
         "attributes": {
-          "label": "Simeon son of Juda",
+          "label": "Simeon Juda's son",
           "x": -1061.625,
           "y": 438.69775,
           "size": 25.0,
@@ -1988,7 +1988,7 @@
       {
         "key": "people_16c785add09c2758b120151627f38ee1",
         "attributes": {
-          "label": "Wife of Simon",
+          "label": "Simon's wife",
           "x": -702.77454,
           "y": -906.6669,
           "size": 25.0,
@@ -2030,7 +2030,7 @@
       {
         "key": "people_05ffe84a3f84b6f7763fd9b21402fe7b",
         "attributes": {
-          "label": "Zacharias son of Barachia",
+          "label": "Zacharias Barachia's son",
           "x": -555.5257,
           "y": 1029.8767,
           "size": 25.0,
@@ -2198,7 +2198,7 @@
       {
         "key": "timeline_f09acf98fdac09db5e6904838d1f2993",
         "attributes": {
-          "label": "Childhood of Jesus",
+          "label": "Jesus's childhood",
           "x": -311.7469,
           "y": 567.7274,
           "size": 25.0,
@@ -2478,7 +2478,7 @@
       {
         "key": "timeline_2f95b79a44a32863c553e197d0ff6124",
         "attributes": {
-          "label": "1st tour of Galilee",
+          "label": "First tour of Galilee",
           "x": -186.77658,
           "y": 438.65277,
           "size": 25.541872,
@@ -2492,7 +2492,7 @@
       {
         "key": "timeline_965574d46756b3d9442c1a3550db5049",
         "attributes": {
-          "label": "2nd tour of Galilee",
+          "label": "Second tour of Galilee",
           "x": -494.76328,
           "y": 536.6786,
           "size": 25.541872,
