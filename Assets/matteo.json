@@ -1353,7 +1353,7 @@
     {
       "key": "event_af0d6cc9d87809e16b176e3b6943e8dc",
       "attributes": {
-        "label": "Apostles chosen, third tour of Galilee",
+        "label": "Apostles chosen",
         "x": -74.37289,
         "y": -159.04698,
         "size": 10.232558,
@@ -1366,7 +1366,7 @@
     {
       "key": "event_fe57cd76745c5780ca62f2e8c846b4c2",
       "attributes": {
-        "label": "Blind and dumb demoniac and following discourse",
+        "label": "The demoniac's discourse",
         "x": -201.58035,
         "y": 97.07975,
         "size": 13.255814,
@@ -1926,7 +1926,7 @@
     {
       "key": "event_edb40125603b530dcc0769f3313348ed",
       "attributes": {
-        "label": "Teachings on humility/temptation/reconciliation",
+        "label": "Teachings on humility and temptation",
         "x": -363.18292,
         "y": 100.23134,
         "size": 13.953488,
@@ -1952,7 +1952,7 @@
     {
       "key": "event_809e9d2cb56f0978e02c042da3aa8f36",
       "attributes": {
-        "label": "The transfiguation",
+        "label": "Transfiguration",
         "x": 278.11115,
         "y": 290.20288,
         "size": 11.395349,
