@@ -406,7 +406,7 @@
     {
       "key": "people_b8e7be5dfa2ce0714d21dcfc7d72382c",
       "attributes": {
-        "label": "Mary mother of Jesus",
+        "label": "Mary Jesus's mother",
         "x": -482.93167,
         "y": -179.93697,
         "size": 11.290322,
@@ -434,7 +434,7 @@
     {
       "key": "people_49a9174b0db12bb87290d1c43795b6c4",
       "attributes": {
-        "label": "Mary mother of Joses",
+        "label": "Mary Joses's mother",
         "x": 744.1305,
         "y": -490.18915,
         "size": 10.0,
@@ -449,7 +449,7 @@
     {
       "key": "people_b11b7c10d594825ffd23426c16ce6322",
       "attributes": {
-        "label": "Mary mother of John Mark",
+        "label": "Mary John Mark's mother",
         "x": 613.09863,
         "y": -644.8227,
         "size": 10.0,
@@ -631,7 +631,7 @@
     {
       "key": "people_e6da0d255c7cde0d55c5423453c06241",
       "attributes": {
-        "label": "Wife of Simon",
+        "label": "Simon's wife",
         "x": -389.6089,
         "y": 804.96484,
         "size": 10.0,
@@ -729,7 +729,7 @@
     {
       "key": "event_f1c757653d4e7b7b8b25e6e3a1be5377",
       "attributes": {
-        "label": "Commandments and tradition discourse",
+        "label": "Commandments discourse",
         "x": 122.193794,
         "y": 345.60925,
         "size": 12.580645,
@@ -995,7 +995,7 @@
     {
       "key": "event_acb4d47e8f28632c76f5369373f5f69d",
       "attributes": {
-        "label": "Jesus calls Matthew",
+        "label": "Matthew's called",
         "x": -263.6847,
         "y": -619.04926,
         "size": 12.580645,
@@ -1093,7 +1093,7 @@
     {
       "key": "event_fe07358fe6347d49865da346e5eefe02",
       "attributes": {
-        "label": "John the Baptist begins ministry",
+        "label": "Beginning of John's ministry",
         "x": 468.0697,
         "y": 259.08652,
         "size": 13.870968,
@@ -1149,7 +1149,7 @@
     {
       "key": "event_0f77167740ba5d66760f65c237174878",
       "attributes": {
-        "label": "Healing Peter\u0027s mother",
+        "label": "Healing Peter's mother",
         "x": -66.291466,
         "y": 380.0768,
         "size": 17.741936,
@@ -1191,7 +1191,7 @@
     {
       "key": "event_edb40125603b530dcc0769f3313348ed",
       "attributes": {
-        "label": "Teachings on humility and temptation",
+        "label": "Teachings on humility",
         "x": -405.4965,
         "y": -366.07397,
         "size": 12.580645,
