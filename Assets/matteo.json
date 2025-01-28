@@ -1509,7 +1509,7 @@
     {
       "key": "event_469d4fc4d5c305481fd4b14a72da264b",
       "attributes": {
-        "label": "Foretelling the death and resurrection",
+        "label": "Foretelling the resurrection",
         "x": 406.78726,
         "y": -129.65648,
         "size": 10.813953,
@@ -1548,7 +1548,7 @@
     {
       "key": "event_facc7c19960225bb394a7517140da30e",
       "attributes": {
-        "label": "Healing a crowd near sea of Galilee",
+        "label": "Healing a crowd",
         "x": 707.55334,
         "y": 39.645508,
         "size": 10.232558,
@@ -1587,7 +1587,7 @@
     {
       "key": "event_88121cbda113d22a64d7d67087710bd2",
       "attributes": {
-        "label": "Healing centurion\u0027s servant",
+        "label": "Healing centurion's servant",
         "x": -460.06815,
         "y": 268.77707,
         "size": 10.930233,
@@ -1639,7 +1639,7 @@
     {
       "key": "event_fa064bb00915c7f5ea2305c237968411",
       "attributes": {
-        "label": "Healing the man with palsy",
+        "label": "Healing the paralytic man",
         "x": 36.103012,
         "y": -445.63623,
         "size": 10.813953,
@@ -1665,7 +1665,7 @@
     {
       "key": "event_acb4d47e8f28632c76f5369373f5f69d",
       "attributes": {
-        "label": "Jesus calls Matthew",
+        "label": "Matthew's called",
         "x": 536.8445,
         "y": -471.99033,
         "size": 10.4651165,
@@ -1678,7 +1678,7 @@
     {
       "key": "event_ea4de07a6f4431a1abf09048a5ad668c",
       "attributes": {
-        "label": "Jesus in capernaum",
+        "label": "Jesus in Capernaum",
         "x": 146.76793,
         "y": 721.8298,
         "size": 10.4651165,
@@ -1691,7 +1691,7 @@
     {
       "key": "event_790f5a904a89d96c69f9fdb896a2a21f",
       "attributes": {
-        "label": "Jesus leaves Judea toward Galilee, Jesus visits Galilee",
+        "label": "Jesus leaves Judea",
         "x": -81.95697,
         "y": 8.941192,
         "size": 10.0,
@@ -1717,7 +1717,7 @@
     {
       "key": "event_2f95b79a44a32863c553e197d0ff6124",
       "attributes": {
-        "label": "Jesus\u0027 1st tour of Galilee",
+        "label": "First tour of Galilee",
         "x": -157.62799,
         "y": 663.06885,
         "size": 10.232558,
@@ -1730,7 +1730,7 @@
     {
       "key": "event_951ee4f78bac6e3c0509b8e229c014fb",
       "attributes": {
-        "label": "Jesus\u0027 message on John the baptist",
+        "label": "Message on John Baptist",
         "x": 554.72217,
         "y": 474.5892,
         "size": 11.976744,
@@ -1769,7 +1769,7 @@
     {
       "key": "event_fe07358fe6347d49865da346e5eefe02",
       "attributes": {
-        "label": "John the baptist begins ministry",
+        "label": "Beginning of John's ministry",
         "x": 132.3196,
         "y": 399.13547,
         "size": 11.27907,
@@ -1795,7 +1795,7 @@
     {
       "key": "event_b52173f210290cf0792ecafa7005ee02",
       "attributes": {
-        "label": "Joseph and Mary flee to egypt",
+        "label": "Joseph and Mary flee to Egypt",
         "x": 732.6192,
         "y": -126.25369,
         "size": 10.232558,
@@ -1808,7 +1808,7 @@
     {
       "key": "event_047ad5b894c8f9435786dd1556504129",
       "attributes": {
-        "label": "Joseph and Mary return from egypt",
+        "label": "Joseph and Mary return from Egypt",
         "x": 869.18005,
         "y": -204.4716,
         "size": 10.232558,
@@ -1821,7 +1821,7 @@
     {
       "key": "event_9fda9d59337c7ed31805a16228b23bd7",
       "attributes": {
-        "label": "Joseph and Mary return from egypt, Joseph and Mary return to Nazareth",
+        "label": "Joseph and Mary return to Nazareth",
         "x": 521.08685,
         "y": -717.79865,
         "size": 10.0,
@@ -1831,23 +1831,11 @@
         "attr_1_1": "\u003c[1970-01-01T01:00:00.002+01:00, 1970-01-01T01:00:00.003+01:00, n/a]\u003e"
       }
     },
-    {
-      "key": "event_6935516f09702fa1ad2df218094baa49",
-      "attributes": {
-        "label": "Joseph and Mary return to Nazareth",
-        "x": -10.615052,
-        "y": 1033.4319,
-        "size": 10.0,
-        "type": "evento",
-        "attr_type": "\u003c[-Infinity, Infinity, event]\u003e",
-        "global_occurrences": "\u003c[-Infinity, Infinity, 1]\u003e",
-        "attr_1_1": "\u003c[1970-01-01T01:00:00.002+01:00, 1970-01-01T01:00:00.003+01:00, n/a]\u003e"
-      }
-    },
+    
     {
       "key": "event_ae4f4dbb5930d402cd354f4eed4b2a64",
       "attributes": {
-        "label": "Parable of the winseskins",
+        "label": "Parable of the wineskins",
         "x": -985.8235,
         "y": -317.99597,
         "size": 10.116279,
@@ -1860,7 +1848,7 @@
     {
       "key": "event_d810e7a6ae9e0e787b5c3cbe20f071b1",
       "attributes": {
-        "label": "Peter\u0027s confession \"upon this rock\"",
+        "label": "Peter's confession",
         "x": 431.11685,
         "y": 356.44702,
         "size": 10.813953,
@@ -1873,7 +1861,7 @@
     {
       "key": "event_0f77167740ba5d66760f65c237174878",
       "attributes": {
-        "label": "Peter\u0027s mother-in-law and others healed",
+        "label": "Healing Peter's mother",
         "x": 422.60236,
         "y": 556.0142,
         "size": 10.348837,
@@ -1899,7 +1887,7 @@
     {
       "key": "event_9bbcb6d922627bb5ea92a233fc2ecbae",
       "attributes": {
-        "label": "Second foretelling of death and resurrection",
+        "label": "Second foretelling the resurrection",
         "x": -525.63556,
         "y": -201.49559,
         "size": 10.116279,
@@ -1925,7 +1913,7 @@
     {
       "key": "event_496915dd3d9499cd80811f085fc0816d",
       "attributes": {
-        "label": "Tax coin in a fish\u0027s mouth",
+        "label": "Tax coin in a fish's mouth",
         "x": -392.12332,
         "y": -46.460773,
         "size": 10.348837,
