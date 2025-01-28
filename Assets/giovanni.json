@@ -616,7 +616,7 @@
     {
       "key": "event_5953a67c0764ee1535d03745ee08e9c5",
       "attributes": {
-        "label": "Jesus leaves Judea toward Galilee",
+        "label": "Jesus leaves Judea",
         "x": 527.5527,
         "y": -155.46648,
         "size": 11.333333,
@@ -658,7 +658,7 @@
     {
       "key": "event_fe07358fe6347d49865da346e5eefe02",
       "attributes": {
-        "label": "John the baptist begins ministry",
+        "label": "Beginning of John's ministry",
         "x": -532.1409,
         "y": -77.3624,
         "size": 12.666667,
@@ -672,7 +672,7 @@
     {
       "key": "event_eaddf922950a97e0bef3015930864ecd",
       "attributes": {
-        "label": "John the baptist witnesses",
+        "label": "John Baptist witnesses",
         "x": -172.64764,
         "y": -292.95563,
         "size": 14.0,
@@ -686,7 +686,7 @@
     {
       "key": "event_311bca681cb301cb3d184d083286ea54",
       "attributes": {
-        "label": "John\u0027s witness",
+        "label": "John's witness",
         "x": 211.7342,
         "y": 214.2631,
         "size": 18.0,
