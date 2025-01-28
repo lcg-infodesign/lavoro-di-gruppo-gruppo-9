@@ -155,6 +155,7 @@ a{
 
   .abouttheproject {
     height: 100vh;
+    width: 100vw;
     padding-top: 70px;
     background-color:rgb(239, 238, 229);
 }
@@ -332,7 +333,7 @@ a{
 
 .footer{
     background-color:rgb(239, 238, 229) ;
-    height: 30vh;
+    height:300px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -341,14 +342,13 @@ a{
   
   
   .contenuto {
-    width: 60%;
+    width: 80%;
     height: 70%;
     margin-left: 5%;
     margin-top:4%;
     color: #8763158d;
     display: flex;
     flex-direction: row;
-  
   }
   
   .titoletto {
@@ -362,23 +362,24 @@ a{
   }
   
   .contatti {
-    width:60%;
+    width:80%;
     height: 100%;
-    line-height: 50%;
+    line-height: 100%;
   }
   
   .line{
-    height: 80%;
+    height: 90%;
     width: 2px;
     background-color: rgb(217, 208, 184);
     margin-top: 1%;
+    
   }
   
   .info {
-    width: 70%;
+    width: 70vw;
     height: 40%;
-    padding-left:2.5vw ;
-    line-height: 50%;
+    padding-left:2vw ;
+    line-height: 100%;
     
      
   
@@ -393,7 +394,7 @@ a{
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: 5.5%;
-    margin-left: 20%;
+    margin-left: 0%;
     
   
   }
