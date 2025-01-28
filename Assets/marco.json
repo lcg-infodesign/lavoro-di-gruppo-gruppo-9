@@ -491,7 +491,7 @@
     {
       "key": "people_c31f76c7f477fd879a39cd6c46d175b0",
       "attributes": {
-        "label": "Mother of the wife of Simon",
+        "label": "Mother of Simon's wife",
         "x": 719.21027,
         "y": 30.832403,
         "size": 10.0,
@@ -659,7 +659,7 @@
     {
       "key": "event_439df57432318c6d7584df8a10e28dab",
       "attributes": {
-        "label": "2nd rejection at nazareth",
+        "label": "Second rejection at Nazareth",
         "x": -390.1253,
         "y": 340.5622,
         "size": 16.451612,
@@ -673,7 +673,7 @@
     {
       "key": "event_b6936d4974d4b39d191d18b1ec33d781",
       "attributes": {
-        "label": "3rd tour of galilee",
+        "label": "Third tour of Galilee",
         "x": 406.2764,
         "y": -579.23615,
         "size": 10.0,
@@ -687,7 +687,7 @@
     {
       "key": "event_bb5e9a3019dff55a5a75db207e371fd8",
       "attributes": {
-        "label": "apostles chosen",
+        "label": "Apostles chosen",
         "x": -319.04654,
         "y": -53.744186,
         "size": 24.193548,
@@ -701,7 +701,7 @@
     {
       "key": "event_fe57cd76745c5780ca62f2e8c846b4c2",
       "attributes": {
-        "label": "blind and dumb demoniac and following discourse",
+        "label": "The demoniac's discourse",
         "x": -291.3345,
         "y": -236.98114,
         "size": 12.580645,
@@ -715,7 +715,7 @@
     {
       "key": "event_ac7440db5ee170b1aa437ade4c3e8ffe",
       "attributes": {
-        "label": "capernaum miracles",
+        "label": "Capernaum miracles",
         "x": 387.53156,
         "y": -60.92344,
         "size": 15.16129,
@@ -729,7 +729,7 @@
     {
       "key": "event_f1c757653d4e7b7b8b25e6e3a1be5377",
       "attributes": {
-        "label": "commandments and tradition discourse",
+        "label": "Commandments and tradition discourse",
         "x": 122.193794,
         "y": 345.60925,
         "size": 12.580645,
@@ -743,7 +743,7 @@
     {
       "key": "event_a7d9a01f97c8b9753c835983abf4fd76",
       "attributes": {
-        "label": "corn on the sabbath",
+        "label": "Corn on the Sabbath",
         "x": -532.7833,
         "y": 203.9406,
         "size": 13.870968,
@@ -757,7 +757,7 @@
     {
       "key": "event_d745a0ae477a8c715404a9704e5ee1ea",
       "attributes": {
-        "label": "discourse with pharisees and saducees",
+        "label": "Discourse with Pharisees and Saducees",
         "x": 227.63037,
         "y": 507.69598,
         "size": 11.290322,
@@ -771,7 +771,7 @@
     {
       "key": "event_77cf2299b8b0feb4b093c29d1c5d029a",
       "attributes": {
-        "label": "fasting question",
+        "label": "Fasting question",
         "x": -238.91733,
         "y": 464.14114,
         "size": 11.290322,
@@ -785,7 +785,7 @@
     {
       "key": "event_9764cdef43ee55a298c276741642a06c",
       "attributes": {
-        "label": "feast of tabernacles",
+        "label": "Feast of tabernacles",
         "x": 320.98087,
         "y": 815.62164,
         "size": 10.0,
@@ -799,7 +799,7 @@
     {
       "key": "event_aa34077aa797b68943e420f8b263714d",
       "attributes": {
-        "label": "feeding of five thousand",
+        "label": "Feeding of five thousand",
         "x": 747.7296,
         "y": 482.64484,
         "size": 10.0,
@@ -813,7 +813,7 @@
     {
       "key": "event_7d54f3540fb59773a796cd869beebd88",
       "attributes": {
-        "label": "feeding of four thousand",
+        "label": "Feeding of four thousand",
         "x": 611.2788,
         "y": 600.1353,
         "size": 10.0,
@@ -827,7 +827,7 @@
     {
       "key": "event_37dcb7300f24b81bb96deade2bd55ee1",
       "attributes": {
-        "label": "fishers of men",
+        "label": "Fishers of men",
         "x": -214.23463,
         "y": 269.1731,
         "size": 16.451612,
@@ -841,7 +841,7 @@
     {
       "key": "event_469d4fc4d5c305481fd4b14a72da264b",
       "attributes": {
-        "label": "foretelling the death and resurrection",
+        "label": "Foretelling the resurrection",
         "x": -63.60581,
         "y": -543.46655,
         "size": 13.870968,
@@ -855,7 +855,7 @@
     {
       "key": "event_808b012e320c52cbcc416205ba11fea0",
       "attributes": {
-        "label": "gadarene demoniacs",
+        "label": "Gadarene demoniac",
         "x": 549.60297,
         "y": -133.42561,
         "size": 11.290322,
@@ -869,7 +869,7 @@
     {
       "key": "event_e0124391878f12ea9e6d95a0957f4b7d",
       "attributes": {
-        "label": "healing a blind man at bethsaida",
+        "label": "Healing a blind man",
         "x": -667.7556,
         "y": -114.91294,
         "size": 10.0,
@@ -883,7 +883,7 @@
     {
       "key": "event_5fb05991727b265893f8c517e59c8675",
       "attributes": {
-        "label": "healing a boy with a demon",
+        "label": "Healing a boy with a demon",
         "x": 69.32795,
         "y": -683.1987,
         "size": 10.0,
@@ -897,7 +897,7 @@
     {
       "key": "event_facc7c19960225bb394a7517140da30e",
       "attributes": {
-        "label": "healing a crowd near sea of galilee",
+        "label": "Healing a crowd in Galilee",
         "x": 178.63354,
         "y": 684.42426,
         "size": 10.0,
@@ -911,7 +911,7 @@
     {
       "key": "event_6cce9cd1cc32a6c13e5414ee5a682397",
       "attributes": {
-        "label": "healing a withered hand",
+        "label": "Healing a withered hand",
         "x": 453.8636,
         "y": -757.6211,
         "size": 10.0,
@@ -925,7 +925,7 @@
     {
       "key": "event_f0d37a4f69df9e55d5ec50567e11daea",
       "attributes": {
-        "label": "healing canaanite daughter",
+        "label": "Healing a Canaanite",
         "x": -849.53424,
         "y": -149.87036,
         "size": 10.0,
@@ -939,7 +939,7 @@
     {
       "key": "event_f79bd890f123234cef66442606e34487",
       "attributes": {
-        "label": "healing in gennesaret",
+        "label": "Healing in Gennesaret",
         "x": 543.0706,
         "y": -467.92535,
         "size": 10.0,
@@ -953,7 +953,7 @@
     {
       "key": "event_e56f7a67743a978ad194ccc981f84248",
       "attributes": {
-        "label": "healing multitudes",
+        "label": "Healing multitudes",
         "x": 320.32953,
         "y": -420.7485,
         "size": 11.290322,
@@ -967,7 +967,7 @@
     {
       "key": "event_6225c363f7a5c1f6312cc5bdf9377766",
       "attributes": {
-        "label": "healing the leper",
+        "label": "Healing the leper",
         "x": -221.9228,
         "y": -430.9287,
         "size": 11.290322,
@@ -981,7 +981,7 @@
     {
       "key": "event_fa064bb00915c7f5ea2305c237968411",
       "attributes": {
-        "label": "healing the man with palsy",
+        "label": "Healing the paralyzed man",
         "x": -687.41187,
         "y": 60.786816,
         "size": 12.580645,
@@ -995,7 +995,7 @@
     {
       "key": "event_acb4d47e8f28632c76f5369373f5f69d",
       "attributes": {
-        "label": "jesus calls matthew",
+        "label": "Jesus calls Matthew",
         "x": -263.6847,
         "y": -619.04926,
         "size": 12.580645,
@@ -1009,7 +1009,7 @@
     {
       "key": "event_790f5a904a89d96c69f9fdb896a2a21f",
       "attributes": {
-        "label": "jesus leaves judea toward galilee, jesus visits galilee",
+        "label": "Jesus leaves Judea",
         "x": 305.58432,
         "y": 334.44104,
         "size": 12.580645,
@@ -1023,7 +1023,7 @@
     {
       "key": "event_11112321e66f8547d0238993596566f4",
       "attributes": {
-        "label": "jesus visits galilee",
+        "label": "Jesus visits Galilee",
         "x": 671.8609,
         "y": 207.8988,
         "size": 10.0,
@@ -1037,7 +1037,7 @@
     {
       "key": "event_8074f61af2afd5a9c8748e0ff9ae718a",
       "attributes": {
-        "label": "jesus walks on water",
+        "label": "Jesus walks on water",
         "x": 610.1236,
         "y": 380.38095,
         "size": 10.0,
@@ -1051,7 +1051,7 @@
     {
       "key": "event_2f95b79a44a32863c553e197d0ff6124",
       "attributes": {
-        "label": "jesus\u0027 1st tour of galilee",
+        "label": "First tour of Galilee",
         "x": -453.38776,
         "y": 515.32983,
         "size": 10.0,
@@ -1065,7 +1065,7 @@
     {
       "key": "event_8be73a7575c9733cfce195dbed9b9d61",
       "attributes": {
-        "label": "john baptizes jesus",
+        "label": "John baptizes Jesus",
         "x": 539.58514,
         "y": 67.745674,
         "size": 12.580645,
@@ -1079,7 +1079,7 @@
     {
       "key": "event_8c5b38afdd6964eefabe2cafc0b33155",
       "attributes": {
-        "label": "john beheaded",
+        "label": "John beheaded",
         "x": 452.1515,
         "y": 472.1757,
         "size": 13.870968,
@@ -1093,7 +1093,7 @@
     {
       "key": "event_fe07358fe6347d49865da346e5eefe02",
       "attributes": {
-        "label": "john the baptist begins ministry",
+        "label": "John the Baptist begins ministry",
         "x": 468.0697,
         "y": 259.08652,
         "size": 13.870968,
@@ -1107,7 +1107,7 @@
     {
       "key": "event_43cc62185419d808a343f0ce0dbd7999",
       "attributes": {
-        "label": "john the baptist imprisoned",
+        "label": "John the Baptist imprisoned",
         "x": 34.101658,
         "y": 528.35925,
         "size": 15.16129,
@@ -1121,7 +1121,7 @@
     {
       "key": "event_ae4f4dbb5930d402cd354f4eed4b2a64",
       "attributes": {
-        "label": "parable of the winseskins",
+        "label": "Parable of the wineskins",
         "x": -502.20224,
         "y": 6.898558,
         "size": 10.0,
@@ -1135,7 +1135,7 @@
     {
       "key": "event_d810e7a6ae9e0e787b5c3cbe20f071b1",
       "attributes": {
-        "label": "peter\u0027s confession \"upon this rock\"",
+        "label": "Peter\u0027s confession",
         "x": -6.689151,
         "y": -384.45917,
         "size": 13.870968,
@@ -1149,7 +1149,7 @@
     {
       "key": "event_0f77167740ba5d66760f65c237174878",
       "attributes": {
-        "label": "peter\u0027s mother-in-law and others healed",
+        "label": "Healing Peter\u0027s mother",
         "x": -66.291466,
         "y": 380.0768,
         "size": 17.741936,
@@ -1163,7 +1163,7 @@
     {
       "key": "event_2c52d25668389a22bf26f47d2080d7da",
       "attributes": {
-        "label": "seaside parables and miracle",
+        "label": "Seaside parables and miracle",
         "x": -100.79904,
         "y": -885.98145,
         "size": 11.290322,
@@ -1177,7 +1177,7 @@
     {
       "key": "event_9bbcb6d922627bb5ea92a233fc2ecbae",
       "attributes": {
-        "label": "second foretelling of death and resurrection",
+        "label": "Second foretelling the resurrection",
         "x": 728.182,
         "y": -154.65236,
         "size": 10.0,
@@ -1191,7 +1191,7 @@
     {
       "key": "event_edb40125603b530dcc0769f3313348ed",
       "attributes": {
-        "label": "teachings on humility temptation reconciliation",
+        "label": "Teachings on humility and temptation",
         "x": -405.4965,
         "y": -366.07397,
         "size": 12.580645,
@@ -1205,7 +1205,7 @@
     {
       "key": "event_4e12fdf35e5c9827cd2ce1982de1030a",
       "attributes": {
-        "label": "temptations of jesus",
+        "label": "Temptations of Jesus",
         "x": 646.9204,
         "y": -323.05432,
         "size": 11.290322,
@@ -1219,7 +1219,7 @@
     {
       "key": "event_6542fa916245dd3506364da65b4d55ed",
       "attributes": {
-        "label": "the demoniac",
+        "label": "The demoniac",
         "x": -629.4891,
         "y": -291.2657,
         "size": 11.290322,
@@ -1233,7 +1233,7 @@
     {
       "key": "event_6c903b3862bfc8600ad4619849505209",
       "attributes": {
-        "label": "the transfiguration",
+        "label": "Transfiguration",
         "x": 276.69006,
         "y": -203.86443,
         "size": 16.451612,
